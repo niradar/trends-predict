@@ -136,3 +136,13 @@ website traffic; two in Hebrew) × two models, each a fresh agent with only the 
   filter (≥95 % non-zero since 2012). Best model ridge+Djorno OOS R² +0.03 vs naive, CW p≈0.01 but
   DM p 0.6–0.7, gain vanishes ex-COVID; LASSO selected nothing at the last origin. Forecast = naive
   3.1 % [2.7, 3.5]. Confirms: Hebrew expansion is technically fine, monthly macro persistence wins.
+- **03-Q3-B (S&P, weekly, ARGO expansion):** 52 candidates → 29 weekly terms, 153 origins, bench
+  drift. Best GT model OOS R² −0.001 (CW 0.57, DM 0.84) and it selected zero search terms at every
+  origin; always-up 71 % beats every model. Post-hoc exclusion of the April-2025 tariff crash makes
+  sliding-window LASSO "moderate" only because it lost during the crash — not an edge. **Library
+  bug found and fixed:** weekly Yahoo/Wikipedia series were labelled Sunday-ending, so `align("W")`
+  put a Friday close in the following Sun–Sat bucket (one-week GT look-ahead); now `W-SAT`.
+- **02-Q2-B (flu, ARGO expansion, 38 terms; partial — final write-up pending):** h=0 strong as with
+  the hand-picked set, but the h=2 "moderate" verdict came entirely from the 13 peak weeks of the
+  2024-25 season; excluding that season every expanded-set model is negative at h=2. Breadth adds
+  noise; gains concentrate in peaks.

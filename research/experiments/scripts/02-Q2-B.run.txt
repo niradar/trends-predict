@@ -54,3 +54,53 @@ h=0 lasso_exp selected at recent origins:
   2026-08-30/2026-09-05: ['y_lag1', 'y_lag2', 'y_lag4', 'y_lag5', 'y_lag8', 'flu__l0', 'the flu__l0', 'flu symptoms__l0', 'cold__l1', 'covid__l0', 'covid__l1', 'stomach flu__l1', 'flu vaccine__l0', 'flu vaccine__l1', 'bird flu__l0', 'symptoms of flu__l1', 'flu test__l0', 'flu shots__l0', 'covid symptoms__l1', 'symptoms of the flu__l0', 'stomach flu symptoms__l0', 'flu like symptoms__l0', 'flu like symptoms__l1', 'cold flu symptoms__l0', 'cold symptoms__l0', 'cold symptoms__l1', 'symptoms of flu a__l1', 'influenza symptoms__l0', 'influenza symptoms__l1', 'flu influenza__l0', 'influenza vaccine__l0', 'influenza vaccine__l1', 'symptoms influenza a__l0', 'symptoms influenza a__l1', 'virus__l0', 'virus__l1', 'influenza virus__l0', 'flu a__l0', 'flu a__l1', 'fever__l1', 'fever symptoms__l0', 'fever symptoms__l1', 'what is a fever__l0', 'what is a fever__l1', 'high fever__l0', 'covid fever__l1', 'toddler fever__l0', 'toddler fever__l1', 'sin1', 'cos1', 'sin2', 'cos2']
 h=0 most-selected features over last 26 origins: {'y_lag1': 26, 'y_lag2': 26, 'y_lag8': 26, 'the flu__l0': 26, 'flu symptoms__l0': 26, 'covid__l0': 26, 'stomach flu__l1': 26, 'bird flu__l0': 26, 'flu like symptoms__l0': 26, 'cold flu symptoms__l0': 26}
 h=0 done in 210s
+h=2 evaluation targets: 2023-10-01/2023-10-07 -> 2026-08-30/2026-09-05 (153 weeks)
+
+=== h=2 view=full bench=ar n=153 ===
+                  n    MAE   RMSE    MAPE  OOS_R2_vs_bench   MASE  DirAcc  DM_stat   DM_p  CW_stat   CW_p
+model                                                                                                    
+naive           153  0.702  1.094  21.687           -0.222  0.890     NaN   -1.014  0.312    2.410  0.008
+seasonal_naive  153  0.720  1.102  22.448           -0.239  0.913   0.745   -0.791  0.430    3.031  0.001
+ar              153  0.617  0.990  19.566            0.000  0.782   0.712      NaN    NaN      NaN    NaN
+lasso_exp       153  0.699  0.922  29.500            0.133  0.885   0.673    0.789  0.431    3.203  0.001
+lasso_w104      153  0.688  0.945  27.715            0.089  0.872   0.614    0.397  0.692    3.200  0.001
+enet_exp        153  0.713  0.919  31.112            0.138  0.903   0.647    0.744  0.458    3.030  0.001
+enet_w104       153  0.663  0.910  25.555            0.156  0.840   0.621    0.752  0.453    3.353  0.000
+lasso_p52_exp   153  0.768  1.047  30.328           -0.119  0.974   0.523   -0.610  0.543    2.993  0.001
+lasso_p52_w104  153  0.820  1.207  29.807           -0.486  1.039   0.582   -1.399  0.164    2.999  0.001
+verdict: {'gt_helps': True, 'best_model': 'enet_w104', 'oos_r2': 0.15582692548476584, 'cw_p': 0.0003997278405373228, 'dm_p': 0.453200566571196, 'strength': 'moderate', 'reason': 'enet_w104 lowers squared error by 16% vs ar (Clark–West p=0.000; DM favours the GT model, p=0.45)'}
+
+=== h=2 view=excl_2020_03_2021_06 bench=ar n=153 ===
+                  n    MAE   RMSE    MAPE  OOS_R2_vs_bench   MASE  DirAcc  DM_stat   DM_p  CW_stat   CW_p
+model                                                                                                    
+naive           153  0.702  1.094  21.687           -0.222  0.890     NaN   -1.014  0.312    2.410  0.008
+seasonal_naive  153  0.720  1.102  22.448           -0.239  0.913   0.745   -0.791  0.430    3.031  0.001
+ar              153  0.617  0.990  19.566            0.000  0.782   0.712      NaN    NaN      NaN    NaN
+lasso_exp       153  0.699  0.922  29.500            0.133  0.885   0.673    0.789  0.431    3.203  0.001
+lasso_w104      153  0.688  0.945  27.715            0.089  0.872   0.614    0.397  0.692    3.200  0.001
+enet_exp        153  0.713  0.919  31.112            0.138  0.903   0.647    0.744  0.458    3.030  0.001
+enet_w104       153  0.663  0.910  25.555            0.156  0.840   0.621    0.752  0.453    3.353  0.000
+lasso_p52_exp   153  0.768  1.047  30.328           -0.119  0.974   0.523   -0.610  0.543    2.993  0.001
+lasso_p52_w104  153  0.820  1.207  29.807           -0.486  1.039   0.582   -1.399  0.164    2.999  0.001
+verdict: {'gt_helps': True, 'best_model': 'enet_w104', 'oos_r2': 0.15582692548476584, 'cw_p': 0.0003997278405373228, 'dm_p': 0.453200566571196, 'strength': 'moderate', 'reason': 'enet_w104 lowers squared error by 16% vs ar (Clark–West p=0.000; DM favours the GT model, p=0.45)'}
+
+=== h=2 view=excl_2024_25_peak bench=ar n=140 ===
+                  n    MAE   RMSE    MAPE  OOS_R2_vs_bench   MASE  DirAcc  DM_stat   DM_p  CW_stat   CW_p
+model                                                                                                    
+naive           140  0.619  0.987  21.161           -0.361  0.784     NaN   -1.498  0.136    2.440  0.007
+seasonal_naive  140  0.638  0.993  22.049           -0.378  0.809   0.743   -0.881  0.380    2.608  0.005
+ar              140  0.531  0.846  19.189            0.000  0.673   0.729      NaN    NaN      NaN    NaN
+lasso_exp       140  0.654  0.858  30.451           -0.029  0.829   0.657   -0.156  0.876    2.841  0.002
+lasso_w104      140  0.666  0.917  28.891           -0.176  0.844   0.586   -0.640  0.523    2.694  0.004
+enet_exp        140  0.674  0.869  32.261           -0.054  0.855   0.629   -0.266  0.791    2.560  0.005
+enet_w104       140  0.639  0.880  26.557           -0.081  0.810   0.593   -0.328  0.744    2.798  0.003
+lasso_p52_exp   140  0.713  0.974  31.096           -0.324  0.904   0.529   -1.216  0.226    2.491  0.006
+lasso_p52_w104  140  0.782  1.173  30.639           -0.921  0.991   0.593   -1.923  0.057    2.447  0.007
+verdict: {'gt_helps': False, 'best_model': 'lasso_exp', 'oos_r2': -0.028838262544909288, 'cw_p': 0.002249660160301925, 'dm_p': 0.8764793587398367, 'strength': 'none', 'reason': 'best GT model lasso_exp has OOS R²=-0.03 vs ar (Clark–West p=0.00; DM favours the benchmark, p=0.88); not a reliable gain'}
+h=2 lasso_exp selected at recent origins:
+  2026-07-26/2026-08-01: ['y_lag2', 'y_lag6', 'y_lag8', 'flu symptoms__l0', 'cold__l0', 'covid__l0', 'covid__l1', 'stomach flu__l0', 'bird flu__l1', 'flu test__l0', 'the flu symptoms__l0', 'covid symptoms__l1', 'stomach flu symptoms__l1', 'flu like symptoms__l0', 'flu like symptoms__l1', 'cold symptoms__l0', 'cold symptoms__l1', 'symptoms of flu a__l1', 'influenza symptoms__l1', 'flu influenza__l1', 'what is influenza__l0', 'influenza vaccine__l0', 'virus__l0', 'virus__l1', 'what is influenza a__l0', 'flu a__l1', 'fever__l0', 'fever__l1', 'fever symptoms__l0', 'fever symptoms__l1', 'what is a fever__l1', 'high fever__l0', 'high fever__l1', 'fever temperature__l0', 'toddler fever__l0', 'toddler fever__l1', 'sin1', 'cos1', 'sin2', 'cos2']
+  2026-08-02/2026-08-08: ['y_lag7', 'y_lag8', 'flu symptoms__l0', 'cold__l0', 'covid__l0', 'covid__l1', 'bird flu__l1', 'cold symptoms__l0', 'cold symptoms__l1', 'what is influenza__l0', 'influenza vaccine__l1', 'virus__l0', 'virus__l1', 'what is influenza a__l0', 'fever__l1', 'fever symptoms__l0', 'fever symptoms__l1', 'what is a fever__l1', 'high fever__l0', 'toddler fever__l0', 'sin1', 'cos1', 'cos2']
+  2026-08-09/2026-08-15: ['y_lag2', 'y_lag6', 'y_lag8', 'flu symptoms__l0', 'cold__l0', 'covid__l0', 'covid__l1', 'stomach flu__l0', 'bird flu__l0', 'bird flu__l1', 'flu test__l0', 'the flu symptoms__l0', 'covid symptoms__l1', 'stomach flu symptoms__l1', 'flu like symptoms__l0', 'flu like symptoms__l1', 'cold symptoms__l0', 'cold symptoms__l1', 'symptoms of flu a__l1', 'influenza__l0', 'influenza symptoms__l1', 'flu influenza__l1', 'what is influenza__l0', 'influenza vaccine__l0', 'symptoms influenza a__l1', 'virus__l0', 'virus__l1', 'what is influenza a__l0', 'flu a__l1', 'fever__l0', 'fever__l1', 'fever symptoms__l0', 'fever symptoms__l1', 'what is a fever__l1', 'high fever__l0', 'high fever__l1', 'fever temperature__l0', 'toddler fever__l0', 'toddler fever__l1', 'sin1', 'cos1', 'sin2', 'cos2']
+  2026-08-16/2026-08-22: ['y_lag7', 'y_lag8', 'flu symptoms__l0', 'cold__l0', 'covid__l0', 'covid__l1', 'bird flu__l1', 'cold symptoms__l0', 'cold symptoms__l1', 'what is influenza__l0', 'influenza vaccine__l1', 'virus__l0', 'virus__l1', 'what is influenza a__l0', 'fever__l1', 'fever symptoms__l0', 'fever symptoms__l1', 'what is a fever__l1', 'high fever__l0', 'toddler fever__l0', 'sin1', 'cos1', 'cos2']
+h=2 most-selected features over last 26 origins: {'flu symptoms__l0': 26, 'covid__l1': 26, 'virus__l0': 26, 'virus__l1': 26, 'what is influenza a__l0': 26, 'fever__l1': 26, 'fever symptoms__l1': 26, 'what is a fever__l1': 26, 'high fever__l0': 26, 'toddler fever__l0': 26}
+h=2 done in 801s

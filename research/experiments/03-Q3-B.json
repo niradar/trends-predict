@@ -1,0 +1,1498 @@
+{
+ "id": "03-Q3-B",
+ "question": "Will the S&P 500 be higher one month from now?",
+ "approach": "B (ARGO-style breadth, weekly, related-query expansion, LASSO/ENet, expanding + sliding-104)",
+ "truth": {
+  "series": "Yahoo Finance ^GSPC weekly last close (Friday), log; labels shifted Sunday->Saturday so the close maps to its own Sun-Sat week",
+  "first": "2004-01-04",
+  "last_sunday_label": "2026-09-13",
+  "last_close": 7656.97998046875,
+  "n": 1185,
+  "freq": "W"
+ },
+ "seeds": [
+  "stock market",
+  "recession",
+  "stock market crash",
+  "S&P 500",
+  "sell stocks"
+ ],
+ "expanded_candidates": [
+  "stock market",
+  "today stock market",
+  "the stock market",
+  "market news",
+  "stock market news",
+  "what is the stock market",
+  "stock market open",
+  "us stock market",
+  "the stock market today",
+  "stock market crash",
+  "stock market dow",
+  "recession",
+  "the recession",
+  "what is recession",
+  "what is a recession",
+  "us recession",
+  "recession definition",
+  "economy recession",
+  "economy",
+  "gum recession",
+  "great recession",
+  "economic recession",
+  "the stock market crash",
+  "did the stock market crash",
+  "stock market crash 1929",
+  "great stock market crash",
+  "great depression stock market crash",
+  "great depression",
+  "stock market crash of 1929",
+  "the great depression stock market crash",
+  "the great depression",
+  "S&P 500",
+  "s&p 500 stock",
+  "s&p 500 index",
+  "s&p 500 today",
+  "dow",
+  "s&p 500 price",
+  "nasdaq",
+  "dow jones",
+  "what is s&p 500",
+  "s&p 500 futures",
+  "etf",
+  "sell stocks",
+  "stocks to sell",
+  "stock",
+  "buy sell stocks",
+  "how to sell stocks",
+  "stocks to buy",
+  "buy and sell stocks",
+  "when to sell stocks",
+  "buy or sell stocks",
+  "what are stocks"
+ ],
+ "queries": [
+  "stock market",
+  "market news",
+  "stock market news",
+  "stock market open",
+  "us stock market",
+  "the stock market today",
+  "stock market crash",
+  "recession",
+  "what is a recession",
+  "us recession",
+  "recession definition",
+  "economy recession",
+  "economy",
+  "economic recession",
+  "did the stock market crash",
+  "S&P 500",
+  "s&p 500 index",
+  "s&p 500 today",
+  "nasdaq",
+  "dow jones",
+  "s&p 500 futures",
+  "sell stocks",
+  "stocks to sell",
+  "buy sell stocks",
+  "how to sell stocks",
+  "stocks to buy",
+  "buy and sell stocks",
+  "when to sell stocks",
+  "buy or sell stocks"
+ ],
+ "queries_dropped_by_hand": [
+  {
+   "query": "today stock market",
+   "reason": "dup of 'the stock market today'"
+  },
+  {
+   "query": "the stock market",
+   "reason": "dup of seed"
+  },
+  {
+   "query": "what is the stock market",
+   "reason": "educational"
+  },
+  {
+   "query": "stock market dow",
+   "reason": "dup (stock market x dow jones)"
+  },
+  {
+   "query": "the recession",
+   "reason": "dup of seed"
+  },
+  {
+   "query": "what is recession",
+   "reason": "educational (dup of 'what is a recession')"
+  },
+  {
+   "query": "gum recession",
+   "reason": "irrelevant (dental)"
+  },
+  {
+   "query": "great recession",
+   "reason": "historical/homework"
+  },
+  {
+   "query": "the stock market crash",
+   "reason": "dup of seed"
+  },
+  {
+   "query": "stock market crash 1929",
+   "reason": "historical/homework"
+  },
+  {
+   "query": "great stock market crash",
+   "reason": "historical/homework"
+  },
+  {
+   "query": "great depression stock market crash",
+   "reason": "historical/homework"
+  },
+  {
+   "query": "great depression",
+   "reason": "historical/homework"
+  },
+  {
+   "query": "stock market crash of 1929",
+   "reason": "historical/homework"
+  },
+  {
+   "query": "the great depression stock market crash",
+   "reason": "historical/homework"
+  },
+  {
+   "query": "the great depression",
+   "reason": "historical/homework"
+  },
+  {
+   "query": "s&p 500 stock",
+   "reason": "malformed dup of seed"
+  },
+  {
+   "query": "dow",
+   "reason": "ambiguous (Dow Inc.) / dup of 'dow jones'"
+  },
+  {
+   "query": "s&p 500 price",
+   "reason": "dup of 's&p 500 today'"
+  },
+  {
+   "query": "what is s&p 500",
+   "reason": "educational"
+  },
+  {
+   "query": "etf",
+   "reason": "generic token"
+  },
+  {
+   "query": "stock",
+   "reason": "generic token"
+  },
+  {
+   "query": "what are stocks",
+   "reason": "educational"
+  }
+ ],
+ "queries_dropped_privacy": [],
+ "queries_failed": [],
+ "nonzero_share": {
+  "stock market": 1.0,
+  "market news": 1.0,
+  "stock market news": 1.0,
+  "stock market open": 1.0,
+  "us stock market": 1.0,
+  "the stock market today": 1.0,
+  "stock market crash": 1.0,
+  "recession": 1.0,
+  "what is a recession": 1.0,
+  "us recession": 1.0,
+  "recession definition": 1.0,
+  "economy recession": 1.0,
+  "economy": 1.0,
+  "economic recession": 1.0,
+  "did the stock market crash": 1.0,
+  "S&P 500": 1.0,
+  "s&p 500 index": 1.0,
+  "s&p 500 today": 1.0,
+  "nasdaq": 1.0,
+  "dow jones": 1.0,
+  "s&p 500 futures": 1.0,
+  "sell stocks": 1.0,
+  "stocks to sell": 1.0,
+  "buy sell stocks": 1.0,
+  "how to sell stocks": 1.0,
+  "stocks to buy": 1.0,
+  "buy and sell stocks": 1.0,
+  "when to sell stocks": 1.0,
+  "buy or sell stocks": 1.0
+ },
+ "gt_range": {
+  "first": "2021-09-12",
+  "last": "2026-09-06",
+  "n": 261
+ },
+ "aligned": {
+  "n": 261,
+  "first": "2021-09-12/2021-09-18",
+  "last": "2026-09-06/2026-09-12"
+ },
+ "design": {
+  "h": 4,
+  "p": 2,
+  "xlags": 1,
+  "period": 52,
+  "fourier_k": 0,
+  "min_train": 104,
+  "window_sliding": 104,
+  "transform": "diff (4-week log change)",
+  "y_known_at_origin": true,
+  "preprocess": [
+   "raw",
+   "diffGT"
+  ],
+  "models": [
+   "lasso+raw+exp",
+   "lasso+raw+w104",
+   "lasso+diffGT+exp",
+   "lasso+diffGT+w104",
+   "enet+raw+exp",
+   "enet+raw+w104",
+   "enet+diffGT+exp",
+   "enet+diffGT+w104"
+  ],
+  "benchmarks": [
+   "naive",
+   "drift",
+   "ar_diff"
+  ],
+  "views": {
+   "h4_full": {
+    "n": 153,
+    "first_target": "2023-10-08/2023-10-14",
+    "last_target": "2026-09-06/2026-09-12",
+    "exclude": null
+   },
+   "h4_excl2020": {
+    "n": 153,
+    "first_target": "2023-10-08/2023-10-14",
+    "last_target": "2026-09-06/2026-09-12",
+    "exclude": [
+     "2020-02-01",
+     "2020-06-30"
+    ]
+   },
+   "h4_excl_tariff2025": {
+    "n": 140,
+    "first_target": "2023-10-08/2023-10-14",
+    "last_target": "2026-09-06/2026-09-12",
+    "exclude": [
+     "2025-03-01",
+     "2025-05-31"
+    ]
+   }
+  }
+ },
+ "bench_per_view": {
+  "h4_full": "drift",
+  "h4_excl2020": "drift",
+  "h4_excl_tariff2025": "drift"
+ },
+ "tables": {
+  "h4_full": [
+   {
+    "model": "naive",
+    "n": 153.0,
+    "MAE": 0.03128012900778553,
+    "RMSE": 0.040073642589768664,
+    "MAPE": 0.3606424710639361,
+    "OOS_R2_vs_bench": -0.05737856403063479,
+    "MASE": 0.1892960683552037,
+    "DirAcc": null,
+    "DM_stat": -1.4796066975597355,
+    "DM_p": 0.1410478150683523,
+    "CW_stat": -0.8140455138092206,
+    "CW_p": 0.7921905611167517
+   },
+   {
+    "model": "drift",
+    "n": 153.0,
+    "MAE": 0.0297209493314238,
+    "RMSE": 0.038971181225367184,
+    "MAPE": 0.34282277174069603,
+    "OOS_R2_vs_bench": 0.0,
+    "MASE": 0.1798604748344368,
+    "DirAcc": 0.6862745098039216,
+    "DM_stat": null,
+    "DM_p": null,
+    "CW_stat": null,
+    "CW_p": null
+   },
+   {
+    "model": "ar_diff",
+    "n": 153.0,
+    "MAE": 0.030042820884387412,
+    "RMSE": 0.039282965247965644,
+    "MAPE": 0.3466402074574793,
+    "OOS_R2_vs_bench": -0.016064753858628267,
+    "MASE": 0.18180832548032863,
+    "DirAcc": 0.6339869281045751,
+    "DM_stat": -0.9638349318777105,
+    "DM_p": 0.336659579428102,
+    "CW_stat": -0.7785522838415443,
+    "CW_p": 0.7818782517623424
+   },
+   {
+    "model": "lasso+raw+exp",
+    "n": 153.0,
+    "MAE": 0.029868353363294863,
+    "RMSE": 0.03932138649863259,
+    "MAPE": 0.34456140026689147,
+    "OOS_R2_vs_bench": -0.018053278371422232,
+    "MASE": 0.18075251091542457,
+    "DirAcc": 0.6797385620915033,
+    "DM_stat": -1.199624931366754,
+    "DM_p": 0.2321516124735259,
+    "CW_stat": -1.164749737321196,
+    "CW_p": 0.8779398451424314
+   },
+   {
+    "model": "lasso+raw+w104",
+    "n": 153.0,
+    "MAE": 0.028985468519425385,
+    "RMSE": 0.03913674603769451,
+    "MAPE": 0.3344613629066019,
+    "OOS_R2_vs_bench": -0.008514830658595818,
+    "MASE": 0.17540961000496819,
+    "DirAcc": 0.6666666666666666,
+    "DM_stat": -0.2018718781304206,
+    "DM_p": 0.8402868102955021,
+    "CW_stat": 0.5007838847270228,
+    "CW_p": 0.308261614198471
+   },
+   {
+    "model": "lasso+diffGT+exp",
+    "n": 153.0,
+    "MAE": 0.029763021794526005,
+    "RMSE": 0.038984603019059406,
+    "MAPE": 0.34333109301926695,
+    "OOS_R2_vs_bench": -0.0006889247142873867,
+    "MASE": 0.18011508221950492,
+    "DirAcc": 0.6797385620915033,
+    "DM_stat": -0.2051823431231064,
+    "DM_p": 0.8377041833418299,
+    "CW_stat": -0.17039176748646187,
+    "CW_p": 0.5676489769662871
+   },
+   {
+    "model": "lasso+diffGT+w104",
+    "n": 153.0,
+    "MAE": 0.02888432591843606,
+    "RMSE": 0.03905102283577583,
+    "MAPE": 0.3333303131128175,
+    "OOS_R2_vs_bench": -0.004101666669246606,
+    "MASE": 0.17479753143247467,
+    "DirAcc": 0.6666666666666666,
+    "DM_stat": -0.09264835068734176,
+    "DM_p": 0.9263049306327207,
+    "CW_stat": 0.5421768276586423,
+    "CW_p": 0.2938483484381871
+   },
+   {
+    "model": "enet+raw+exp",
+    "n": 153.0,
+    "MAE": 0.02985146904345505,
+    "RMSE": 0.03922306664955794,
+    "MAPE": 0.3443593402846574,
+    "OOS_R2_vs_bench": -0.012968528611881025,
+    "MASE": 0.18065033309634546,
+    "DirAcc": 0.6797385620915033,
+    "DM_stat": -1.1705926815053835,
+    "DM_p": 0.24359452052455088,
+    "CW_stat": -1.1218180852595985,
+    "CW_p": 0.8690301024866156
+   },
+   {
+    "model": "enet+raw+w104",
+    "n": 153.0,
+    "MAE": 0.02903111729449425,
+    "RMSE": 0.03923029765296291,
+    "MAPE": 0.3349826941146977,
+    "OOS_R2_vs_bench": -0.013342056471293162,
+    "MASE": 0.17568585994126534,
+    "DirAcc": 0.6601307189542484,
+    "DM_stat": -0.3129482891119911,
+    "DM_p": 0.7547489238687408,
+    "CW_stat": 0.38290486827954917,
+    "CW_p": 0.35089515080063305
+   },
+   {
+    "model": "enet+diffGT+exp",
+    "n": 153.0,
+    "MAE": 0.029763021794526005,
+    "RMSE": 0.038984603019059406,
+    "MAPE": 0.34333109301926695,
+    "OOS_R2_vs_bench": -0.0006889247142873867,
+    "MASE": 0.18011508221950492,
+    "DirAcc": 0.6797385620915033,
+    "DM_stat": -0.2051823431231064,
+    "DM_p": 0.8377041833418299,
+    "CW_stat": -0.17039176748646187,
+    "CW_p": 0.5676489769662871
+   },
+   {
+    "model": "enet+diffGT+w104",
+    "n": 153.0,
+    "MAE": 0.02888383079106941,
+    "RMSE": 0.03905095984565619,
+    "MAPE": 0.3333246962020354,
+    "OOS_R2_vs_bench": -0.004098427397723592,
+    "MASE": 0.17479453510008044,
+    "DirAcc": 0.6666666666666666,
+    "DM_stat": -0.0925753113047204,
+    "DM_p": 0.9263628612556567,
+    "CW_stat": 0.5421338487267235,
+    "CW_p": 0.2938631510746105
+   }
+  ],
+  "h4_excl2020": [
+   {
+    "model": "naive",
+    "n": 153.0,
+    "MAE": 0.03128012900778553,
+    "RMSE": 0.040073642589768664,
+    "MAPE": 0.3606424710639361,
+    "OOS_R2_vs_bench": -0.05737856403063479,
+    "MASE": 0.1892960683552037,
+    "DirAcc": null,
+    "DM_stat": -1.4796066975597355,
+    "DM_p": 0.1410478150683523,
+    "CW_stat": -0.8140455138092206,
+    "CW_p": 0.7921905611167517
+   },
+   {
+    "model": "drift",
+    "n": 153.0,
+    "MAE": 0.0297209493314238,
+    "RMSE": 0.038971181225367184,
+    "MAPE": 0.34282277174069603,
+    "OOS_R2_vs_bench": 0.0,
+    "MASE": 0.1798604748344368,
+    "DirAcc": 0.6862745098039216,
+    "DM_stat": null,
+    "DM_p": null,
+    "CW_stat": null,
+    "CW_p": null
+   },
+   {
+    "model": "ar_diff",
+    "n": 153.0,
+    "MAE": 0.030042820884387412,
+    "RMSE": 0.039282965247965644,
+    "MAPE": 0.3466402074574793,
+    "OOS_R2_vs_bench": -0.016064753858628267,
+    "MASE": 0.18180832548032863,
+    "DirAcc": 0.6339869281045751,
+    "DM_stat": -0.9638349318777105,
+    "DM_p": 0.336659579428102,
+    "CW_stat": -0.7785522838415443,
+    "CW_p": 0.7818782517623424
+   },
+   {
+    "model": "lasso+raw+exp",
+    "n": 153.0,
+    "MAE": 0.029868353363294863,
+    "RMSE": 0.03932138649863259,
+    "MAPE": 0.34456140026689147,
+    "OOS_R2_vs_bench": -0.018053278371422232,
+    "MASE": 0.18075251091542457,
+    "DirAcc": 0.6797385620915033,
+    "DM_stat": -1.199624931366754,
+    "DM_p": 0.2321516124735259,
+    "CW_stat": -1.164749737321196,
+    "CW_p": 0.8779398451424314
+   },
+   {
+    "model": "lasso+raw+w104",
+    "n": 153.0,
+    "MAE": 0.028985468519425385,
+    "RMSE": 0.03913674603769451,
+    "MAPE": 0.3344613629066019,
+    "OOS_R2_vs_bench": -0.008514830658595818,
+    "MASE": 0.17540961000496819,
+    "DirAcc": 0.6666666666666666,
+    "DM_stat": -0.2018718781304206,
+    "DM_p": 0.8402868102955021,
+    "CW_stat": 0.5007838847270228,
+    "CW_p": 0.308261614198471
+   },
+   {
+    "model": "lasso+diffGT+exp",
+    "n": 153.0,
+    "MAE": 0.029763021794526005,
+    "RMSE": 0.038984603019059406,
+    "MAPE": 0.34333109301926695,
+    "OOS_R2_vs_bench": -0.0006889247142873867,
+    "MASE": 0.18011508221950492,
+    "DirAcc": 0.6797385620915033,
+    "DM_stat": -0.2051823431231064,
+    "DM_p": 0.8377041833418299,
+    "CW_stat": -0.17039176748646187,
+    "CW_p": 0.5676489769662871
+   },
+   {
+    "model": "lasso+diffGT+w104",
+    "n": 153.0,
+    "MAE": 0.02888432591843606,
+    "RMSE": 0.03905102283577583,
+    "MAPE": 0.3333303131128175,
+    "OOS_R2_vs_bench": -0.004101666669246606,
+    "MASE": 0.17479753143247467,
+    "DirAcc": 0.6666666666666666,
+    "DM_stat": -0.09264835068734176,
+    "DM_p": 0.9263049306327207,
+    "CW_stat": 0.5421768276586423,
+    "CW_p": 0.2938483484381871
+   },
+   {
+    "model": "enet+raw+exp",
+    "n": 153.0,
+    "MAE": 0.02985146904345505,
+    "RMSE": 0.03922306664955794,
+    "MAPE": 0.3443593402846574,
+    "OOS_R2_vs_bench": -0.012968528611881025,
+    "MASE": 0.18065033309634546,
+    "DirAcc": 0.6797385620915033,
+    "DM_stat": -1.1705926815053835,
+    "DM_p": 0.24359452052455088,
+    "CW_stat": -1.1218180852595985,
+    "CW_p": 0.8690301024866156
+   },
+   {
+    "model": "enet+raw+w104",
+    "n": 153.0,
+    "MAE": 0.02903111729449425,
+    "RMSE": 0.03923029765296291,
+    "MAPE": 0.3349826941146977,
+    "OOS_R2_vs_bench": -0.013342056471293162,
+    "MASE": 0.17568585994126534,
+    "DirAcc": 0.6601307189542484,
+    "DM_stat": -0.3129482891119911,
+    "DM_p": 0.7547489238687408,
+    "CW_stat": 0.38290486827954917,
+    "CW_p": 0.35089515080063305
+   },
+   {
+    "model": "enet+diffGT+exp",
+    "n": 153.0,
+    "MAE": 0.029763021794526005,
+    "RMSE": 0.038984603019059406,
+    "MAPE": 0.34333109301926695,
+    "OOS_R2_vs_bench": -0.0006889247142873867,
+    "MASE": 0.18011508221950492,
+    "DirAcc": 0.6797385620915033,
+    "DM_stat": -0.2051823431231064,
+    "DM_p": 0.8377041833418299,
+    "CW_stat": -0.17039176748646187,
+    "CW_p": 0.5676489769662871
+   },
+   {
+    "model": "enet+diffGT+w104",
+    "n": 153.0,
+    "MAE": 0.02888383079106941,
+    "RMSE": 0.03905095984565619,
+    "MAPE": 0.3333246962020354,
+    "OOS_R2_vs_bench": -0.004098427397723592,
+    "MASE": 0.17479453510008044,
+    "DirAcc": 0.6666666666666666,
+    "DM_stat": -0.0925753113047204,
+    "DM_p": 0.9263628612556567,
+    "CW_stat": 0.5421338487267235,
+    "CW_p": 0.2938631510746105
+   }
+  ],
+  "h4_excl_tariff2025": [
+   {
+    "model": "naive",
+    "n": 140.0,
+    "MAE": 0.027875054723915594,
+    "RMSE": 0.03496863909620886,
+    "MAPE": 0.3209897987742582,
+    "OOS_R2_vs_bench": -0.11141822242774935,
+    "MASE": 0.1686897858736462,
+    "DirAcc": null,
+    "DM_stat": -2.4579894179767257,
+    "DM_p": 0.015201754057219796,
+    "CW_stat": -1.6727894849734282,
+    "CW_p": 0.9528156272006062
+   },
+   {
+    "model": "drift",
+    "n": 140.0,
+    "MAE": 0.025968949106811707,
+    "RMSE": 0.03316958014379947,
+    "MAPE": 0.29915741540196417,
+    "OOS_R2_vs_bench": 0.0,
+    "MASE": 0.15715472158098523,
+    "DirAcc": 0.7142857142857143,
+    "DM_stat": null,
+    "DM_p": null,
+    "CW_stat": null,
+    "CW_p": null
+   },
+   {
+    "model": "ar_diff",
+    "n": 140.0,
+    "MAE": 0.026188098386076688,
+    "RMSE": 0.0333024684348607,
+    "MAPE": 0.3017870995151044,
+    "OOS_R2_vs_bench": -0.008028711106480513,
+    "MASE": 0.1584809340444125,
+    "DirAcc": 0.6642857142857143,
+    "DM_stat": -0.48283304667598465,
+    "DM_p": 0.6299738550164897,
+    "CW_stat": -0.24056482788381092,
+    "CW_p": 0.5950537935198928
+   },
+   {
+    "model": "lasso+raw+exp",
+    "n": 140.0,
+    "MAE": 0.025962970263999567,
+    "RMSE": 0.033196031251830786,
+    "MAPE": 0.29911574452040773,
+    "OOS_R2_vs_bench": -0.0015955375163119179,
+    "MASE": 0.15711853977887788,
+    "DirAcc": 0.7071428571428572,
+    "DM_stat": -0.33242322546667075,
+    "DM_p": 0.7400704890404435,
+    "CW_stat": -0.07390299877227119,
+    "CW_p": 0.5294562151493682
+   },
+   {
+    "model": "lasso+raw+w104",
+    "n": 140.0,
+    "MAE": 0.024790311325548917,
+    "RMSE": 0.03244666712761544,
+    "MAPE": 0.2856593218428863,
+    "OOS_R2_vs_bench": 0.043113917297457505,
+    "MASE": 0.15002203047371981,
+    "DirAcc": 0.6928571428571428,
+    "DM_stat": 1.1927465415056282,
+    "DM_p": 0.23500071825103763,
+    "CW_stat": 2.266207328090888,
+    "CW_p": 0.011719346090542704
+   },
+   {
+    "model": "lasso+diffGT+exp",
+    "n": 140.0,
+    "MAE": 0.025994448536696232,
+    "RMSE": 0.033166336229572484,
+    "MAPE": 0.29947443599322215,
+    "OOS_R2_vs_bench": 0.0001955861719667995,
+    "MASE": 0.15730903494143328,
+    "DirAcc": 0.7071428571428572,
+    "DM_stat": 0.05760270231218572,
+    "DM_p": 0.954147821044401,
+    "CW_stat": 0.10550118279533875,
+    "CW_p": 0.45798906574675835
+   },
+   {
+    "model": "lasso+diffGT+w104",
+    "n": 140.0,
+    "MAE": 0.024742246553449528,
+    "RMSE": 0.03254950585569929,
+    "MAPE": 0.2851410843146404,
+    "OOS_R2_vs_bench": 0.03703866198521033,
+    "MASE": 0.14973115979404525,
+    "DirAcc": 0.6928571428571428,
+    "DM_stat": 1.0425212632541747,
+    "DM_p": 0.29897987711973606,
+    "CW_stat": 2.0216955949895565,
+    "CW_p": 0.021603904618199055
+   },
+   {
+    "model": "enet+raw+exp",
+    "n": 140.0,
+    "MAE": 0.025964320401198726,
+    "RMSE": 0.03320632202406563,
+    "MAPE": 0.2991310806825167,
+    "OOS_R2_vs_bench": -0.0022166231566340677,
+    "MASE": 0.15712671032265912,
+    "DirAcc": 0.7071428571428572,
+    "DM_stat": -0.4740121716359753,
+    "DM_p": 0.6362349559872329,
+    "CW_stat": -0.22984991904215019,
+    "CW_p": 0.5908958033935738
+   },
+   {
+    "model": "enet+raw+w104",
+    "n": 140.0,
+    "MAE": 0.024815393810270387,
+    "RMSE": 0.032476001728199325,
+    "MAPE": 0.2859425984445793,
+    "OOS_R2_vs_bench": 0.04138291918115711,
+    "MASE": 0.1501738206322953,
+    "DirAcc": 0.6928571428571428,
+    "DM_stat": 1.1349295621636715,
+    "DM_p": 0.2583581292567916,
+    "CW_stat": 2.207339429626118,
+    "CW_p": 0.013645177286885413
+   },
+   {
+    "model": "enet+diffGT+exp",
+    "n": 140.0,
+    "MAE": 0.025994448536696232,
+    "RMSE": 0.033166336229572484,
+    "MAPE": 0.29947443599322215,
+    "OOS_R2_vs_bench": 0.0001955861719667995,
+    "MASE": 0.15730903494143328,
+    "DirAcc": 0.7071428571428572,
+    "DM_stat": 0.05760270231218572,
+    "DM_p": 0.954147821044401,
+    "CW_stat": 0.10550118279533875,
+    "CW_p": 0.45798906574675835
+   },
+   {
+    "model": "enet+diffGT+w104",
+    "n": 140.0,
+    "MAE": 0.024741705449970258,
+    "RMSE": 0.03254942326635029,
+    "MAPE": 0.2851349458335714,
+    "OOS_R2_vs_bench": 0.037043548710647634,
+    "MASE": 0.1497278852307858,
+    "DirAcc": 0.6928571428571428,
+    "DM_stat": 1.042669204970001,
+    "DM_p": 0.29891157469116236,
+    "CW_stat": 2.0216112063739686,
+    "CW_p": 0.021608266714468582
+   }
+  ]
+ },
+ "direction_tables": {
+  "h4_full": [
+   {
+    "model": "always_up",
+    "n": 153.0,
+    "k": 109.0,
+    "hit_rate": 0.7124183006535948,
+    "p_vs_0.5": 1.5064429385303805e-07,
+    "p_vs_always_up": null,
+    "share_pred_up": 1.0
+   },
+   {
+    "model": "drift",
+    "n": 153.0,
+    "k": 105.0,
+    "hit_rate": 0.6862745098039216,
+    "p_vs_0.5": 4.696504505016046e-06,
+    "p_vs_always_up": 0.47557724675176133,
+    "share_pred_up": 0.9477124183006536
+   },
+   {
+    "model": "ar_diff",
+    "n": 153.0,
+    "k": 97.0,
+    "hit_rate": 0.6339869281045751,
+    "p_vs_0.5": 0.0011504552032125695,
+    "p_vs_always_up": 0.039482723959652535,
+    "share_pred_up": 0.9215686274509803
+   },
+   {
+    "model": "lasso+raw+exp",
+    "n": 153.0,
+    "k": 104.0,
+    "hit_rate": 0.6797385620915033,
+    "p_vs_0.5": 1.030627900095857e-05,
+    "p_vs_always_up": 0.3725217023554639,
+    "share_pred_up": 0.9411764705882353
+   },
+   {
+    "model": "lasso+raw+w104",
+    "n": 153.0,
+    "k": 102.0,
+    "hit_rate": 0.6666666666666666,
+    "p_vs_0.5": 4.554006265861126e-05,
+    "p_vs_always_up": 0.21193593983721504,
+    "share_pred_up": 0.9019607843137255
+   },
+   {
+    "model": "lasso+diffGT+exp",
+    "n": 153.0,
+    "k": 104.0,
+    "hit_rate": 0.6797385620915033,
+    "p_vs_0.5": 1.030627900095857e-05,
+    "p_vs_always_up": 0.3725217023554639,
+    "share_pred_up": 0.9411764705882353
+   },
+   {
+    "model": "lasso+diffGT+w104",
+    "n": 153.0,
+    "k": 102.0,
+    "hit_rate": 0.6666666666666666,
+    "p_vs_0.5": 4.554006265861126e-05,
+    "p_vs_always_up": 0.21193593983721504,
+    "share_pred_up": 0.9150326797385621
+   },
+   {
+    "model": "enet+raw+exp",
+    "n": 153.0,
+    "k": 104.0,
+    "hit_rate": 0.6797385620915033,
+    "p_vs_0.5": 1.030627900095857e-05,
+    "p_vs_always_up": 0.3725217023554639,
+    "share_pred_up": 0.9411764705882353
+   },
+   {
+    "model": "enet+raw+w104",
+    "n": 153.0,
+    "k": 101.0,
+    "hit_rate": 0.6601307189542484,
+    "p_vs_0.5": 9.176460450517649e-05,
+    "p_vs_always_up": 0.1537621793446577,
+    "share_pred_up": 0.8954248366013072
+   },
+   {
+    "model": "enet+diffGT+exp",
+    "n": 153.0,
+    "k": 104.0,
+    "hit_rate": 0.6797385620915033,
+    "p_vs_0.5": 1.030627900095857e-05,
+    "p_vs_always_up": 0.3725217023554639,
+    "share_pred_up": 0.9411764705882353
+   },
+   {
+    "model": "enet+diffGT+w104",
+    "n": 153.0,
+    "k": 102.0,
+    "hit_rate": 0.6666666666666666,
+    "p_vs_0.5": 4.554006265861126e-05,
+    "p_vs_always_up": 0.21193593983721504,
+    "share_pred_up": 0.9150326797385621
+   }
+  ],
+  "h4_excl2020": [
+   {
+    "model": "always_up",
+    "n": 153.0,
+    "k": 109.0,
+    "hit_rate": 0.7124183006535948,
+    "p_vs_0.5": 1.5064429385303805e-07,
+    "p_vs_always_up": null,
+    "share_pred_up": 1.0
+   },
+   {
+    "model": "drift",
+    "n": 153.0,
+    "k": 105.0,
+    "hit_rate": 0.6862745098039216,
+    "p_vs_0.5": 4.696504505016046e-06,
+    "p_vs_always_up": 0.47557724675176133,
+    "share_pred_up": 0.9477124183006536
+   },
+   {
+    "model": "ar_diff",
+    "n": 153.0,
+    "k": 97.0,
+    "hit_rate": 0.6339869281045751,
+    "p_vs_0.5": 0.0011504552032125695,
+    "p_vs_always_up": 0.039482723959652535,
+    "share_pred_up": 0.9215686274509803
+   },
+   {
+    "model": "lasso+raw+exp",
+    "n": 153.0,
+    "k": 104.0,
+    "hit_rate": 0.6797385620915033,
+    "p_vs_0.5": 1.030627900095857e-05,
+    "p_vs_always_up": 0.3725217023554639,
+    "share_pred_up": 0.9411764705882353
+   },
+   {
+    "model": "lasso+raw+w104",
+    "n": 153.0,
+    "k": 102.0,
+    "hit_rate": 0.6666666666666666,
+    "p_vs_0.5": 4.554006265861126e-05,
+    "p_vs_always_up": 0.21193593983721504,
+    "share_pred_up": 0.9019607843137255
+   },
+   {
+    "model": "lasso+diffGT+exp",
+    "n": 153.0,
+    "k": 104.0,
+    "hit_rate": 0.6797385620915033,
+    "p_vs_0.5": 1.030627900095857e-05,
+    "p_vs_always_up": 0.3725217023554639,
+    "share_pred_up": 0.9411764705882353
+   },
+   {
+    "model": "lasso+diffGT+w104",
+    "n": 153.0,
+    "k": 102.0,
+    "hit_rate": 0.6666666666666666,
+    "p_vs_0.5": 4.554006265861126e-05,
+    "p_vs_always_up": 0.21193593983721504,
+    "share_pred_up": 0.9150326797385621
+   },
+   {
+    "model": "enet+raw+exp",
+    "n": 153.0,
+    "k": 104.0,
+    "hit_rate": 0.6797385620915033,
+    "p_vs_0.5": 1.030627900095857e-05,
+    "p_vs_always_up": 0.3725217023554639,
+    "share_pred_up": 0.9411764705882353
+   },
+   {
+    "model": "enet+raw+w104",
+    "n": 153.0,
+    "k": 101.0,
+    "hit_rate": 0.6601307189542484,
+    "p_vs_0.5": 9.176460450517649e-05,
+    "p_vs_always_up": 0.1537621793446577,
+    "share_pred_up": 0.8954248366013072
+   },
+   {
+    "model": "enet+diffGT+exp",
+    "n": 153.0,
+    "k": 104.0,
+    "hit_rate": 0.6797385620915033,
+    "p_vs_0.5": 1.030627900095857e-05,
+    "p_vs_always_up": 0.3725217023554639,
+    "share_pred_up": 0.9411764705882353
+   },
+   {
+    "model": "enet+diffGT+w104",
+    "n": 153.0,
+    "k": 102.0,
+    "hit_rate": 0.6666666666666666,
+    "p_vs_0.5": 4.554006265861126e-05,
+    "p_vs_always_up": 0.21193593983721504,
+    "share_pred_up": 0.9150326797385621
+   }
+  ],
+  "h4_excl_tariff2025": [
+   {
+    "model": "always_up",
+    "n": 140.0,
+    "k": 104.0,
+    "hit_rate": 0.7428571428571429,
+    "p_vs_0.5": 7.600909757854836e-09,
+    "p_vs_always_up": null,
+    "share_pred_up": 1.0
+   },
+   {
+    "model": "drift",
+    "n": 140.0,
+    "k": 100.0,
+    "hit_rate": 0.7142857142857143,
+    "p_vs_0.5": 4.143396431880526e-07,
+    "p_vs_always_up": 0.4397641088223675,
+    "share_pred_up": 0.9428571428571428
+   },
+   {
+    "model": "ar_diff",
+    "n": 140.0,
+    "k": 93.0,
+    "hit_rate": 0.6642857142857143,
+    "p_vs_0.5": 0.00012562947340398603,
+    "p_vs_always_up": 0.041700625445459716,
+    "share_pred_up": 0.9214285714285714
+   },
+   {
+    "model": "lasso+raw+exp",
+    "n": 140.0,
+    "k": 99.0,
+    "hit_rate": 0.7071428571428572,
+    "p_vs_0.5": 1.0330793850718241e-06,
+    "p_vs_always_up": 0.33421434783948767,
+    "share_pred_up": 0.9357142857142857
+   },
+   {
+    "model": "lasso+raw+w104",
+    "n": 140.0,
+    "k": 97.0,
+    "hit_rate": 0.6928571428571428,
+    "p_vs_0.5": 5.815464798668522e-06,
+    "p_vs_always_up": 0.17655464719938696,
+    "share_pred_up": 0.8928571428571429
+   },
+   {
+    "model": "lasso+diffGT+exp",
+    "n": 140.0,
+    "k": 99.0,
+    "hit_rate": 0.7071428571428572,
+    "p_vs_0.5": 1.0330793850718241e-06,
+    "p_vs_always_up": 0.33421434783948767,
+    "share_pred_up": 0.9357142857142857
+   },
+   {
+    "model": "lasso+diffGT+w104",
+    "n": 140.0,
+    "k": 97.0,
+    "hit_rate": 0.6928571428571428,
+    "p_vs_0.5": 5.815464798668522e-06,
+    "p_vs_always_up": 0.17655464719938696,
+    "share_pred_up": 0.9071428571428571
+   },
+   {
+    "model": "enet+raw+exp",
+    "n": 140.0,
+    "k": 99.0,
+    "hit_rate": 0.7071428571428572,
+    "p_vs_0.5": 1.0330793850718241e-06,
+    "p_vs_always_up": 0.33421434783948767,
+    "share_pred_up": 0.9357142857142857
+   },
+   {
+    "model": "enet+raw+w104",
+    "n": 140.0,
+    "k": 97.0,
+    "hit_rate": 0.6928571428571428,
+    "p_vs_0.5": 5.815464798668522e-06,
+    "p_vs_always_up": 0.17655464719938696,
+    "share_pred_up": 0.8928571428571429
+   },
+   {
+    "model": "enet+diffGT+exp",
+    "n": 140.0,
+    "k": 99.0,
+    "hit_rate": 0.7071428571428572,
+    "p_vs_0.5": 1.0330793850718241e-06,
+    "p_vs_always_up": 0.33421434783948767,
+    "share_pred_up": 0.9357142857142857
+   },
+   {
+    "model": "enet+diffGT+w104",
+    "n": 140.0,
+    "k": 97.0,
+    "hit_rate": 0.6928571428571428,
+    "p_vs_0.5": 5.815464798668522e-06,
+    "p_vs_always_up": 0.17655464719938696,
+    "share_pred_up": 0.9071428571428571
+   }
+  ]
+ },
+ "verdicts": {
+  "h4_full": {
+   "gt_helps": false,
+   "best_model": "lasso+diffGT+exp",
+   "oos_r2": -0.0006889247142873867,
+   "cw_p": 0.5676489769662871,
+   "dm_p": 0.8377041833418299,
+   "strength": "none",
+   "reason": "best GT model lasso+diffGT+exp has OOS R²=-0.00 vs drift (Clark–West p=0.57); not a reliable gain"
+  },
+  "h4_excl2020": {
+   "gt_helps": false,
+   "best_model": "lasso+diffGT+exp",
+   "oos_r2": -0.0006889247142873867,
+   "cw_p": 0.5676489769662871,
+   "dm_p": 0.8377041833418299,
+   "strength": "none",
+   "reason": "best GT model lasso+diffGT+exp has OOS R²=-0.00 vs drift (Clark–West p=0.57); not a reliable gain"
+  },
+  "h4_excl_tariff2025": {
+   "gt_helps": true,
+   "best_model": "lasso+raw+w104",
+   "oos_r2": 0.043113917297457505,
+   "cw_p": 0.011719346090542704,
+   "dm_p": 0.23500071825103763,
+   "strength": "moderate",
+   "reason": "lasso+raw+w104 lowers squared error by 4% vs drift (Clark–West p=0.012)"
+  }
+ },
+ "lasso_selections": {
+  "lasso+raw+exp": {
+   "n_origins": 153,
+   "mean_n_selected": 0.11764705882352941,
+   "share_origins_empty": 0.8888888888888888,
+   "top_features_share": [
+    [
+     "s&p 500 today__l0",
+     0.111
+    ],
+    [
+     "stocks to buy__l1",
+     0.007
+    ]
+   ],
+   "recent": [
+    {
+     "origin": "2026-07-05/2026-07-11",
+     "features": []
+    },
+    {
+     "origin": "2026-07-12/2026-07-18",
+     "features": []
+    },
+    {
+     "origin": "2026-07-19/2026-07-25",
+     "features": []
+    },
+    {
+     "origin": "2026-07-26/2026-08-01",
+     "features": []
+    },
+    {
+     "origin": "2026-08-02/2026-08-08",
+     "features": []
+    },
+    {
+     "origin": "2026-08-09/2026-08-15",
+     "features": []
+    }
+   ]
+  },
+  "lasso+raw+w104": {
+   "n_origins": 153,
+   "mean_n_selected": 1.196078431372549,
+   "share_origins_empty": 0.7777777777777778,
+   "top_features_share": [
+    [
+     "dow jones__l1",
+     0.203
+    ],
+    [
+     "stock market crash__l1",
+     0.176
+    ],
+    [
+     "s&p 500 futures__l0",
+     0.118
+    ],
+    [
+     "buy or sell stocks__l0",
+     0.105
+    ],
+    [
+     "y_lag0",
+     0.098
+    ],
+    [
+     "how to sell stocks__l0",
+     0.092
+    ],
+    [
+     "sell stocks__l1",
+     0.072
+    ],
+    [
+     "what is a recession__l1",
+     0.065
+    ],
+    [
+     "stock market crash__l0",
+     0.039
+    ],
+    [
+     "us recession__l1",
+     0.033
+    ],
+    [
+     "how to sell stocks__l1",
+     0.026
+    ],
+    [
+     "economy recession__l1",
+     0.026
+    ],
+    [
+     "s&p 500 futures__l1",
+     0.026
+    ],
+    [
+     "stock market open__l0",
+     0.02
+    ],
+    [
+     "stocks to buy__l1",
+     0.013
+    ]
+   ],
+   "recent": [
+    {
+     "origin": "2026-07-05/2026-07-11",
+     "features": []
+    },
+    {
+     "origin": "2026-07-12/2026-07-18",
+     "features": []
+    },
+    {
+     "origin": "2026-07-19/2026-07-25",
+     "features": []
+    },
+    {
+     "origin": "2026-07-26/2026-08-01",
+     "features": [
+      "dow jones__l1",
+      "s&p 500 futures__l0"
+     ]
+    },
+    {
+     "origin": "2026-08-02/2026-08-08",
+     "features": [
+      "stock market crash__l1",
+      "dow jones__l1",
+      "s&p 500 futures__l0",
+      "buy sell stocks__l0",
+      "buy sell stocks__l1",
+      "how to sell stocks__l0"
+     ]
+    },
+    {
+     "origin": "2026-08-09/2026-08-15",
+     "features": [
+      "stock market crash__l1",
+      "dow jones__l1",
+      "s&p 500 futures__l0",
+      "how to sell stocks__l0"
+     ]
+    }
+   ]
+  },
+  "lasso+diffGT+exp": {
+   "n_origins": 153,
+   "mean_n_selected": 0.0,
+   "share_origins_empty": 1.0,
+   "top_features_share": [],
+   "recent": [
+    {
+     "origin": "2026-07-05/2026-07-11",
+     "features": []
+    },
+    {
+     "origin": "2026-07-12/2026-07-18",
+     "features": []
+    },
+    {
+     "origin": "2026-07-19/2026-07-25",
+     "features": []
+    },
+    {
+     "origin": "2026-07-26/2026-08-01",
+     "features": []
+    },
+    {
+     "origin": "2026-08-02/2026-08-08",
+     "features": []
+    },
+    {
+     "origin": "2026-08-09/2026-08-15",
+     "features": []
+    }
+   ]
+  },
+  "lasso+diffGT+w104": {
+   "n_origins": 153,
+   "mean_n_selected": 0.013071895424836602,
+   "share_origins_empty": 0.9869281045751634,
+   "top_features_share": [
+    [
+     "recession__l1",
+     0.013
+    ]
+   ],
+   "recent": [
+    {
+     "origin": "2026-07-05/2026-07-11",
+     "features": []
+    },
+    {
+     "origin": "2026-07-12/2026-07-18",
+     "features": []
+    },
+    {
+     "origin": "2026-07-19/2026-07-25",
+     "features": []
+    },
+    {
+     "origin": "2026-07-26/2026-08-01",
+     "features": []
+    },
+    {
+     "origin": "2026-08-02/2026-08-08",
+     "features": []
+    },
+    {
+     "origin": "2026-08-09/2026-08-15",
+     "features": []
+    }
+   ]
+  }
+ },
+ "leakage_check_as_specified_alignment": {
+  "bench": "drift",
+  "table": [
+   {
+    "model": "naive",
+    "n": 153.0,
+    "MAE": 0.03139331409118119,
+    "RMSE": 0.04014514245941323,
+    "MAPE": 0.36207876626412505,
+    "OOS_R2_vs_bench": -0.056633840847784445,
+    "MASE": 0.19030665874217173,
+    "DirAcc": null,
+    "DM_stat": -1.5008117051855052,
+    "DM_p": 0.13547866001867348,
+    "CW_stat": -0.8613123824479106,
+    "CW_p": 0.8054669911456137
+   },
+   {
+    "model": "drift",
+    "n": 153.0,
+    "MAE": 0.02983559245241575,
+    "RMSE": 0.03905446973598807,
+    "MAPE": 0.3442985745703458,
+    "OOS_R2_vs_bench": 0.0,
+    "MASE": 0.18086373087979904,
+    "DirAcc": 0.6993464052287581,
+    "DM_stat": null,
+    "DM_p": null,
+    "CW_stat": null,
+    "CW_p": null
+   },
+   {
+    "model": "ar_diff",
+    "n": 153.0,
+    "MAE": 0.030052849333475625,
+    "RMSE": 0.03928924888257245,
+    "MAPE": 0.3468957578216233,
+    "OOS_R2_vs_bench": -0.012059303082078143,
+    "MASE": 0.1821807447829239,
+    "DirAcc": 0.6470588235294118,
+    "DM_stat": -0.7054136491321163,
+    "DM_p": 0.4816324886834855,
+    "CW_stat": -0.5153420908889803,
+    "CW_p": 0.6968430044519986
+   },
+   {
+    "model": "lasso+raw+exp",
+    "n": 153.0,
+    "MAE": 0.029510925254688514,
+    "RMSE": 0.03982992445703621,
+    "MAPE": 0.34053199683143204,
+    "OOS_R2_vs_bench": -0.04010569511217854,
+    "MASE": 0.17889559430704993,
+    "DirAcc": 0.6928104575163399,
+    "DM_stat": -0.7052690415938405,
+    "DM_p": 0.4817222008594375,
+    "CW_stat": -0.29054524969250134,
+    "CW_p": 0.6143004306519689
+   },
+   {
+    "model": "lasso+diffGT+exp",
+    "n": 153.0,
+    "MAE": 0.029747141630445985,
+    "RMSE": 0.038974492562343976,
+    "MAPE": 0.3432946256302399,
+    "OOS_R2_vs_bench": 0.004091479622761018,
+    "MASE": 0.18032754090179373,
+    "DirAcc": 0.673202614379085,
+    "DM_stat": 0.9505788554449721,
+    "DM_p": 0.34332722794954496,
+    "CW_stat": 1.0198008379803913,
+    "CW_p": 0.15391146284826496
+   }
+  ]
+ },
+ "forecast": {
+  "winner": "drift",
+  "origin_week_sat": "2026-09-06/2026-09-12",
+  "origin_close_date": "2026-09-11",
+  "target_week_sat": "2026-10-04/2026-10-10",
+  "origin": "2026-09-06/2026-09-12",
+  "target_date": "2026-10-04/2026-10-10",
+  "point": 8.951781284950913,
+  "model": "drift",
+  "n_train": 261,
+  "features": [
+   [
+    "drift_per_week",
+    0.002102089595251803
+   ]
+  ],
+  "origin_close": 7656.97998046875,
+  "point_close": 7721.634048626249,
+  "pred_log_change_4w": 0.00840835838100773,
+  "pred_change_pct": 0.8443807914140677,
+  "q90_recent52_log": 0.07469962218173443,
+  "lo_close": 7165.847830919735,
+  "hi_close": 8320.527282708363,
+  "q90_all_origins_log": 0.06599945245402239,
+  "gt_reference": {
+   "lasso+diffGT+exp": {
+    "origin": "2026-09-06/2026-09-12",
+    "target_date": "2026-10-04/2026-10-10",
+    "point": 8.9519876535793,
+    "model": "lasso",
+    "n_train": 255,
+    "features": [],
+    "origin_close": 7656.97998046875,
+    "point_close": 7723.227716089597,
+    "pred_log_change_4w": 0.008614727009394585,
+    "pred_change_pct": 0.8651940554870396,
+    "q90_recent52_log": 0.07521557716789395,
+    "lo_close": 7163.629725554704,
+    "hi_close": 8326.539567196261,
+    "q90_all_origins_log": 0.06629057268513883
+   },
+   "lasso+raw+w104": {
+    "origin": "2026-09-06/2026-09-12",
+    "target_date": "2026-10-04/2026-10-10",
+    "point": 8.947825833960003,
+    "model": "lasso",
+    "n_train": 98,
+    "features": [
+     [
+      "s&p 500 futures__l0",
+      0.00589997078597851
+     ],
+     [
+      "dow jones__l1",
+      0.004661129569115112
+     ],
+     [
+      "how to sell stocks__l0",
+      -0.0009983558886520144
+     ],
+     [
+      "what is a recession__l1",
+      -0.00021033363108405702
+     ],
+     [
+      "stock market crash__l1",
+      -0.00013305203622346047
+     ]
+    ],
+    "origin_close": 7656.97998046875,
+    "point_close": 7691.151828783198,
+    "pred_log_change_4w": 0.004452907390097849,
+    "pred_change_pct": 0.4462836314266472,
+    "q90_recent52_log": 0.0727130810638652,
+    "lo_close": 7151.7528028501,
+    "hi_close": 8271.23337230298,
+    "q90_all_origins_log": 0.06584643960775338
+   }
+  },
+  "context": {
+   "share_up_4w_windows_sample": 0.6381322957198443,
+   "mean_4w_log_change": 0.008658547933861265,
+   "sd_4w_log_change": 0.04323988389340272,
+   "n_4w_windows": 257
+  }
+ },
+ "interval_coverage_backtest": {
+  "drift": 0.8811881188118812,
+  "lasso+diffGT+exp": 0.8811881188118812,
+  "lasso+raw+w104": 0.8613861386138614
+ },
+ "requests": 34,
+ "requests_note": "own-keyword weekly catalog rows + 5 related_queries calls (JSON-cached, not catalog rows)",
+ "own_keyword_vintages_total": 29,
+ "catalog_size": 218,
+ "seconds": 2423.5
+}

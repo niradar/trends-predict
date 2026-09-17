@@ -226,10 +226,13 @@ def yahoo(ticker: str, start: str = "2004-01-01", end: str | None = None, field:
     s = s.astype(float)
     s.index = pd.to_datetime(s.index).tz_localize(None)
     if freq:
-        rule = {"W": "W-SUN", "M": "MS", "D": "D"}[freq]
+        # Weekly buckets end on Saturday so a Mon–Fri trading week lands in the same Sun–Sat
+        # period as Google's Sunday-start week; a Sunday label would push the Friday close into
+        # the *next* bucket and give GT a one-week look-ahead (experiments/03-Q3-B).
+        rule = {"W": "W-SAT", "M": "MS", "D": "D"}[freq]
         s = s.resample(rule).last().dropna()
         # drop the current, incomplete period (its 'last close' is not the period's close)
-        per = s.index[-1].to_period({"W": "W-SUN", "M": "M", "D": "D"}[freq])
+        per = s.index[-1].to_period({"W": "W-SAT", "M": "M", "D": "D"}[freq])
         if per.end_time > pd.Timestamp.now():
             s = s.iloc[:-1]
     return _save(name, s, {"source": "Yahoo Finance (yfinance)", "ticker": ticker, "field": field, "freq": freq or "D"})
@@ -254,7 +257,7 @@ def wikipedia_pageviews(article: str, project: str = "en.wikipedia", start: str 
     items = r.json().get("items", [])
     s = pd.Series({pd.Timestamp(i["timestamp"][:8]): i["views"] for i in items}).sort_index().astype(float)
     if freq != "D":
-        s = s.resample({"W": "W-SUN", "M": "MS"}[freq]).sum()
+        s = s.resample({"W": "W-SAT", "M": "MS"}[freq]).sum()  # Sun–Sat weeks, same as Google Trends
     return _save(name, s, {"source": "Wikimedia pageviews", "article": article, "project": project, "freq": freq})
 
 
