@@ -1,0 +1,26 @@
+{
+ "id": "us-midterms-2026-salience-fable-topics",
+ "question": "מי ינצח בבחירות הקרובות בארצות הברית? (robustness check: Google Trends topic ids instead of keywords)",
+ "entities": [
+  "/m/0d075m",
+  "/m/07wbk"
+ ],
+ "geo": "US",
+ "timeframe": "2026-06-01 2026-09-17",
+ "share_last4": {
+  "/m/0d075m": 0.438,
+  "/m/07wbk": 0.562
+ },
+ "share_prev4": {
+  "/m/0d075m": 0.492,
+  "/m/07wbk": 0.508
+ },
+ "share_last4_ex_spike_week": {
+  "/m/0d075m": 0.438,
+  "/m/07wbk": 0.562
+ },
+ "spike_week": "2026-06-06",
+ "leader_by_attention": "/m/07wbk",
+ "validated_hit_rate": "21/36 pooled US contests 2006–2024 (58%); presidential raw share 2/5; swing states 12/21",
+ "is_forecast": false
+}

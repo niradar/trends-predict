@@ -1,0 +1,11 @@
+{
+  "source": "Yahoo Finance (yfinance)",
+  "ticker": "^GSPC",
+  "field": "Close",
+  "freq": "M",
+  "name": "yahoo_GSPC_Close_M",
+  "rows": 272,
+  "first": "2004-01-01 00:00:00",
+  "last": "2026-08-01 00:00:00",
+  "retrieved_utc": "20260917T172117Z"
+}

@@ -1,0 +1,11 @@
+{
+  "source": "BLS API v1",
+  "series_id": "LNS14000000",
+  "description": "Unemployment rate, 16+, seasonally adjusted, %",
+  "freq": "M",
+  "name": "bls_UNRATE",
+  "rows": 271,
+  "first": "2004-01-01 00:00:00",
+  "last": "2026-08-01 00:00:00",
+  "retrieved_utc": "20260917T163404Z"
+}

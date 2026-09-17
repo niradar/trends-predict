@@ -1,0 +1,22 @@
+{
+  "request": {
+    "keywords": [
+      "/m/0d075m",
+      "/m/07wbk"
+    ],
+    "geo": "US",
+    "timeframe": "today 12-m",
+    "cat": 0,
+    "gprop": ""
+  },
+  "slug": "US__m-0d075m_x2__today-12-m__fa01a2292a",
+  "vintages": [
+    {
+      "file": "v_20260917T170937Z.csv",
+      "retrieved_utc": "20260917T170937Z",
+      "rows": 53,
+      "first": "2025-09-14 00:00:00",
+      "last": "2026-09-13 00:00:00"
+    }
+  ]
+}

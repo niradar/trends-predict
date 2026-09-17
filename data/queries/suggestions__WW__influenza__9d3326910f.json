@@ -1,0 +1,34 @@
+{
+ "kind": "suggestions",
+ "term": "Influenza",
+ "geo": "",
+ "timeframe": "",
+ "retrieved_utc": "20260917T170151Z",
+ "data": [
+  {
+   "mid": "/m/0cycc",
+   "title": "Influenza",
+   "type": "Disease"
+  },
+  {
+   "mid": "/m/0292d3",
+   "title": "Avian influenza",
+   "type": "Disease"
+  },
+  {
+   "mid": "/m/057c6k",
+   "title": "Swine influenza",
+   "type": "Infection"
+  },
+  {
+   "mid": "/m/05_5py4",
+   "title": "Influenza-like illness",
+   "type": "Illness"
+  },
+  {
+   "mid": "/m/0416v7",
+   "title": "Influenza vaccine",
+   "type": "Vaccine"
+  }
+ ]
+}

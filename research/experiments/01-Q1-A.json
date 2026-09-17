@@ -1,0 +1,493 @@
+{
+ "id": "01-Q1-A",
+ "question": "What will the US unemployment rate be next month?",
+ "approach": "A (Choi–Varian minimal)",
+ "truth": {
+  "series": "BLS LNS14000000 (UNRATE)",
+  "first": "2004-01-01",
+  "last": "2026-08-01",
+  "n": 271,
+  "freq": "M"
+ },
+ "queries": [
+  "unemployment",
+  "unemployment benefits",
+  "file for unemployment",
+  "unemployment office",
+  "unemployment claims"
+ ],
+ "queries_dropped": [],
+ "nonzero_share": {
+  "unemployment": 1.0,
+  "unemployment benefits": 1.0,
+  "file for unemployment": 1.0,
+  "unemployment office": 1.0,
+  "unemployment claims": 1.0
+ },
+ "gt_range": {
+  "first": "2004-01-01",
+  "last": "2026-08-01",
+  "n": 272
+ },
+ "design": {
+  "p": 3,
+  "xlags": 1,
+  "period": 12,
+  "fourier_k": 1,
+  "min_train": 60,
+  "max_origins": 120,
+  "transform": "diff",
+  "window": "expanding",
+  "preprocess": "raw_pipeline",
+  "model": "ols",
+  "benchmarks": [
+   "naive",
+   "seasonal_naive",
+   "ar_diff"
+  ],
+  "exclude": [
+   "2020-03-01",
+   "2020-12-31"
+  ]
+ },
+ "bench_per_view": {
+  "h0_full": "ar_diff",
+  "h0_excl": "naive",
+  "h1_full": "naive",
+  "h1_excl": "naive"
+ },
+ "tables": {
+  "h0_full": [
+   {
+    "model": "naive",
+    "n": 120.0,
+    "MAE": 0.2558333333333334,
+    "RMSE": 1.0148481002921899,
+    "MAPE": 3.708587326944309,
+    "OOS_R2_vs_bench": -0.46554822931507367,
+    "MASE": 0.2350508454534706,
+    "DirAcc": null,
+    "DM_stat": -1.111925613538192,
+    "DM_p": 0.26841148480250565,
+    "CW_stat": -0.9480733578928829,
+    "CW_p": 0.8284539448945747
+   },
+   {
+    "model": "seasonal_naive",
+    "n": 120.0,
+    "MAE": 1.2391666666666665,
+    "RMSE": 2.3727445430696217,
+    "MAPE": 22.103478406838352,
+    "OOS_R2_vs_bench": -7.0112446657736935,
+    "MASE": 1.1385036064798393,
+    "DirAcc": 0.45977011494252873,
+    "DM_stat": -3.7863765357927845,
+    "DM_p": 0.00024106031609250067,
+    "CW_stat": 0.28602780551069673,
+    "CW_p": 0.3874284125467292
+   },
+   {
+    "model": "ar_diff",
+    "n": 120.0,
+    "MAE": 0.24119371843092055,
+    "RMSE": 0.8383029328256749,
+    "MAPE": 3.9528385643208828,
+    "OOS_R2_vs_bench": 0.0,
+    "MASE": 0.2216004720596255,
+    "DirAcc": 0.5172413793103449,
+    "DM_stat": null,
+    "DM_p": null,
+    "CW_stat": null,
+    "CW_p": null
+   },
+   {
+    "model": "ols+rawGT",
+    "n": 120.0,
+    "MAE": 0.2794062028545305,
+    "RMSE": 0.5790558584814931,
+    "MAPE": 5.471695032249938,
+    "OOS_R2_vs_bench": 0.5228675560646612,
+    "MASE": 0.2567087851696467,
+    "DirAcc": 0.6666666666666666,
+    "DM_stat": 0.8210573391804498,
+    "DM_p": 0.4132554200961809,
+    "CW_stat": 1.1148290846995972,
+    "CW_p": 0.13246183517803467
+   }
+  ],
+  "h0_excl": [
+   {
+    "model": "naive",
+    "n": 110.0,
+    "MAE": 0.10272727272727276,
+    "RMSE": 0.13915328369692315,
+    "MAPE": 2.447198928397935,
+    "OOS_R2_vs_bench": 0.0,
+    "MASE": 0.09438227611338648,
+    "DirAcc": null,
+    "DM_stat": null,
+    "DM_p": null,
+    "CW_stat": null,
+    "CW_p": null
+   },
+   {
+    "model": "seasonal_naive",
+    "n": 110.0,
+    "MAE": 0.8627272727272726,
+    "RMSE": 1.627072105459262,
+    "MAPE": 19.15837356661582,
+    "OOS_R2_vs_bench": -135.71830985915483,
+    "MASE": 0.7926440710761391,
+    "DirAcc": 0.41025641025641024,
+    "DM_stat": -2.9039991183418894,
+    "DM_p": 0.004460997919151444,
+    "CW_stat": -1.8185565278707494,
+    "CW_p": 0.9655104423981803
+   },
+   {
+    "model": "ar_diff",
+    "n": 110.0,
+    "MAE": 0.1262194928260579,
+    "RMSE": 0.15919881110961343,
+    "MAPE": 2.9980022387206766,
+    "OOS_R2_vs_bench": -0.30885857298524866,
+    "MASE": 0.11596611792106776,
+    "DirAcc": 0.5256410256410257,
+    "DM_stat": -2.8973235243288715,
+    "DM_p": 0.004549986922299354,
+    "CW_stat": -0.5254206877062515,
+    "CW_p": 0.7003546123867735
+   },
+   {
+    "model": "ols+rawGT",
+    "n": 110.0,
+    "MAE": 0.21689387915869154,
+    "RMSE": 0.3169389344416354,
+    "MAPE": 5.110661687611629,
+    "OOS_R2_vs_bench": -4.187573567206531,
+    "MASE": 0.19927461760234522,
+    "DirAcc": 0.6410256410256411,
+    "DM_stat": -3.886832783736857,
+    "DM_p": 0.00017481060546820082,
+    "CW_stat": 3.0025996109643085,
+    "CW_p": 0.0013384217717412605
+   }
+  ],
+  "h1_full": [
+   {
+    "model": "naive",
+    "n": 119.0,
+    "MAE": 0.25714285714285723,
+    "RMSE": 1.0190620172285805,
+    "MAPE": 3.7210777900091996,
+    "OOS_R2_vs_bench": 0.0,
+    "MASE": 0.23625399077687134,
+    "DirAcc": null,
+    "DM_stat": null,
+    "DM_p": null,
+    "CW_stat": null,
+    "CW_p": null
+   },
+   {
+    "model": "seasonal_naive",
+    "n": 119.0,
+    "MAE": 1.2462184873949578,
+    "RMSE": 2.3824110377810914,
+    "MAPE": 22.21452537757742,
+    "OOS_R2_vs_bench": -4.465528402654148,
+    "MASE": 1.144982576216013,
+    "DirAcc": 0.46511627906976744,
+    "DM_stat": -3.7473646378637393,
+    "DM_p": 0.0002780927431715874,
+    "CW_stat": 1.5830929379040988,
+    "CW_p": 0.05670014150829661
+   },
+   {
+    "model": "ar_diff",
+    "n": 119.0,
+    "MAE": 0.4819022941183118,
+    "RMSE": 2.209323649058468,
+    "MAPE": 5.919233699377973,
+    "OOS_R2_vs_bench": -3.7002120680400843,
+    "MASE": 0.44275521169436954,
+    "DirAcc": 0.46511627906976744,
+    "DM_stat": -1.0548071162006543,
+    "DM_p": 0.29366850040861947,
+    "CW_stat": -1.0915799865868916,
+    "CW_p": 0.8624911215979736
+   },
+   {
+    "model": "ols+rawGT",
+    "n": 119.0,
+    "MAE": 0.40657817665369034,
+    "RMSE": 1.277678072209809,
+    "MAPE": 6.443163172077247,
+    "OOS_R2_vs_bench": -0.571960588189731,
+    "MASE": 0.37355000976695923,
+    "DirAcc": 0.6046511627906976,
+    "DM_stat": -0.9560730252522921,
+    "DM_p": 0.340989974837294,
+    "CW_stat": 0.1235734988701468,
+    "CW_p": 0.45082648823228044
+   }
+  ],
+  "h1_excl": [
+   {
+    "model": "naive",
+    "n": 109.0,
+    "MAE": 0.10275229357798171,
+    "RMSE": 0.13946161222502657,
+    "MAPE": 2.4492629348766117,
+    "OOS_R2_vs_bench": 0.0,
+    "MASE": 0.09440526440829111,
+    "DirAcc": null,
+    "DM_stat": null,
+    "DM_p": null,
+    "CW_stat": null,
+    "CW_p": null
+   },
+   {
+    "model": "seasonal_naive",
+    "n": 109.0,
+    "MAE": 0.8669724770642201,
+    "RMSE": 1.6340696087494353,
+    "MAPE": 19.25258902237478,
+    "OOS_R2_vs_bench": -136.2877358490565,
+    "MASE": 0.7965444184449557,
+    "DirAcc": 0.4155844155844156,
+    "DM_stat": -2.9032863816720975,
+    "DM_p": 0.004477969433682949,
+    "CW_stat": -1.810599637900706,
+    "CW_p": 0.9648985758497176
+   },
+   {
+    "model": "ar_diff",
+    "n": 109.0,
+    "MAE": 0.12798347870203858,
+    "RMSE": 0.16173778146521803,
+    "MAPE": 3.0421088721186127,
+    "OOS_R2_vs_bench": -0.344973106088998,
+    "MASE": 0.11758680732113513,
+    "DirAcc": 0.4935064935064935,
+    "DM_stat": -3.1441479709746445,
+    "DM_p": 0.002151352616929225,
+    "CW_stat": -0.8205853778564322,
+    "CW_p": 0.7940587603378308
+   },
+   {
+    "model": "ols+rawGT",
+    "n": 109.0,
+    "MAE": 0.21067210458645472,
+    "RMSE": 0.30720870180041215,
+    "MAPE": 4.942021407127027,
+    "OOS_R2_vs_bench": -3.8524119454464625,
+    "MASE": 0.1935582656541035,
+    "DirAcc": 0.5974025974025974,
+    "DM_stat": -3.560508680726224,
+    "DM_p": 0.0005518175189485053,
+    "CW_stat": 2.3431408505769675,
+    "CW_p": 0.009561081317784326
+   }
+  ]
+ },
+ "verdicts": {
+  "h0_full": {
+   "gt_helps": false,
+   "best_model": "ols+rawGT",
+   "oos_r2": 0.5228675560646612,
+   "cw_p": 0.13246183517803467,
+   "dm_p": 0.4132554200961809,
+   "strength": "none",
+   "reason": "best GT model ols+rawGT has OOS R²=0.52 vs ar_diff (Clark–West p=0.13); not a reliable gain"
+  },
+  "h0_excl": {
+   "gt_helps": false,
+   "best_model": "ols+rawGT",
+   "oos_r2": -4.187573567206531,
+   "cw_p": 0.0013384217717412605,
+   "dm_p": 0.00017481060546820082,
+   "strength": "none",
+   "reason": "best GT model ols+rawGT has OOS R²=-4.19 vs naive (Clark–West p=0.00); not a reliable gain"
+  },
+  "h1_full": {
+   "gt_helps": false,
+   "best_model": "ols+rawGT",
+   "oos_r2": -0.571960588189731,
+   "cw_p": 0.45082648823228044,
+   "dm_p": 0.340989974837294,
+   "strength": "none",
+   "reason": "best GT model ols+rawGT has OOS R²=-0.57 vs naive (Clark–West p=0.45); not a reliable gain"
+  },
+  "h1_excl": {
+   "gt_helps": false,
+   "best_model": "ols+rawGT",
+   "oos_r2": -3.8524119454464625,
+   "cw_p": 0.009561081317784326,
+   "dm_p": 0.0005518175189485053,
+   "strength": "none",
+   "reason": "best GT model ols+rawGT has OOS R²=-3.85 vs naive (Clark–West p=0.01); not a reliable gain"
+  }
+ },
+ "forecast": {
+  "h0": {
+   "winner": "ar_diff",
+   "origin": "2026-08",
+   "target_date": "2026-09",
+   "point": 4.008119252775065,
+   "model": "ar",
+   "n_train": 267,
+   "features": null,
+   "note": "no unpublished period to nowcast; returned h=1 forecast",
+   "q90_recent36": 0.25436977744475975,
+   "lo": 3.753749475330305,
+   "hi": 4.262489030219824,
+   "q90_all_origins": 0.32806968419821825,
+   "gt_reference": {
+    "origin": "2026-08",
+    "target_date": "2026-09",
+    "point": 3.852321791774414,
+    "model": "ols",
+    "n_train": 267,
+    "features": [
+     [
+      "file for unemployment__l0",
+      2.1169109540094317
+     ],
+     [
+      "file for unemployment__l1",
+      -2.063815776810363
+     ],
+     [
+      "unemployment office__l1",
+      0.8699912527847379
+     ],
+     [
+      "unemployment office__l0",
+      -0.7812605725429433
+     ],
+     [
+      "unemployment claims__l1",
+      -0.635507263169196
+     ],
+     [
+      "unemployment claims__l0",
+      0.6076353301629998
+     ],
+     [
+      "unemployment benefits__l0",
+      0.6043804042778038
+     ],
+     [
+      "unemployment__l1",
+      -0.46587788426617227
+     ],
+     [
+      "unemployment benefits__l1",
+      -0.381434685824367
+     ],
+     [
+      "y_lag0",
+      -0.25531318061800734
+     ],
+     [
+      "unemployment__l0",
+      0.1027274077599929
+     ],
+     [
+      "sin1",
+      0.08856486263395412
+     ]
+    ],
+    "note": "no unpublished period to nowcast; returned h=1 forecast",
+    "q90_recent36": 0.5992070605038218,
+    "lo": 3.253114731270592,
+    "hi": 4.451528852278235
+   }
+  },
+  "h1": {
+   "winner": "naive",
+   "origin": "2026-08",
+   "target_date": "2026-09",
+   "point": 4.1,
+   "model": "naive",
+   "n_train": 271,
+   "features": null,
+   "q90_recent36": 0.20000000000000018,
+   "lo": 3.8999999999999995,
+   "hi": 4.3,
+   "q90_all_origins": 0.2999999999999998,
+   "gt_reference": {
+    "origin": "2026-08",
+    "target_date": "2026-09",
+    "point": 3.852321791774414,
+    "model": "ols",
+    "n_train": 267,
+    "features": [
+     [
+      "file for unemployment__l0",
+      2.1169109540094317
+     ],
+     [
+      "file for unemployment__l1",
+      -2.063815776810363
+     ],
+     [
+      "unemployment office__l1",
+      0.8699912527847379
+     ],
+     [
+      "unemployment office__l0",
+      -0.7812605725429433
+     ],
+     [
+      "unemployment claims__l1",
+      -0.635507263169196
+     ],
+     [
+      "unemployment claims__l0",
+      0.6076353301629998
+     ],
+     [
+      "unemployment benefits__l0",
+      0.6043804042778038
+     ],
+     [
+      "unemployment__l1",
+      -0.46587788426617227
+     ],
+     [
+      "unemployment benefits__l1",
+      -0.381434685824367
+     ],
+     [
+      "y_lag0",
+      -0.25531318061800734
+     ],
+     [
+      "unemployment__l0",
+      0.1027274077599929
+     ],
+     [
+      "sin1",
+      0.08856486263395412
+     ]
+    ],
+    "q90_recent36": 0.561466160989402,
+    "lo": 3.290855630785012,
+    "hi": 4.4137879527638155
+   }
+  }
+ },
+ "interval_coverage_backtest": {
+  "h0": 0.9285714285714286,
+  "h1": 0.9597701149425287
+ },
+ "requests": 1,
+ "catalog_size": 32,
+ "seconds": 6.0,
+ "rerun_cached": {
+  "requests": 0,
+  "seconds": 2.0,
+  "note": "first run pulled 1 new keyword (unemployment claims) in 6 s; subsequent runs are fully cached"
+ }
+}

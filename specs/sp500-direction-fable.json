@@ -1,0 +1,19 @@
+{
+  "id": "sp500-direction-fable",
+  "question": "Will the S&P 500 be higher a month from now?",
+  "title": "S&P 500 — direction over the next one to two months",
+  "truth": {"kind": "yahoo", "ticker": "^GSPC", "field": "Close", "freq": "M", "log": true},
+  "freq": "M", "geo": "US", "answer_type": "direction",
+  "queries": [
+    "stock market", "dow jones",
+    "market crash", "bear market", "recession",
+    "buy stocks", "stocks to buy", "sell stocks",
+    "inflation", "gold price",
+    "layoffs", "unemployment"
+  ],
+  "horizons": [{"h": 1, "y_known": true}, {"h": 2, "y_known": true}],
+  "transform": "diff", "p": 2, "fourier_k": 0,
+  "windows": [null],
+  "exclude": ["2020-02-01", "2020-06-30"],
+  "units": " (log index)", "label": "log S&P 500 monthly close"
+}

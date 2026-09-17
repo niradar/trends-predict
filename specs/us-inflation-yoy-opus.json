@@ -1,0 +1,30 @@
+{
+  "id": "us-inflation-yoy-opus",
+  "question": "Will US inflation accelerate next month? (headline y/y definition — cross-check of specs/us-inflation-opus.json)",
+  "title": "US CPI inflation (NSA, % y/y) — next print",
+  "truth": {"kind": "cached", "name": "bls_cpi_yoy_nsa_pct"},
+  "freq": "M",
+  "geo": "US",
+  "queries": [
+    "inflation",
+    "gas prices",
+    "gas prices near me",
+    "cheap gas",
+    "cost of living",
+    "grocery prices",
+    "food prices",
+    "coupons",
+    "used car prices",
+    "rent increase",
+    "price increase",
+    "egg prices"
+  ],
+  "horizons": [{"h": 1, "y_known": true}, {"h": 2, "y_known": true}],
+  "transform": "diff",
+  "models": ["ridge+raw", "lasso+raw", "ridge+djorno", "ridge+djorno_nocluster", "lasso+djorno"],
+  "windows": [null],
+  "exclude": ["2020-03-01", "2020-12-31"],
+  "units": "%",
+  "label": "CPI inflation (% y/y, NSA)",
+  "answer_type": "direction"
+}

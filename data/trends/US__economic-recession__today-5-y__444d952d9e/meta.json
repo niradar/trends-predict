@@ -1,0 +1,21 @@
+{
+  "request": {
+    "keywords": [
+      "economic recession"
+    ],
+    "geo": "US",
+    "timeframe": "today 5-y",
+    "cat": 0,
+    "gprop": ""
+  },
+  "slug": "US__economic-recession__today-5-y__444d952d9e",
+  "vintages": [
+    {
+      "file": "v_20260917T165853Z.csv",
+      "retrieved_utc": "20260917T165853Z",
+      "rows": 262,
+      "first": "2021-09-12 00:00:00",
+      "last": "2026-09-13 00:00:00"
+    }
+  ]
+}

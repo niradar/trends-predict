@@ -1,0 +1,213 @@
+{
+ "kind": "related_queries",
+ "term": "layoffs",
+ "geo": "US",
+ "timeframe": "2004-01-01 2026-09-17",
+ "retrieved_utc": "20260917T164554Z",
+ "data": {
+  "top": [
+   {
+    "query": "the layoffs",
+    "value": 100
+   },
+   {
+    "query": "layoffs news",
+    "value": 90
+   },
+   {
+    "query": "layoffs 2025",
+    "value": 76
+   },
+   {
+    "query": "layoffs 2023",
+    "value": 66
+   },
+   {
+    "query": "layoffs 2024",
+    "value": 58
+   },
+   {
+    "query": "amazon layoffs",
+    "value": 53
+   },
+   {
+    "query": "layoff",
+    "value": 45
+   },
+   {
+    "query": "google layoffs",
+    "value": 44
+   },
+   {
+    "query": "espn layoffs",
+    "value": 42
+   },
+   {
+    "query": "layoffs 2020",
+    "value": 38
+   },
+   {
+    "query": "meta layoffs",
+    "value": 36
+   },
+   {
+    "query": "reddit layoffs",
+    "value": 35
+   },
+   {
+    "query": "layoffs 2022",
+    "value": 34
+   },
+   {
+    "query": "tech layoffs",
+    "value": 31
+   },
+   {
+    "query": "microsoft layoffs",
+    "value": 29
+   },
+   {
+    "query": "ibm",
+    "value": 27
+   },
+   {
+    "query": "ibm layoffs",
+    "value": 27
+   },
+   {
+    "query": "verizon layoffs",
+    "value": 26
+   },
+   {
+    "query": "oracle layoffs",
+    "value": 24
+   },
+   {
+    "query": "wells fargo layoffs",
+    "value": 21
+   },
+   {
+    "query": "intel layoffs",
+    "value": 21
+   },
+   {
+    "query": "walmart layoffs",
+    "value": 18
+   },
+   {
+    "query": "linkedin layoffs",
+    "value": 18
+   },
+   {
+    "query": "cisco layoffs",
+    "value": 18
+   },
+   {
+    "query": "facebook layoffs",
+    "value": 17
+   }
+  ],
+  "rising": [
+   {
+    "query": "layoffs 2025",
+    "value": 408150
+   },
+   {
+    "query": "layoffs 2023",
+    "value": 351950
+   },
+   {
+    "query": "layoffs 2024",
+    "value": 310650
+   },
+   {
+    "query": "layoffs 2020",
+    "value": 202150
+   },
+   {
+    "query": "reddit layoffs",
+    "value": 188450
+   },
+   {
+    "query": "layoffs 2022",
+    "value": 179050
+   },
+   {
+    "query": "linkedin layoffs",
+    "value": 97950
+   },
+   {
+    "query": "facebook layoffs",
+    "value": 90000
+   },
+   {
+    "query": "twitter layoffs",
+    "value": 79650
+   },
+   {
+    "query": "oil layoffs",
+    "value": 69850
+   },
+   {
+    "query": "tesla layoffs",
+    "value": 59450
+   },
+   {
+    "query": "target layoffs",
+    "value": 57650
+   },
+   {
+    "query": "salesforce layoffs",
+    "value": 56100
+   },
+   {
+    "query": "ups layoffs",
+    "value": 50000
+   },
+   {
+    "query": "nyc layoffs",
+    "value": 43300
+   },
+   {
+    "query": "layoffs fyi",
+    "value": 41750
+   },
+   {
+    "query": "cvs layoffs",
+    "value": 41350
+   },
+   {
+    "query": "lowes layoffs",
+    "value": 40850
+   },
+   {
+    "query": "chevron layoffs",
+    "value": 37450
+   },
+   {
+    "query": "nike layoffs",
+    "value": 35850
+   },
+   {
+    "query": "optum layoffs",
+    "value": 35100
+   },
+   {
+    "query": "bny layoffs",
+    "value": 32500
+   },
+   {
+    "query": "chase layoffs",
+    "value": 32250
+   },
+   {
+    "query": "bny mellon layoffs",
+    "value": 32250
+   },
+   {
+    "query": "netflix layoffs",
+    "value": 30700
+   }
+  ]
+ }
+}

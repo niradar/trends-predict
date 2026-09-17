@@ -1,0 +1,30 @@
+{
+  "id": "us-unemployment-opus",
+  "question": "What will the US unemployment rate be next month?",
+  "title": "US unemployment rate (SA) — next month",
+  "truth": {"kind": "bls", "id": "UNRATE"},
+  "freq": "M",
+  "geo": "US",
+  "queries": [
+    "unemployment",
+    "unemployment benefits",
+    "file for unemployment",
+    "unemployment office",
+    "unemployment insurance",
+    "unemployment claims",
+    "jobs hiring",
+    "indeed jobs",
+    "layoffs",
+    "severance",
+    "job openings",
+    "resume"
+  ],
+  "horizons": [{"h": 0, "y_known": false}, {"h": 1, "y_known": true}],
+  "models": ["ridge+djorno", "ridge+djorno_nocluster", "lasso+djorno", "lasso+raw", "ridge+raw"],
+  "windows": [null, 36],
+  "exclude": ["2020-03-01", "2020-12-31"],
+  "clip_min": 0,
+  "units": "%",
+  "label": "Unemployment rate (%)",
+  "answer_type": "quantity"
+}

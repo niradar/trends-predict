@@ -1,0 +1,24 @@
+{
+  "request": {
+    "keywords": [
+      "unemployment",
+      "indeed jobs",
+      "layoffs",
+      "severance"
+    ],
+    "geo": "US",
+    "timeframe": "2004-01-01 2026-09-17",
+    "cat": 0,
+    "gprop": ""
+  },
+  "slug": "US__unemployment_x4__2004-01-01-2026-09-17__24206bfcb0",
+  "vintages": [
+    {
+      "file": "v_20260917T163221Z.csv",
+      "retrieved_utc": "20260917T163221Z",
+      "rows": 273,
+      "first": "2004-01-01 00:00:00",
+      "last": "2026-09-01 00:00:00"
+    }
+  ]
+}

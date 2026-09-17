@@ -1,0 +1,213 @@
+{
+ "kind": "related_queries",
+ "term": "sell stocks",
+ "geo": "US",
+ "timeframe": "today 5-y",
+ "retrieved_utc": "20260917T165454Z",
+ "data": {
+  "top": [
+   {
+    "query": "stocks to sell",
+    "value": 100
+   },
+   {
+    "query": "stock",
+    "value": 61
+   },
+   {
+    "query": "buy sell stocks",
+    "value": 53
+   },
+   {
+    "query": "how to sell stocks",
+    "value": 48
+   },
+   {
+    "query": "stocks to buy",
+    "value": 36
+   },
+   {
+    "query": "buy and sell stocks",
+    "value": 31
+   },
+   {
+    "query": "when to sell stocks",
+    "value": 26
+   },
+   {
+    "query": "buy or sell stocks",
+    "value": 21
+   },
+   {
+    "query": "what are stocks",
+    "value": 19
+   },
+   {
+    "query": "stock market",
+    "value": 17
+   },
+   {
+    "query": "what is a stock",
+    "value": 16
+   },
+   {
+    "query": "how to buy stocks",
+    "value": 16
+   },
+   {
+    "query": "should i sell stocks",
+    "value": 14
+   },
+   {
+    "query": "sell stocks now",
+    "value": 11
+   },
+   {
+    "query": "best stocks to buy",
+    "value": 11
+   },
+   {
+    "query": "how to buy and sell stocks",
+    "value": 11
+   },
+   {
+    "query": "stocks today",
+    "value": 10
+   },
+   {
+    "query": "how do you sell stocks",
+    "value": 9
+   },
+   {
+    "query": "stocks to invest in",
+    "value": 8
+   },
+   {
+    "query": "stocks to sell now",
+    "value": 8
+   },
+   {
+    "query": "dividend stocks",
+    "value": 8
+   },
+   {
+    "query": "robinhood",
+    "value": 8
+   },
+   {
+    "query": "should i sell my stocks",
+    "value": 7
+   },
+   {
+    "query": "when to buy and sell stocks",
+    "value": 7
+   },
+   {
+    "query": "ai stocks",
+    "value": 6
+   }
+  ],
+  "rising": [
+   {
+    "query": "meta stock",
+    "value": 37200
+   },
+   {
+    "query": "are the buying and selling of stocks centralized activities? why or why not? yes, the new york stock exchange is the primary exchange for all the world’s most important trades. no, people can buy stocks anywhere, and they do not need to go through a market. yes, the world’s stock markets are coordinated exchanges, and they are dependent on one another. no, there are many stock markets around the world, and they are independent of one another.",
+    "value": 12800
+   },
+   {
+    "query": "which describes an investor’s primary goal of buying a loan? to grow a business to earn a profit off the interest to bolster the economy to provide capital to a business",
+    "value": 8800
+   },
+   {
+    "query": "you purchase a home for $125,000. the value of the property increases by 1.9% every year. after ten years, you decide to sell the home. in the meantime, you have made renovations and improvements to the house which increase its sale value by $48,300. how much will you sell the house for, to the nearest hundred dollars? a. $257,500 b. $209,200 c. $150,900 d. $199,200",
+    "value": 5350
+   },
+   {
+    "query": "ai stocks",
+    "value": 2950
+   },
+   {
+    "query": "how do bonds generate income for investors? bonds depreciate in value. bonds protect investors from bankruptcy. bonds pay interest to the bank that sold the bond. bonds pay a specified amount to the investor at maturity.",
+    "value": 2900
+   },
+   {
+    "query": "best ai stocks to buy now",
+    "value": 2150
+   },
+   {
+    "query": "ai stocks to buy",
+    "value": 1850
+   },
+   {
+    "query": "rivian stock",
+    "value": 950
+   },
+   {
+    "query": "you have a car that is valued at $12,000. the balance that you owe on the car loan is $7,000. you lose your job and can not afford to make payments on your loan so you sell the car for $9,000 and pay off the loan. explain how your net worth is affected by your actions.",
+    "value": 850
+   },
+   {
+    "query": "determine the amount needed such that when it comes time for retirement, an individual can make monthly withdraws in the amount of $2,154 for 30 years from an account paying 5.1% compounded monthly. round your answer to the nearest cent. a. $396,721.78 b. $398,407.85 c. $775,440 d. $1,833,962.40",
+    "value": 800
+   },
+   {
+    "query": "which statement best describes how an investor makes money off debt? an investor makes money by issuing bonds. an investor makes money by earning interest. an investor makes money by raising capital. an investor makes money by being repaid for the principal.",
+    "value": 700
+   },
+   {
+    "query": "palantir",
+    "value": 650
+   },
+   {
+    "query": "which best describes the role that government and business play in investments? they both use taxes to support a country’s growth. they both invest money to earn a profit. they both receive capital to use for growth. they both act as angel investors for start-ups.",
+    "value": 600
+   },
+   {
+    "query": "nvidia stock price",
+    "value": 600
+   },
+   {
+    "query": "is it time to sell stocks",
+    "value": 150
+   },
+   {
+    "query": "what are stocks",
+    "value": 120
+   },
+   {
+    "query": "when should you sell stocks",
+    "value": 110
+   },
+   {
+    "query": "fidelity",
+    "value": 100
+   },
+   {
+    "query": "when can you sell stocks",
+    "value": 100
+   },
+   {
+    "query": "what is a stock",
+    "value": 80
+   },
+   {
+    "query": "how to invest in stocks",
+    "value": 80
+   },
+   {
+    "query": "when to buy and sell stocks",
+    "value": 70
+   },
+   {
+    "query": "stocks today",
+    "value": 60
+   },
+   {
+    "query": "best time to sell stocks",
+    "value": 60
+   }
+  ]
+ }
+}

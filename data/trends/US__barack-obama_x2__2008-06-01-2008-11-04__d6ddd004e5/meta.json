@@ -1,0 +1,22 @@
+{
+  "request": {
+    "keywords": [
+      "Barack Obama",
+      "John McCain"
+    ],
+    "geo": "US",
+    "timeframe": "2008-06-01 2008-11-04",
+    "cat": 0,
+    "gprop": ""
+  },
+  "slug": "US__barack-obama_x2__2008-06-01-2008-11-04__d6ddd004e5",
+  "vintages": [
+    {
+      "file": "v_20260917T164811Z.csv",
+      "retrieved_utc": "20260917T164811Z",
+      "rows": 157,
+      "first": "2008-06-01 00:00:00",
+      "last": "2008-11-04 00:00:00"
+    }
+  ]
+}

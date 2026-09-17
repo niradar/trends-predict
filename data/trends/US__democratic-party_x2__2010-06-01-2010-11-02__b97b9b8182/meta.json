@@ -1,0 +1,22 @@
+{
+  "request": {
+    "keywords": [
+      "Democratic Party",
+      "Republican Party"
+    ],
+    "geo": "US",
+    "timeframe": "2010-06-01 2010-11-02",
+    "cat": 0,
+    "gprop": ""
+  },
+  "slug": "US__democratic-party_x2__2010-06-01-2010-11-02__b97b9b8182",
+  "vintages": [
+    {
+      "file": "v_20260917T164855Z.csv",
+      "retrieved_utc": "20260917T164855Z",
+      "rows": 155,
+      "first": "2010-06-01 00:00:00",
+      "last": "2010-11-02 00:00:00"
+    }
+  ]
+}

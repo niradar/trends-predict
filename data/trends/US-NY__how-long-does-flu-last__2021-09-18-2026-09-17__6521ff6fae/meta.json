@@ -1,0 +1,21 @@
+{
+  "request": {
+    "keywords": [
+      "how long does flu last"
+    ],
+    "geo": "US-NY",
+    "timeframe": "2021-09-18 2026-09-17",
+    "cat": 0,
+    "gprop": ""
+  },
+  "slug": "US-NY__how-long-does-flu-last__2021-09-18-2026-09-17__6521ff6fae",
+  "vintages": [
+    {
+      "file": "v_20260917T171828Z.csv",
+      "retrieved_utc": "20260917T171828Z",
+      "rows": 262,
+      "first": "2021-09-12 00:00:00",
+      "last": "2026-09-13 00:00:00"
+    }
+  ]
+}

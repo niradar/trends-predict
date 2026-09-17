@@ -1,0 +1,21 @@
+{
+  "request": {
+    "keywords": [
+      "when to sell stocks"
+    ],
+    "geo": "US",
+    "timeframe": "today 5-y",
+    "cat": 0,
+    "gprop": ""
+  },
+  "slug": "US__when-to-sell-stocks__today-5-y__0a5bae493e",
+  "vintages": [
+    {
+      "file": "v_20260917T165907Z.csv",
+      "retrieved_utc": "20260917T165907Z",
+      "rows": 262,
+      "first": "2021-09-12 00:00:00",
+      "last": "2026-09-13 00:00:00"
+    }
+  ]
+}

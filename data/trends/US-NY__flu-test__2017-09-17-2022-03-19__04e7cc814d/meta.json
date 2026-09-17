@@ -1,0 +1,21 @@
+{
+  "request": {
+    "keywords": [
+      "flu test"
+    ],
+    "geo": "US-NY",
+    "timeframe": "2017-09-17 2022-03-19",
+    "cat": 0,
+    "gprop": ""
+  },
+  "slug": "US-NY__flu-test__2017-09-17-2022-03-19__04e7cc814d",
+  "vintages": [
+    {
+      "file": "v_20260917T171819Z.csv",
+      "retrieved_utc": "20260917T171819Z",
+      "rows": 235,
+      "first": "2017-09-17 00:00:00",
+      "last": "2022-03-13 00:00:00"
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+ "kind": "related_queries",
+ "term": "unemployment",
+ "geo": "US",
+ "timeframe": "2004-01-01 2026-09-17",
+ "retrieved_utc": "20260917T164551Z",
+ "data": {
+  "top": [
+   {
+    "query": "unemployment benefits",
+    "value": 100
+   },
+   {
+    "query": "unemployment login",
+    "value": 99
+   },
+   {
+    "query": "unemployment claim",
+    "value": 69
+   },
+   {
+    "query": "unemployment rate",
+    "value": 67
+   },
+   {
+    "query": "unemployment nj",
+    "value": 67
+   },
+   {
+    "query": "unemployment number",
+    "value": 66
+   },
+   {
+    "query": "ohio unemployment",
+    "value": 64
+   },
+   {
+    "query": "nj unemployment",
+    "value": 63
+   },
+   {
+    "query": "unemployment pa",
+    "value": 60
+   },
+   {
+    "query": "unemployment ny",
+    "value": 60
+   },
+   {
+    "query": "ny unemployment",
+    "value": 59
+   },
+   {
+    "query": "unemployment office",
+    "value": 56
+   },
+   {
+    "query": "unemployment florida",
+    "value": 56
+   },
+   {
+    "query": "unemployment texas",
+    "value": 53
+   },
+   {
+    "query": "file unemployment",
+    "value": 48
+   },
+   {
+    "query": "my unemployment",
+    "value": 48
+   },
+   {
+    "query": "unemployment nys",
+    "value": 43
+   },
+   {
+    "query": "michigan unemployment",
+    "value": 36
+   },
+   {
+    "query": "unemployment california",
+    "value": 32
+   },
+   {
+    "query": "file for unemployment",
+    "value": 31
+   },
+   {
+    "query": "unemployment phone number",
+    "value": 29
+   },
+   {
+    "query": "nc unemployment",
+    "value": 28
+   },
+   {
+    "query": "unemployment insurance",
+    "value": 27
+   },
+   {
+    "query": "pua unemployment",
+    "value": 27
+   },
+   {
+    "query": "unemployment extension",
+    "value": 27
+   }
+  ],
+  "rising": [
+   {
+    "query": "pua unemployment",
+    "value": 165450
+   },
+   {
+    "query": "pua",
+    "value": 157550
+   },
+   {
+    "query": "unemployment stimulus",
+    "value": 122600
+   },
+   {
+    "query": "stimulus",
+    "value": 117900
+   },
+   {
+    "query": "600 unemployment",
+    "value": 64900
+   },
+   {
+    "query": "pandemic unemployment assistance",
+    "value": 41950
+   },
+   {
+    "query": "pua unemployment ohio",
+    "value": 35450
+   },
+   {
+    "query": "pua unemployment login",
+    "value": 32250
+   },
+   {
+    "query": "texas unemployment login",
+    "value": 26200
+   },
+   {
+    "query": "unemployment office near me",
+    "value": 18400
+   },
+   {
+    "query": "pua unemployment pa",
+    "value": 18150
+   },
+   {
+    "query": "michigan unemployment login",
+    "value": 17400
+   },
+   {
+    "query": "mn unemployment login",
+    "value": 14050
+   },
+   {
+    "query": "unemployment extension 2014",
+    "value": 14000
+   },
+   {
+    "query": "my unemployment nj",
+    "value": 13800
+   },
+   {
+    "query": "stimulus update",
+    "value": 13200
+   },
+   {
+    "query": "pandemic unemployment",
+    "value": 11900
+   },
+   {
+    "query": "unemployment login",
+    "value": 11750
+   },
+   {
+    "query": "indiana unemployment login",
+    "value": 11550
+   },
+   {
+    "query": "can you get unemployment if you quit",
+    "value": 10600
+   },
+   {
+    "query": "nyc unemployment login",
+    "value": 9550
+   },
+   {
+    "query": "washington unemployment login",
+    "value": 8850
+   },
+   {
+    "query": "can i get unemployment if i quit",
+    "value": 8250
+   },
+   {
+    "query": "md unemployment login",
+    "value": 8250
+   },
+   {
+    "query": "ui online",
+    "value": 8200
+   }
+  ]
+ }
+}

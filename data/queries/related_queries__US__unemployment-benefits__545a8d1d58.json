@@ -1,0 +1,213 @@
+{
+ "kind": "related_queries",
+ "term": "unemployment benefits",
+ "geo": "US",
+ "timeframe": "2004-01-01 2026-09-17",
+ "retrieved_utc": "20260917T164441Z",
+ "data": {
+  "top": [
+   {
+    "query": "texas unemployment",
+    "value": 100
+   },
+   {
+    "query": "texas benefits",
+    "value": 99
+   },
+   {
+    "query": "unemployment texas benefits",
+    "value": 97
+   },
+   {
+    "query": "claim unemployment benefits",
+    "value": 75
+   },
+   {
+    "query": "unemployment claim",
+    "value": 75
+   },
+   {
+    "query": "ny unemployment benefits",
+    "value": 69
+   },
+   {
+    "query": "ny unemployment",
+    "value": 68
+   },
+   {
+    "query": "unemployment benefits login",
+    "value": 64
+   },
+   {
+    "query": "unemployment login",
+    "value": 61
+   },
+   {
+    "query": "unemployment benefits extended",
+    "value": 57
+   },
+   {
+    "query": "new unemployment benefits",
+    "value": 56
+   },
+   {
+    "query": "unemployment benefits extension",
+    "value": 45
+   },
+   {
+    "query": "nj unemployment benefits",
+    "value": 45
+   },
+   {
+    "query": "unemployment california",
+    "value": 44
+   },
+   {
+    "query": "nj unemployment",
+    "value": 44
+   },
+   {
+    "query": "california unemployment benefits",
+    "value": 43
+   },
+   {
+    "query": "unemployment number",
+    "value": 43
+   },
+   {
+    "query": "unemployment benefits number",
+    "value": 42
+   },
+   {
+    "query": "unemployment extension",
+    "value": 42
+   },
+   {
+    "query": "florida unemployment",
+    "value": 41
+   },
+   {
+    "query": "florida unemployment benefits",
+    "value": 39
+   },
+   {
+    "query": "apply for unemployment",
+    "value": 39
+   },
+   {
+    "query": "unemployment benefits florida",
+    "value": 39
+   },
+   {
+    "query": "apply for unemployment benefits",
+    "value": 38
+   },
+   {
+    "query": "unemployment insurance benefits",
+    "value": 37
+   }
+  ],
+  "rising": [
+   {
+    "query": "unemployment benefits login",
+    "value": 486150
+   },
+   {
+    "query": "unemployment benefits log in",
+    "value": 184350
+   },
+   {
+    "query": "stimulus",
+    "value": 172600
+   },
+   {
+    "query": "covid unemployment benefits",
+    "value": 158050
+   },
+   {
+    "query": "extra unemployment benefits",
+    "value": 107350
+   },
+   {
+    "query": "pua benefits",
+    "value": 106950
+   },
+   {
+    "query": "unemployment benefits ga",
+    "value": 84050
+   },
+   {
+    "query": "coronavirus unemployment benefits",
+    "value": 80950
+   },
+   {
+    "query": "twc",
+    "value": 71950
+   },
+   {
+    "query": "unemployment benefits $600",
+    "value": 71800
+   },
+   {
+    "query": "stimulus check",
+    "value": 69200
+   },
+   {
+    "query": "my texas benefits",
+    "value": 35150
+   },
+   {
+    "query": "will unemployment benefits be extended",
+    "value": 33900
+   },
+   {
+    "query": "texas workforce commission",
+    "value": 30350
+   },
+   {
+    "query": "kcc.ky.gov unemployment benefits",
+    "value": 30300
+   },
+   {
+    "query": "ny labor unemployment benefits",
+    "value": 29300
+   },
+   {
+    "query": "stimulus package",
+    "value": 26800
+   },
+   {
+    "query": "how to calculate unemployment benefits",
+    "value": 23800
+   },
+   {
+    "query": "are unemployment benefits taxable",
+    "value": 23700
+   },
+   {
+    "query": "unemployment benefits extension 2014",
+    "value": 23500
+   },
+   {
+    "query": "how long do unemployment benefits last",
+    "value": 22100
+   },
+   {
+    "query": "ides",
+    "value": 21300
+   },
+   {
+    "query": "stimulus update",
+    "value": 21050
+   },
+   {
+    "query": "unemployment benefits pennsylvania log in",
+    "value": 19850
+   },
+   {
+    "query": "your texas benefits",
+    "value": 19450
+   }
+  ]
+ }
+}

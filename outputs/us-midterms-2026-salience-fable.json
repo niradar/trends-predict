@@ -1,0 +1,26 @@
+{
+ "id": "us-midterms-2026-salience-fable",
+ "question": "מי ינצח בבחירות הקרובות בארצות הברית? (Who will win the upcoming US election? -> 2026 midterms, 3 Nov 2026)",
+ "entities": [
+  "Democratic Party",
+  "Republican Party"
+ ],
+ "geo": "US",
+ "timeframe": "2026-06-01 2026-09-17",
+ "share_last4": {
+  "Democratic Party": 0.461,
+  "Republican Party": 0.539
+ },
+ "share_prev4": {
+  "Democratic Party": 0.576,
+  "Republican Party": 0.424
+ },
+ "share_last4_ex_spike_week": {
+  "Democratic Party": 0.461,
+  "Republican Party": 0.539
+ },
+ "spike_week": "2026-06-06",
+ "leader_by_attention": "Republican Party",
+ "validated_hit_rate": "21/36 pooled US contests 2006–2024 (58%); presidential raw share 2/5; swing states 12/21",
+ "is_forecast": false
+}

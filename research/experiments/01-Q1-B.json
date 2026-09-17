@@ -1,0 +1,980 @@
+{
+ "id": "01-Q1-B",
+ "question": "What will the US unemployment rate be next month?",
+ "truth": {
+  "source": "BLS LNS14000000 via truth.bls_series('UNRATE')",
+  "first": "2004-01-01",
+  "last": "2026-08-01",
+  "n": 271,
+  "freq": "M"
+ },
+ "gt": {
+  "first": "2004-01-01",
+  "last": "2026-08-01",
+  "n_terms": 27,
+  "dropped_privacy": [],
+  "failed": []
+ },
+ "queries": [
+  "unemployment",
+  "unemployment benefits",
+  "unemployment login",
+  "unemployment claim",
+  "unemployment rate",
+  "unemployment nj",
+  "unemployment number",
+  "ohio unemployment",
+  "unemployment pa",
+  "unemployment ny",
+  "unemployment office",
+  "texas unemployment",
+  "unemployment texas benefits",
+  "claim unemployment benefits",
+  "ny unemployment benefits",
+  "unemployment benefits login",
+  "unemployment benefits extended",
+  "new unemployment benefits",
+  "unemployment benefits extension",
+  "jobs",
+  "jobs near me",
+  "indeed",
+  "jobs hiring",
+  "state jobs",
+  "part time jobs",
+  "remote jobs",
+  "jobs from home"
+ ],
+ "queries_expanded": [
+  "unemployment",
+  "unemployment benefits",
+  "unemployment login",
+  "unemployment claim",
+  "unemployment rate",
+  "unemployment nj",
+  "unemployment number",
+  "ohio unemployment",
+  "nj unemployment",
+  "unemployment pa",
+  "unemployment ny",
+  "ny unemployment",
+  "unemployment office",
+  "texas unemployment",
+  "texas benefits",
+  "unemployment texas benefits",
+  "claim unemployment benefits",
+  "ny unemployment benefits",
+  "unemployment benefits login",
+  "unemployment benefits extended",
+  "new unemployment benefits",
+  "unemployment benefits extension",
+  "jobs",
+  "jobs near me",
+  "jobs indeed",
+  "indeed",
+  "job",
+  "jobs hiring",
+  "state jobs",
+  "craigslist jobs",
+  "part time jobs",
+  "remote jobs",
+  "amazon jobs",
+  "jobs from home",
+  "usa jobs"
+ ],
+ "queries_dropped": {
+  "texas benefits": "not unemployment-specific (Texas HHS benefits portal: SNAP/Medicaid)",
+  "job": "single generic word, dominated by unrelated meanings (Steve Jobs 2011, 'job' as task)",
+  "jobs indeed": "word-order duplicate of 'indeed' (kept)",
+  "ny unemployment": "word-order duplicate of 'unemployment ny' (kept)",
+  "nj unemployment": "word-order duplicate of 'unemployment nj' (kept)",
+  "craigslist jobs": "platform-branded; secular decline of Craigslist dominates, not labour demand",
+  "amazon jobs": "single-employer branded term; tracks Amazon's growth, not the labour market",
+  "usa jobs": "federal hiring portal (usajobs.gov); government-hiring specific"
+ },
+ "benchmarks": {
+  "0": "naive",
+  "1": "naive"
+ },
+ "tables": {
+  "h0_all": [
+   {
+    "model": "naive",
+    "n": 120,
+    "MAE": 0.2558,
+    "RMSE": 1.0148,
+    "MAPE": 3.7086,
+    "OOS_R2_vs_bench": 0.0,
+    "MASE": 0.2351,
+    "DirAcc": null,
+    "DM_stat": null,
+    "DM_p": null,
+    "CW_stat": null,
+    "CW_p": null
+   },
+   {
+    "model": "seasonal_naive",
+    "n": 120,
+    "MAE": 1.2392,
+    "RMSE": 2.3727,
+    "MAPE": 22.1035,
+    "OOS_R2_vs_bench": -4.4664,
+    "MASE": 1.1385,
+    "DirAcc": 0.4598,
+    "DM_stat": -3.7468,
+    "DM_p": 0.0003,
+    "CW_stat": 1.582,
+    "CW_p": 0.0568
+   },
+   {
+    "model": "ar_diff",
+    "n": 120,
+    "MAE": 0.4794,
+    "RMSE": 2.2002,
+    "MAPE": 5.9034,
+    "OOS_R2_vs_bench": -3.7001,
+    "MASE": 0.4404,
+    "DirAcc": 0.4598,
+    "DM_stat": -1.0549,
+    "DM_p": 0.2936,
+    "CW_stat": -1.0918,
+    "CW_p": 0.8625
+   },
+   {
+    "model": "lasso_exp+GT",
+    "n": 120,
+    "MAE": 0.3392,
+    "RMSE": 1.1642,
+    "MAPE": 5.1374,
+    "OOS_R2_vs_bench": -0.316,
+    "MASE": 0.3117,
+    "DirAcc": 0.5517,
+    "DM_stat": -0.9308,
+    "DM_p": 0.3539,
+    "CW_stat": -0.3826,
+    "CW_p": 0.649
+   },
+   {
+    "model": "lasso_w36+GT",
+    "n": 120,
+    "MAE": 0.7163,
+    "RMSE": 3.0783,
+    "MAPE": 8.7585,
+    "OOS_R2_vs_bench": -8.2004,
+    "MASE": 0.6581,
+    "DirAcc": 0.4253,
+    "DM_stat": -1.4562,
+    "DM_p": 0.148,
+    "CW_stat": -1.5015,
+    "CW_p": 0.9334
+   },
+   {
+    "model": "enet_exp+GT",
+    "n": 120,
+    "MAE": 0.3219,
+    "RMSE": 1.1239,
+    "MAPE": 4.8116,
+    "OOS_R2_vs_bench": -0.2264,
+    "MASE": 0.2958,
+    "DirAcc": 0.5632,
+    "DM_stat": -0.8726,
+    "DM_p": 0.3846,
+    "CW_stat": -0.269,
+    "CW_p": 0.606
+   },
+   {
+    "model": "enet_w36+GT",
+    "n": 120,
+    "MAE": 0.5657,
+    "RMSE": 2.214,
+    "MAPE": 6.8871,
+    "OOS_R2_vs_bench": -3.7595,
+    "MASE": 0.5198,
+    "DirAcc": 0.4253,
+    "DM_stat": -1.7901,
+    "DM_p": 0.076,
+    "CW_stat": -1.6003,
+    "CW_p": 0.9452
+   }
+  ],
+  "h0_excl2020": [
+   {
+    "model": "naive",
+    "n": 110,
+    "MAE": 0.1027,
+    "RMSE": 0.1392,
+    "MAPE": 2.4472,
+    "OOS_R2_vs_bench": 0.0,
+    "MASE": 0.0944,
+    "DirAcc": null,
+    "DM_stat": null,
+    "DM_p": null,
+    "CW_stat": null,
+    "CW_p": null
+   },
+   {
+    "model": "seasonal_naive",
+    "n": 110,
+    "MAE": 0.8627,
+    "RMSE": 1.6271,
+    "MAPE": 19.1584,
+    "OOS_R2_vs_bench": -135.7183,
+    "MASE": 0.7926,
+    "DirAcc": 0.4103,
+    "DM_stat": -2.904,
+    "DM_p": 0.0045,
+    "CW_stat": -1.8186,
+    "CW_p": 0.9655
+   },
+   {
+    "model": "ar_diff",
+    "n": 110,
+    "MAE": 0.1285,
+    "RMSE": 0.1619,
+    "MAPE": 3.0509,
+    "OOS_R2_vs_bench": -0.354,
+    "MASE": 0.118,
+    "DirAcc": 0.4872,
+    "DM_stat": -3.2343,
+    "DM_p": 0.0016,
+    "CW_stat": -0.8963,
+    "CW_p": 0.815
+   },
+   {
+    "model": "lasso_exp+GT",
+    "n": 110,
+    "MAE": 0.1465,
+    "RMSE": 0.2251,
+    "MAPE": 3.4268,
+    "OOS_R2_vs_bench": -1.616,
+    "MASE": 0.1346,
+    "DirAcc": 0.5897,
+    "DM_stat": -2.2275,
+    "DM_p": 0.028,
+    "CW_stat": 2.634,
+    "CW_p": 0.0042
+   },
+   {
+    "model": "lasso_w36+GT",
+    "n": 110,
+    "MAE": 0.1323,
+    "RMSE": 0.186,
+    "MAPE": 3.0562,
+    "OOS_R2_vs_bench": -0.7868,
+    "MASE": 0.1216,
+    "DirAcc": 0.4487,
+    "DM_stat": -2.498,
+    "DM_p": 0.014,
+    "CW_stat": 0.7164,
+    "CW_p": 0.2369
+   },
+   {
+    "model": "enet_exp+GT",
+    "n": 110,
+    "MAE": 0.136,
+    "RMSE": 0.2094,
+    "MAPE": 3.177,
+    "OOS_R2_vs_bench": -1.2638,
+    "MASE": 0.1249,
+    "DirAcc": 0.5897,
+    "DM_stat": -2.0367,
+    "DM_p": 0.0441,
+    "CW_stat": 2.6274,
+    "CW_p": 0.0043
+   },
+   {
+    "model": "enet_w36+GT",
+    "n": 110,
+    "MAE": 0.1224,
+    "RMSE": 0.1622,
+    "MAPE": 2.886,
+    "OOS_R2_vs_bench": -0.358,
+    "MASE": 0.1124,
+    "DirAcc": 0.4359,
+    "DM_stat": -3.5244,
+    "DM_p": 0.0006,
+    "CW_stat": 0.289,
+    "CW_p": 0.3863
+   }
+  ],
+  "h1_all": [
+   {
+    "model": "naive",
+    "n": 119,
+    "MAE": 0.2571,
+    "RMSE": 1.0191,
+    "MAPE": 3.7211,
+    "OOS_R2_vs_bench": 0.0,
+    "MASE": 0.2363,
+    "DirAcc": null,
+    "DM_stat": null,
+    "DM_p": null,
+    "CW_stat": null,
+    "CW_p": null
+   },
+   {
+    "model": "seasonal_naive",
+    "n": 119,
+    "MAE": 1.2462,
+    "RMSE": 2.3824,
+    "MAPE": 22.2145,
+    "OOS_R2_vs_bench": -4.4655,
+    "MASE": 1.145,
+    "DirAcc": 0.4651,
+    "DM_stat": -3.7474,
+    "DM_p": 0.0003,
+    "CW_stat": 1.5831,
+    "CW_p": 0.0567
+   },
+   {
+    "model": "ar_diff",
+    "n": 119,
+    "MAE": 0.4819,
+    "RMSE": 2.2093,
+    "MAPE": 5.9192,
+    "OOS_R2_vs_bench": -3.7002,
+    "MASE": 0.4428,
+    "DirAcc": 0.4651,
+    "DM_stat": -1.0548,
+    "DM_p": 0.2937,
+    "CW_stat": -1.0916,
+    "CW_p": 0.8625
+   },
+   {
+    "model": "lasso_exp+GT",
+    "n": 119,
+    "MAE": 0.5058,
+    "RMSE": 1.641,
+    "MAPE": 7.5376,
+    "OOS_R2_vs_bench": -1.5931,
+    "MASE": 0.4647,
+    "DirAcc": 0.5465,
+    "DM_stat": -1.3855,
+    "DM_p": 0.1685,
+    "CW_stat": -1.2604,
+    "CW_p": 0.8962
+   },
+   {
+    "model": "lasso_w36+GT",
+    "n": 119,
+    "MAE": 0.2904,
+    "RMSE": 1.0284,
+    "MAPE": 4.4697,
+    "OOS_R2_vs_bench": -0.0184,
+    "MASE": 0.2668,
+    "DirAcc": 0.4419,
+    "DM_stat": -0.4919,
+    "DM_p": 0.6237,
+    "CW_stat": 0.6524,
+    "CW_p": 0.2571
+   },
+   {
+    "model": "enet_exp+GT",
+    "n": 119,
+    "MAE": 0.5003,
+    "RMSE": 1.62,
+    "MAPE": 7.4466,
+    "OOS_R2_vs_bench": -1.5273,
+    "MASE": 0.4597,
+    "DirAcc": 0.5233,
+    "DM_stat": -1.3972,
+    "DM_p": 0.165,
+    "CW_stat": -1.2605,
+    "CW_p": 0.8963
+   },
+   {
+    "model": "enet_w36+GT",
+    "n": 119,
+    "MAE": 0.307,
+    "RMSE": 1.0417,
+    "MAPE": 4.7881,
+    "OOS_R2_vs_bench": -0.045,
+    "MASE": 0.2821,
+    "DirAcc": 0.4302,
+    "DM_stat": -1.7143,
+    "DM_p": 0.0891,
+    "CW_stat": -0.0785,
+    "CW_p": 0.5313
+   }
+  ],
+  "h1_excl2020": [
+   {
+    "model": "naive",
+    "n": 109,
+    "MAE": 0.1028,
+    "RMSE": 0.1395,
+    "MAPE": 2.4493,
+    "OOS_R2_vs_bench": 0.0,
+    "MASE": 0.0944,
+    "DirAcc": null,
+    "DM_stat": null,
+    "DM_p": null,
+    "CW_stat": null,
+    "CW_p": null
+   },
+   {
+    "model": "seasonal_naive",
+    "n": 109,
+    "MAE": 0.867,
+    "RMSE": 1.6341,
+    "MAPE": 19.2526,
+    "OOS_R2_vs_bench": -136.2877,
+    "MASE": 0.7965,
+    "DirAcc": 0.4156,
+    "DM_stat": -2.9033,
+    "DM_p": 0.0045,
+    "CW_stat": -1.8106,
+    "CW_p": 0.9649
+   },
+   {
+    "model": "ar_diff",
+    "n": 109,
+    "MAE": 0.128,
+    "RMSE": 0.1617,
+    "MAPE": 3.0421,
+    "OOS_R2_vs_bench": -0.345,
+    "MASE": 0.1176,
+    "DirAcc": 0.4935,
+    "DM_stat": -3.1441,
+    "DM_p": 0.0022,
+    "CW_stat": -0.8206,
+    "CW_p": 0.7941
+   },
+   {
+    "model": "lasso_exp+GT",
+    "n": 109,
+    "MAE": 0.207,
+    "RMSE": 0.28,
+    "MAPE": 5.0012,
+    "OOS_R2_vs_bench": -3.03,
+    "MASE": 0.1902,
+    "DirAcc": 0.5584,
+    "DM_stat": -4.2408,
+    "DM_p": 0.0,
+    "CW_stat": 1.774,
+    "CW_p": 0.038
+   },
+   {
+    "model": "lasso_w36+GT",
+    "n": 109,
+    "MAE": 0.147,
+    "RMSE": 0.2443,
+    "MAPE": 3.3569,
+    "OOS_R2_vs_bench": -2.0689,
+    "MASE": 0.135,
+    "DirAcc": 0.4545,
+    "DM_stat": -2.1497,
+    "DM_p": 0.0338,
+    "CW_stat": -1.2497,
+    "CW_p": 0.8943
+   },
+   {
+    "model": "enet_exp+GT",
+    "n": 109,
+    "MAE": 0.2045,
+    "RMSE": 0.2775,
+    "MAPE": 4.93,
+    "OOS_R2_vs_bench": -2.9599,
+    "MASE": 0.1879,
+    "DirAcc": 0.5325,
+    "DM_stat": -4.1594,
+    "DM_p": 0.0001,
+    "CW_stat": 1.8063,
+    "CW_p": 0.0354
+   },
+   {
+    "model": "enet_w36+GT",
+    "n": 109,
+    "MAE": 0.1551,
+    "RMSE": 0.2496,
+    "MAPE": 3.5959,
+    "OOS_R2_vs_bench": -2.2028,
+    "MASE": 0.1425,
+    "DirAcc": 0.4545,
+    "DM_stat": -2.3334,
+    "DM_p": 0.0215,
+    "CW_stat": -1.7065,
+    "CW_p": 0.956
+   }
+  ]
+ },
+ "verdicts": {
+  "h0_all": {
+   "gt_helps": false,
+   "best_model": "enet_exp+GT",
+   "oos_r2": -0.22637546356379068,
+   "cw_p": 0.6060475994709372,
+   "dm_p": 0.38462303396638897,
+   "strength": "none",
+   "reason": "best GT model enet_exp+GT has OOS R²=-0.23 vs naive (Clark–West p=0.61); not a reliable gain"
+  },
+  "h0_excl2020": {
+   "gt_helps": false,
+   "best_model": "enet_w36+GT",
+   "oos_r2": -0.3580374386659244,
+   "cw_p": 0.3862739665223296,
+   "dm_p": 0.0006217848612006804,
+   "strength": "none",
+   "reason": "best GT model enet_w36+GT has OOS R²=-0.36 vs naive (Clark–West p=0.39); not a reliable gain"
+  },
+  "h1_all": {
+   "gt_helps": false,
+   "best_model": "lasso_w36+GT",
+   "oos_r2": -0.018385890639851077,
+   "cw_p": 0.25705688532460325,
+   "dm_p": 0.6236912304472848,
+   "strength": "none",
+   "reason": "best GT model lasso_w36+GT has OOS R²=-0.02 vs naive (Clark–West p=0.26); not a reliable gain"
+  },
+  "h1_excl2020": {
+   "gt_helps": false,
+   "best_model": "lasso_w36+GT",
+   "oos_r2": -2.068906276724786,
+   "cw_p": 0.8942959962687494,
+   "dm_p": 0.033811201571646965,
+   "strength": "none",
+   "reason": "best GT model lasso_w36+GT has OOS R²=-2.07 vs naive (Clark–West p=0.89); not a reliable gain"
+  }
+ },
+ "selected_last_origins": {
+  "h0_lasso_exp+GT": [
+   {
+    "origin": "2026-06",
+    "features": []
+   },
+   {
+    "origin": "2026-07",
+    "features": []
+   },
+   {
+    "origin": "2026-08",
+    "features": []
+   }
+  ],
+  "h0_lasso_w36+GT": [
+   {
+    "origin": "2026-06",
+    "features": [
+     "y_lag1",
+     "jobs__l1",
+     "part time jobs__l1"
+    ]
+   },
+   {
+    "origin": "2026-07",
+    "features": [
+     "y_lag1",
+     "part time jobs__l1"
+    ]
+   },
+   {
+    "origin": "2026-08",
+    "features": []
+   }
+  ],
+  "h0_enet_exp+GT": [
+   {
+    "origin": "2026-06",
+    "features": []
+   },
+   {
+    "origin": "2026-07",
+    "features": []
+   },
+   {
+    "origin": "2026-08",
+    "features": []
+   }
+  ],
+  "h0_enet_w36+GT": [
+   {
+    "origin": "2026-06",
+    "features": [
+     "y_lag1",
+     "jobs__l1",
+     "part time jobs__l1"
+    ]
+   },
+   {
+    "origin": "2026-07",
+    "features": [
+     "y_lag1",
+     "unemployment nj__l1",
+     "jobs__l1",
+     "part time jobs__l1"
+    ]
+   },
+   {
+    "origin": "2026-08",
+    "features": []
+   }
+  ],
+  "h1_lasso_exp+GT": [
+   {
+    "origin": "2026-05",
+    "features": [
+     "y_lag0",
+     "y_lag1",
+     "y_lag2",
+     "unemployment__l0",
+     "unemployment__l1",
+     "unemployment benefits__l0",
+     "unemployment benefits__l1",
+     "unemployment claim__l1",
+     "unemployment rate__l0",
+     "unemployment rate__l1",
+     "unemployment nj__l0",
+     "ohio unemployment__l0",
+     "ohio unemployment__l1",
+     "unemployment pa__l1",
+     "unemployment ny__l0",
+     "unemployment office__l0",
+     "unemployment office__l1",
+     "texas unemployment__l0",
+     "texas unemployment__l1",
+     "unemployment texas benefits__l0",
+     "unemployment texas benefits__l1",
+     "ny unemployment benefits__l0",
+     "unemployment benefits extended__l0",
+     "unemployment benefits extended__l1",
+     "unemployment benefits extension__l0",
+     "unemployment benefits extension__l1",
+     "jobs__l1",
+     "jobs hiring__l0",
+     "state jobs__l0",
+     "state jobs__l1",
+     "part time jobs__l1",
+     "remote jobs__l1",
+     "sin1",
+     "cos1"
+    ]
+   },
+   {
+    "origin": "2026-06",
+    "features": [
+     "y_lag0",
+     "y_lag1",
+     "y_lag2",
+     "unemployment__l0",
+     "unemployment__l1",
+     "unemployment benefits__l0",
+     "unemployment benefits__l1",
+     "unemployment claim__l1",
+     "unemployment rate__l0",
+     "unemployment rate__l1",
+     "unemployment nj__l0",
+     "ohio unemployment__l0",
+     "ohio unemployment__l1",
+     "unemployment pa__l1",
+     "unemployment ny__l0",
+     "unemployment office__l0",
+     "unemployment office__l1",
+     "texas unemployment__l0",
+     "texas unemployment__l1",
+     "unemployment texas benefits__l0",
+     "unemployment texas benefits__l1",
+     "ny unemployment benefits__l0",
+     "unemployment benefits extended__l0",
+     "unemployment benefits extended__l1",
+     "unemployment benefits extension__l0",
+     "unemployment benefits extension__l1",
+     "jobs__l1",
+     "jobs hiring__l0",
+     "state jobs__l0",
+     "state jobs__l1",
+     "part time jobs__l1",
+     "remote jobs__l1",
+     "sin1",
+     "cos1"
+    ]
+   },
+   {
+    "origin": "2026-07",
+    "features": [
+     "y_lag0",
+     "y_lag1",
+     "y_lag2",
+     "unemployment__l0",
+     "unemployment__l1",
+     "unemployment benefits__l0",
+     "unemployment benefits__l1",
+     "unemployment claim__l1",
+     "unemployment rate__l0",
+     "unemployment rate__l1",
+     "unemployment nj__l0",
+     "ohio unemployment__l0",
+     "ohio unemployment__l1",
+     "unemployment pa__l1",
+     "unemployment ny__l0",
+     "unemployment office__l0",
+     "unemployment office__l1",
+     "texas unemployment__l0",
+     "texas unemployment__l1",
+     "unemployment texas benefits__l0",
+     "unemployment texas benefits__l1",
+     "ny unemployment benefits__l0",
+     "unemployment benefits extended__l0",
+     "unemployment benefits extended__l1",
+     "unemployment benefits extension__l0",
+     "unemployment benefits extension__l1",
+     "jobs__l1",
+     "jobs hiring__l0",
+     "state jobs__l0",
+     "state jobs__l1",
+     "part time jobs__l1",
+     "remote jobs__l1",
+     "sin1",
+     "cos1"
+    ]
+   }
+  ],
+  "h1_lasso_w36+GT": [
+   {
+    "origin": "2026-05",
+    "features": []
+   },
+   {
+    "origin": "2026-06",
+    "features": []
+   },
+   {
+    "origin": "2026-07",
+    "features": []
+   }
+  ],
+  "h1_enet_exp+GT": [
+   {
+    "origin": "2026-05",
+    "features": [
+     "y_lag0",
+     "y_lag1",
+     "y_lag2",
+     "unemployment__l0",
+     "unemployment__l1",
+     "unemployment benefits__l0",
+     "unemployment benefits__l1",
+     "unemployment login__l1",
+     "unemployment claim__l0",
+     "unemployment claim__l1",
+     "unemployment rate__l0",
+     "unemployment rate__l1",
+     "unemployment nj__l0",
+     "unemployment number__l0",
+     "ohio unemployment__l0",
+     "ohio unemployment__l1",
+     "unemployment pa__l1",
+     "unemployment ny__l0",
+     "unemployment office__l0",
+     "unemployment office__l1",
+     "texas unemployment__l0",
+     "texas unemployment__l1",
+     "unemployment texas benefits__l0",
+     "unemployment texas benefits__l1",
+     "claim unemployment benefits__l1",
+     "ny unemployment benefits__l0",
+     "unemployment benefits extended__l0",
+     "unemployment benefits extended__l1",
+     "new unemployment benefits__l0",
+     "new unemployment benefits__l1",
+     "unemployment benefits extension__l0",
+     "unemployment benefits extension__l1",
+     "jobs__l1",
+     "jobs near me__l1",
+     "jobs hiring__l0",
+     "state jobs__l0",
+     "state jobs__l1",
+     "part time jobs__l0",
+     "part time jobs__l1",
+     "remote jobs__l0",
+     "remote jobs__l1",
+     "sin1",
+     "cos1"
+    ]
+   },
+   {
+    "origin": "2026-06",
+    "features": [
+     "y_lag0",
+     "y_lag1",
+     "y_lag2",
+     "unemployment__l0",
+     "unemployment__l1",
+     "unemployment benefits__l0",
+     "unemployment benefits__l1",
+     "unemployment login__l1",
+     "unemployment claim__l0",
+     "unemployment claim__l1",
+     "unemployment rate__l0",
+     "unemployment rate__l1",
+     "unemployment nj__l0",
+     "unemployment number__l0",
+     "ohio unemployment__l0",
+     "ohio unemployment__l1",
+     "unemployment pa__l1",
+     "unemployment ny__l0",
+     "unemployment office__l0",
+     "unemployment office__l1",
+     "texas unemployment__l0",
+     "texas unemployment__l1",
+     "unemployment texas benefits__l0",
+     "unemployment texas benefits__l1",
+     "claim unemployment benefits__l1",
+     "ny unemployment benefits__l0",
+     "unemployment benefits extended__l0",
+     "unemployment benefits extended__l1",
+     "new unemployment benefits__l0",
+     "new unemployment benefits__l1",
+     "unemployment benefits extension__l0",
+     "unemployment benefits extension__l1",
+     "jobs__l1",
+     "jobs near me__l1",
+     "jobs hiring__l0",
+     "state jobs__l0",
+     "state jobs__l1",
+     "part time jobs__l0",
+     "part time jobs__l1",
+     "remote jobs__l0",
+     "remote jobs__l1",
+     "sin1",
+     "cos1"
+    ]
+   },
+   {
+    "origin": "2026-07",
+    "features": [
+     "y_lag0",
+     "y_lag1",
+     "y_lag2",
+     "unemployment__l0",
+     "unemployment__l1",
+     "unemployment benefits__l0",
+     "unemployment benefits__l1",
+     "unemployment login__l1",
+     "unemployment claim__l0",
+     "unemployment claim__l1",
+     "unemployment rate__l0",
+     "unemployment rate__l1",
+     "unemployment nj__l0",
+     "unemployment number__l0",
+     "ohio unemployment__l0",
+     "ohio unemployment__l1",
+     "unemployment pa__l1",
+     "unemployment ny__l0",
+     "unemployment office__l0",
+     "unemployment office__l1",
+     "texas unemployment__l0",
+     "texas unemployment__l1",
+     "unemployment texas benefits__l0",
+     "unemployment texas benefits__l1",
+     "claim unemployment benefits__l1",
+     "ny unemployment benefits__l0",
+     "unemployment benefits extended__l0",
+     "unemployment benefits extended__l1",
+     "new unemployment benefits__l0",
+     "new unemployment benefits__l1",
+     "unemployment benefits extension__l0",
+     "unemployment benefits extension__l1",
+     "jobs__l1",
+     "jobs near me__l1",
+     "jobs hiring__l0",
+     "state jobs__l0",
+     "state jobs__l1",
+     "part time jobs__l0",
+     "part time jobs__l1",
+     "remote jobs__l0",
+     "remote jobs__l1",
+     "sin1",
+     "cos1"
+    ]
+   }
+  ],
+  "h1_enet_w36+GT": [
+   {
+    "origin": "2026-05",
+    "features": []
+   },
+   {
+    "origin": "2026-06",
+    "features": []
+   },
+   {
+    "origin": "2026-07",
+    "features": []
+   }
+  ]
+ },
+ "forecast": {
+  "h0": {
+   "origin": "2026-08",
+   "target_date": "2026-09",
+   "point": 4.1125,
+   "model": "enet",
+   "n_train": 32,
+   "features": [],
+   "note": "no unpublished period to nowcast; returned h=1 forecast",
+   "best_model_excl2020": "enet_w36+GT",
+   "best_model_all": "enet_exp+GT",
+   "window": 36,
+   "q90_recent36": 0.22270259889855115,
+   "q90_all_origins": 0.34838709677419466,
+   "lo": 3.8897974011014487,
+   "hi": 4.335202598898551,
+   "last_known_y": {
+    "date": "2026-08",
+    "value": 4.1
+   },
+   "ar_diff_point": 4.008119252775065,
+   "ar_diff_target": "2026-09"
+  },
+  "h1": {
+   "origin": "2026-08",
+   "target_date": "2026-09",
+   "point": 4.1125,
+   "model": "lasso",
+   "n_train": 32,
+   "features": [],
+   "best_model_excl2020": "lasso_w36+GT",
+   "best_model_all": "lasso_w36+GT",
+   "window": 36,
+   "q90_recent36": 0.26562499999999956,
+   "q90_all_origins": 0.5779250137369685,
+   "lo": 3.8468750000000003,
+   "hi": 4.378124999999999,
+   "last_known_y": {
+    "date": "2026-08",
+    "value": 4.1
+   },
+   "ar_diff_point": 4.008119252775065,
+   "ar_diff_target": "2026-09"
+  }
+ },
+ "settings": {
+  "p": 3,
+  "period": 12,
+  "fourier_k": 1,
+  "min_train": 60,
+  "max_origins": 120,
+  "transform": "diff",
+  "xlags": 1,
+  "preprocess": "raw_pipeline (ZeroRepair -> log1p)",
+  "windows": [
+   "expanding",
+   36
+  ],
+  "models": [
+   "lasso",
+   "enet"
+  ],
+  "exclude": [
+   "2020-03-01",
+   "2020-12-31"
+  ]
+ },
+ "requests": 26,
+ "requests_detail": {
+  "related_queries": 3,
+  "interest_pulls_new": 23,
+  "interest_cached_from_00b": 4,
+  "live_fetch_seconds": 28
+ },
+ "seconds": 221.7
+}

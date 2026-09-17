@@ -1,0 +1,10 @@
+{
+  "source": "csv:us_cpi_mm_sa_src.csv",
+  "date_col": "date",
+  "value_col": "cpi_mm_sa_pct",
+  "name": "us_cpi_mm_sa",
+  "rows": 271,
+  "first": "2004-02-01 00:00:00",
+  "last": "2026-08-01 00:00:00",
+  "retrieved_utc": "20260917T172003Z"
+}

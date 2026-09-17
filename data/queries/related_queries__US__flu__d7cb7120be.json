@@ -1,0 +1,213 @@
+{
+ "kind": "related_queries",
+ "term": "flu",
+ "geo": "US",
+ "timeframe": "today 5-y",
+ "retrieved_utc": "20260917T164441Z",
+ "data": {
+  "top": [
+   {
+    "query": "the flu",
+    "value": 100
+   },
+   {
+    "query": "flu shot",
+    "value": 55
+   },
+   {
+    "query": "flu symptoms",
+    "value": 54
+   },
+   {
+    "query": "cold",
+    "value": 35
+   },
+   {
+    "query": "covid",
+    "value": 31
+   },
+   {
+    "query": "stomach flu",
+    "value": 24
+   },
+   {
+    "query": "flu vaccine",
+    "value": 22
+   },
+   {
+    "query": "bird flu",
+    "value": 18
+   },
+   {
+    "query": "symptoms of flu",
+    "value": 12
+   },
+   {
+    "query": "flu test",
+    "value": 12
+   },
+   {
+    "query": "what is the flu",
+    "value": 11
+   },
+   {
+    "query": "flu shots",
+    "value": 10
+   },
+   {
+    "query": "the flu symptoms",
+    "value": 10
+   },
+   {
+    "query": "flu a symptoms",
+    "value": 9
+   },
+   {
+    "query": "flu medicine",
+    "value": 9
+   },
+   {
+    "query": "how long does flu last",
+    "value": 8
+   },
+   {
+    "query": "what is flu a",
+    "value": 8
+   },
+   {
+    "query": "flu virus",
+    "value": 7
+   },
+   {
+    "query": "is flu contagious",
+    "value": 7
+   },
+   {
+    "query": "cvs flu shot",
+    "value": 7
+   },
+   {
+    "query": "tylenol",
+    "value": 6
+   },
+   {
+    "query": "spanish flu",
+    "value": 6
+   },
+   {
+    "query": "flu season",
+    "value": 6
+   },
+   {
+    "query": "covid symptoms",
+    "value": 6
+   },
+   {
+    "query": "influenza",
+    "value": 5
+   }
+  ],
+  "rising": [
+   {
+    "query": "flu symptoms 2025",
+    "value": 68650
+   },
+   {
+    "query": "2022 flu symptoms",
+    "value": 39350
+   },
+   {
+    "query": "flu symptoms 2026",
+    "value": 35600
+   },
+   {
+    "query": "flu symptoms 2024",
+    "value": 35150
+   },
+   {
+    "query": "flu symptoms 2023",
+    "value": 28350
+   },
+   {
+    "query": "flu a symptoms 2025",
+    "value": 20300
+   },
+   {
+    "query": "bird flu 2024",
+    "value": 12400
+   },
+   {
+    "query": "flu season 2025",
+    "value": 12300
+   },
+   {
+    "query": "bird flu 2022",
+    "value": 12200
+   },
+   {
+    "query": "stomach flu 2022",
+    "value": 7200
+   },
+   {
+    "query": "avian flu 2022",
+    "value": 6650
+   },
+   {
+    "query": "covid symptoms 2024",
+    "value": 6550
+   },
+   {
+    "query": "bird flu 2023",
+    "value": 5650
+   },
+   {
+    "query": "flu b symptoms 2026",
+    "value": 5150
+   },
+   {
+    "query": "flu b symptoms 2025",
+    "value": 4600
+   },
+   {
+    "query": "cvs flu and covid shots",
+    "value": 2550
+   },
+   {
+    "query": "at home flu test",
+    "value": 2250
+   },
+   {
+    "query": "frat flu",
+    "value": 1900
+   },
+   {
+    "query": "bird flu california",
+    "value": 1900
+   },
+   {
+    "query": "bird flu symptoms in humans",
+    "value": 1750
+   },
+   {
+    "query": "rsv symptoms in adults",
+    "value": 1400
+   },
+   {
+    "query": "home flu test",
+    "value": 1350
+   },
+   {
+    "query": "rsv symptoms",
+    "value": 1350
+   },
+   {
+    "query": "symptoms of bird flu in humans",
+    "value": 1350
+   },
+   {
+    "query": "rsv in adults",
+    "value": 1250
+   }
+  ]
+ }
+}

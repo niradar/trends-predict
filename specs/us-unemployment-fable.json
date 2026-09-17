@@ -1,0 +1,28 @@
+{
+  "id": "us-unemployment-fable",
+  "question": "What will the US unemployment rate be next month?",
+  "title": "US unemployment rate (BLS, seasonally adjusted) — next monthly print",
+  "truth": {"kind": "bls", "id": "UNRATE"},
+  "freq": "M", "geo": "US",
+  "queries": [
+    "file for unemployment",
+    "how to apply for unemployment",
+    "unemployment claim",
+    "unemployment benefits",
+    "unemployment login",
+    "unemployment office",
+    "layoffs",
+    "severance",
+    "jobs hiring",
+    "jobs near me",
+    "part time jobs",
+    "indeed",
+    "unemployment"
+  ],
+  "horizons": [{"h": 0, "y_known": false}, {"h": 1, "y_known": true}],
+  "models": ["ridge+raw", "lasso+raw", "ridge+djorno", "ridge+djorno_nocluster", "lasso+djorno"],
+  "windows": [null, 36],
+  "exclude": ["2020-03-01", "2020-12-31"],
+  "clip_min": 0,
+  "units": "%", "label": "Unemployment rate (%)"
+}

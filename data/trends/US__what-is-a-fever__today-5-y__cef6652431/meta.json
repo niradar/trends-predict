@@ -1,0 +1,21 @@
+{
+  "request": {
+    "keywords": [
+      "what is a fever"
+    ],
+    "geo": "US",
+    "timeframe": "today 5-y",
+    "cat": 0,
+    "gprop": ""
+  },
+  "slug": "US__what-is-a-fever__today-5-y__cef6652431",
+  "vintages": [
+    {
+      "file": "v_20260917T164713Z.csv",
+      "retrieved_utc": "20260917T164713Z",
+      "rows": 262,
+      "first": "2021-09-12 00:00:00",
+      "last": "2026-09-13 00:00:00"
+    }
+  ]
+}

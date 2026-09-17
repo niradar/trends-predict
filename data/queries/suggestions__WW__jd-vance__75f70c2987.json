@@ -1,0 +1,34 @@
+{
+ "kind": "suggestions",
+ "term": "JD Vance",
+ "geo": "",
+ "timeframe": "",
+ "retrieved_utc": "20260917T164307Z",
+ "data": [
+  {
+   "mid": "/g/11c6v_wj1r",
+   "title": "JD Vance",
+   "type": "Vice President of the United States"
+  },
+  {
+   "mid": "/g/11z38xd4wr",
+   "title": "Communion: Finding My Way Back to Faith",
+   "type": "Book by JD Vance"
+  },
+  {
+   "mid": "/g/11vwf50nxk",
+   "title": "2024 United States vice presidential debate",
+   "type": "Event"
+  },
+  {
+   "mid": "/g/11m78tdkvj",
+   "title": "Furious Minds: The Making of the MAGA New Right",
+   "type": "Book by Laura K. Field"
+  },
+  {
+   "mid": "/g/11wv33f8gj",
+   "title": "Gilded Rage: Elon Musk and the Radicalization of Silicon Valley",
+   "type": "Book by Jacob Silverman"
+  }
+ ]
+}

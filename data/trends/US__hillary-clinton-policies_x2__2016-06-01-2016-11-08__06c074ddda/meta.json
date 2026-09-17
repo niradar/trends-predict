@@ -1,0 +1,22 @@
+{
+  "request": {
+    "keywords": [
+      "Hillary Clinton policies",
+      "Donald Trump policies"
+    ],
+    "geo": "US",
+    "timeframe": "2016-06-01 2016-11-08",
+    "cat": 0,
+    "gprop": ""
+  },
+  "slug": "US__hillary-clinton-policies_x2__2016-06-01-2016-11-08__06c074ddda",
+  "vintages": [
+    {
+      "file": "v_20260917T164824Z.csv",
+      "retrieved_utc": "20260917T164824Z",
+      "rows": 161,
+      "first": "2016-06-01 00:00:00",
+      "last": "2016-11-08 00:00:00"
+    }
+  ]
+}

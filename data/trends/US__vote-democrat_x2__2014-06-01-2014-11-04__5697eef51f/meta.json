@@ -1,0 +1,22 @@
+{
+  "request": {
+    "keywords": [
+      "vote Democrat",
+      "vote Republican"
+    ],
+    "geo": "US",
+    "timeframe": "2014-06-01 2014-11-04",
+    "cat": 0,
+    "gprop": ""
+  },
+  "slug": "US__vote-democrat_x2__2014-06-01-2014-11-04__5697eef51f",
+  "vintages": [
+    {
+      "file": "v_20260917T164901Z.csv",
+      "retrieved_utc": "20260917T164901Z",
+      "rows": 157,
+      "first": "2014-06-01 00:00:00",
+      "last": "2014-11-04 00:00:00"
+    }
+  ]
+}

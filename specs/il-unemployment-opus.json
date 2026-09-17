@@ -1,0 +1,30 @@
+{
+  "id": "il-unemployment-opus",
+  "question": "מה יהיה שיעור האבטלה בישראל בחודש הבא? (What will Israel's unemployment rate be next month?)",
+  "title": "Israel unemployment rate (SA, CBS LFS) — next published month",
+  "truth": {"kind": "cached", "name": "cbs_unemployment_rate_il"},
+  "freq": "M",
+  "geo": "IL",
+  "queries": [
+    "דמי אבטלה",
+    "אבטלה",
+    "לשכת התעסוקה",
+    "שירות התעסוקה",
+    "ביטוח לאומי אבטלה",
+    "דרושים",
+    "משרות",
+    "חיפוש עבודה",
+    "פיטורים",
+    "פיצויי פיטורים",
+    "חלת",
+    "/m/07s_c"
+  ],
+  "horizons": [{"h": 0, "y_known": false}, {"h": 1, "y_known": true}, {"h": 2, "y_known": true}],
+  "models": ["ridge+raw", "lasso+raw", "ridge+djorno", "ridge+djorno_nocluster", "lasso+djorno"],
+  "windows": [null, 36],
+  "exclude": ["2020-03-01", "2021-06-30"],
+  "clip_min": 0,
+  "units": "%",
+  "label": "Unemployment rate (%)",
+  "answer_type": "quantity"
+}

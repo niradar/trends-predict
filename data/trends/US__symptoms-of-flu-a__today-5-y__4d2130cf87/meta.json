@@ -1,0 +1,21 @@
+{
+  "request": {
+    "keywords": [
+      "symptoms of flu a"
+    ],
+    "geo": "US",
+    "timeframe": "today 5-y",
+    "cat": 0,
+    "gprop": ""
+  },
+  "slug": "US__symptoms-of-flu-a__today-5-y__4d2130cf87",
+  "vintages": [
+    {
+      "file": "v_20260917T164702Z.csv",
+      "retrieved_utc": "20260917T164702Z",
+      "rows": 262,
+      "first": "2021-09-12 00:00:00",
+      "last": "2026-09-13 00:00:00"
+    }
+  ]
+}

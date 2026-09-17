@@ -1,0 +1,13 @@
+{
+  "id": "sp500-direction",
+  "question": "Will the S&P 500 be higher one month from now?",
+  "title": "S&P 500 — direction over the next month",
+  "truth": {"kind": "yahoo", "ticker": "^GSPC", "field": "Close", "freq": "M", "log": true},
+  "freq": "M", "geo": "US", "answer_type": "direction",
+  "queries": ["stock market", "recession", "market crash", "buy stocks", "sell stocks", "inflation", "gold price", "unemployment"],
+  "horizons": [{"h": 1, "y_known": true}],
+  "transform": "diff", "p": 2, "fourier_k": 0,
+  "models": ["ridge+djorno", "ols+raw", "ridge+diffgt"],
+  "exclude": ["2020-02-01", "2020-06-30"],
+  "units": " (log index)", "label": "log S&P 500 monthly close"
+}

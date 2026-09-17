@@ -1,0 +1,22 @@
+{
+  "request": {
+    "keywords": [
+      "vote Democrat",
+      "vote Republican"
+    ],
+    "geo": "US",
+    "timeframe": "2010-06-01 2010-11-02",
+    "cat": 0,
+    "gprop": ""
+  },
+  "slug": "US__vote-democrat_x2__2010-06-01-2010-11-02__6d662ca633",
+  "vintages": [
+    {
+      "file": "v_20260917T164900Z.csv",
+      "retrieved_utc": "20260917T164900Z",
+      "rows": 155,
+      "first": "2010-06-01 00:00:00",
+      "last": "2010-11-02 00:00:00"
+    }
+  ]
+}

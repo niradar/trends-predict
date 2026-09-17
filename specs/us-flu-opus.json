@@ -1,0 +1,55 @@
+{
+ "id": "us-flu-opus",
+ "question": "How high will US flu activity be over the next two weeks?",
+ "title": "US flu activity (weighted ILI %) — nowcast and next two weeks",
+ "truth": {
+  "kind": "fluview",
+  "region": "nat",
+  "start_epiweek": 201040
+ },
+ "freq": "W",
+ "geo": "US",
+ "queries": [
+  "flu symptoms",
+  "flu",
+  "influenza",
+  "cough",
+  "tamiflu",
+  "flu test",
+  "sore throat",
+  "body aches",
+  "flu shot",
+  "how long does flu last"
+ ],
+ "horizons": [
+  {"h": 0, "y_known": false},
+  {"h": 1, "y_known": false},
+  {"h": 2, "y_known": false}
+ ],
+ "transform": null,
+ "p": 4,
+ "xlags": 1,
+ "fourier_k": 2,
+ "models": [
+  "ridge+raw",
+  "lasso+raw",
+  "ols+raw",
+  "ridge+djorno",
+  "ridge+djorno_nocluster"
+ ],
+ "windows": [
+  null,
+  104
+ ],
+ "exclude": [
+  "2020-03-01",
+  "2021-06-30"
+ ],
+ "min_train": 104,
+ "max_origins": 150,
+ "units": "%",
+ "label": "Weighted ILI (% of outpatient visits)",
+ "clip_min": 0,
+ "history_years": 9,
+ "answer_type": "quantity"
+}

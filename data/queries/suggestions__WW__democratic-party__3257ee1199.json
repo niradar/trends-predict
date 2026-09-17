@@ -1,0 +1,34 @@
+{
+ "kind": "suggestions",
+ "term": "Democratic Party",
+ "geo": "",
+ "timeframe": "",
+ "retrieved_utc": "20260917T170318Z",
+ "data": [
+  {
+   "mid": "/m/0d075m",
+   "title": "Democratic Party",
+   "type": "United States"
+  },
+  {
+   "mid": "/g/11ykpshldm",
+   "title": "Colorado Democratic Party",
+   "type": "Topic"
+  },
+  {
+   "mid": "/g/11zjmpz0_0",
+   "title": "Democratic Party Of Illinois",
+   "type": "Topic"
+  },
+  {
+   "mid": "/m/015vrt",
+   "title": "Liberal Democratic Party",
+   "type": "Japan"
+  },
+  {
+   "mid": "/m/027v98z",
+   "title": "Democratic Party",
+   "type": "Italy"
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+  "request": {
+    "keywords": [
+      "tamiflu"
+    ],
+    "geo": "US",
+    "timeframe": "2017-01-01 2021-12-31",
+    "cat": 0,
+    "gprop": ""
+  },
+  "slug": "US__tamiflu__2017-01-01-2021-12-31__1bc4534c34",
+  "vintages": [
+    {
+      "file": "v_20260917T164831Z.csv",
+      "retrieved_utc": "20260917T164831Z",
+      "rows": 261,
+      "first": "2017-01-01 00:00:00",
+      "last": "2021-12-26 00:00:00"
+    }
+  ]
+}

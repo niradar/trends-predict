@@ -1,0 +1,22 @@
+{
+  "request": {
+    "keywords": [
+      "vote for Barack Obama",
+      "vote for John McCain"
+    ],
+    "geo": "US",
+    "timeframe": "2008-06-01 2008-11-04",
+    "cat": 0,
+    "gprop": ""
+  },
+  "slug": "US__vote-for-barack-obama_x2__2008-06-01-2008-11-04__78522af23f",
+  "vintages": [
+    {
+      "file": "v_20260917T164812Z.csv",
+      "retrieved_utc": "20260917T164812Z",
+      "rows": 157,
+      "first": "2008-06-01 00:00:00",
+      "last": "2008-11-04 00:00:00"
+    }
+  ]
+}

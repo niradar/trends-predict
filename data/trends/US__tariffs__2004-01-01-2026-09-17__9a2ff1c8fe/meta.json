@@ -1,0 +1,21 @@
+{
+  "request": {
+    "keywords": [
+      "tariffs"
+    ],
+    "geo": "US",
+    "timeframe": "2004-01-01 2026-09-17",
+    "cat": 0,
+    "gprop": ""
+  },
+  "slug": "US__tariffs__2004-01-01-2026-09-17__9a2ff1c8fe",
+  "vintages": [
+    {
+      "file": "v_20260917T171828Z.csv",
+      "retrieved_utc": "20260917T171828Z",
+      "rows": 273,
+      "first": "2004-01-01 00:00:00",
+      "last": "2026-09-01 00:00:00"
+    }
+  ]
+}

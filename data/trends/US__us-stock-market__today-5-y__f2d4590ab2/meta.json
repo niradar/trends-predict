@@ -1,0 +1,21 @@
+{
+  "request": {
+    "keywords": [
+      "us stock market"
+    ],
+    "geo": "US",
+    "timeframe": "today 5-y",
+    "cat": 0,
+    "gprop": ""
+  },
+  "slug": "US__us-stock-market__today-5-y__f2d4590ab2",
+  "vintages": [
+    {
+      "file": "v_20260917T165844Z.csv",
+      "retrieved_utc": "20260917T165844Z",
+      "rows": 262,
+      "first": "2021-09-12 00:00:00",
+      "last": "2026-09-13 00:00:00"
+    }
+  ]
+}

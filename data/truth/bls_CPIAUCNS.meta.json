@@ -1,0 +1,11 @@
+{
+  "source": "BLS API v1",
+  "series_id": "CUUR0000SA0",
+  "description": "CPI-U all items, NSA, index 1982-84=100",
+  "freq": "M",
+  "name": "bls_CPIAUCNS",
+  "rows": 271,
+  "first": "2004-01-01 00:00:00",
+  "last": "2026-08-01 00:00:00",
+  "retrieved_utc": "20260917T171621Z"
+}

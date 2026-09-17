@@ -1,0 +1,213 @@
+{
+ "kind": "related_queries",
+ "term": "fever",
+ "geo": "US",
+ "timeframe": "today 5-y",
+ "retrieved_utc": "20260917T164449Z",
+ "data": {
+  "top": [
+   {
+    "query": "indiana fever",
+    "value": 100
+   },
+   {
+    "query": "fever symptoms",
+    "value": 62
+   },
+   {
+    "query": "what is a fever",
+    "value": 53
+   },
+   {
+    "query": "baby fever",
+    "value": 41
+   },
+   {
+    "query": "high fever",
+    "value": 38
+   },
+   {
+    "query": "covid fever",
+    "value": 35
+   },
+   {
+    "query": "fever temperature",
+    "value": 31
+   },
+   {
+    "query": "fever game",
+    "value": 31
+   },
+   {
+    "query": "toddler fever",
+    "value": 30
+   },
+   {
+    "query": "yellow fever",
+    "value": 25
+   },
+   {
+    "query": "night fever",
+    "value": 25
+   },
+   {
+    "query": "fever up",
+    "value": 23
+   },
+   {
+    "query": "scarlet fever",
+    "value": 21
+   },
+   {
+    "query": "fever schedule",
+    "value": 20
+   },
+   {
+    "query": "sore throat",
+    "value": 20
+   },
+   {
+    "query": "tylenol",
+    "value": 20
+   },
+   {
+    "query": "fever rash",
+    "value": 19
+   },
+   {
+    "query": "low grade fever",
+    "value": 19
+   },
+   {
+    "query": "fever wnba",
+    "value": 19
+   },
+   {
+    "query": "wnba",
+    "value": 18
+   },
+   {
+    "query": "fever dream",
+    "value": 17
+   },
+   {
+    "query": "fever temp",
+    "value": 16
+   },
+   {
+    "query": "valley fever",
+    "value": 13
+   },
+   {
+    "query": "fever blister",
+    "value": 13
+   },
+   {
+    "query": "hay fever",
+    "value": 13
+   }
+  ],
+  "rising": [
+   {
+    "query": "caitlin clark",
+    "value": 66750
+   },
+   {
+    "query": "caitlin clark indiana fever",
+    "value": 45800
+   },
+   {
+    "query": "valkyries vs fever",
+    "value": 20550
+   },
+   {
+    "query": "sophie cunningham",
+    "value": 17450
+   },
+   {
+    "query": "fever vs aces",
+    "value": 13200
+   },
+   {
+    "query": "indiana fever game",
+    "value": 12850
+   },
+   {
+    "query": "indiana fever game today",
+    "value": 12400
+   },
+   {
+    "query": "indiana fever games",
+    "value": 11550
+   },
+   {
+    "query": "fever vs sky",
+    "value": 10950
+   },
+   {
+    "query": "fever game today",
+    "value": 10850
+   },
+   {
+    "query": "wings vs fever",
+    "value": 10500
+   },
+   {
+    "query": "indiana fever game tonight",
+    "value": 9550
+   },
+   {
+    "query": "fever vs tempo",
+    "value": 9250
+   },
+   {
+    "query": "fever game tonight",
+    "value": 9250
+   },
+   {
+    "query": "dream vs fever",
+    "value": 8400
+   },
+   {
+    "query": "fever vs sun",
+    "value": 8250
+   },
+   {
+    "query": "angel reese",
+    "value": 8250
+   },
+   {
+    "query": "wnba games",
+    "value": 7850
+   },
+   {
+    "query": "liberty vs fever",
+    "value": 7550
+   },
+   {
+    "query": "indiana fever next game",
+    "value": 7300
+   },
+   {
+    "query": "indiana fever schedule 2025",
+    "value": 6700
+   },
+   {
+    "query": "mario tennis fever",
+    "value": 6650
+   },
+   {
+    "query": "fever vs mystics",
+    "value": 6450
+   },
+   {
+    "query": "lynx vs fever",
+    "value": 6400
+   },
+   {
+    "query": "fever vs lynx",
+    "value": 6150
+   }
+  ]
+ }
+}

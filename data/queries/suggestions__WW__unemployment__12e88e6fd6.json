@@ -1,0 +1,34 @@
+{
+ "kind": "suggestions",
+ "term": "Unemployment",
+ "geo": "",
+ "timeframe": "",
+ "retrieved_utc": "20260917T164800Z",
+ "data": [
+  {
+   "mid": "/m/07s_c",
+   "title": "Unemployment",
+   "type": "Topic"
+  },
+  {
+   "mid": "/g/11s5xllyfs",
+   "title": "The Little Liar: A Novel",
+   "type": "Book by Pascale Robert-Diard"
+  },
+  {
+   "mid": "/m/0218w7",
+   "title": "Unemployment benefits",
+   "type": "Topic"
+  },
+  {
+   "mid": "/g/11n6q8n1zs",
+   "title": "Compassionate Leadership: How to Do Hard Things in a Human Way",
+   "type": "Book by Jacqueline Carter"
+  },
+  {
+   "mid": "/m/06lfkdz",
+   "title": "The Fireside Chats of Franklin Delano Roosevelt",
+   "type": "Book by Franklin D. Roosevelt"
+  }
+ ]
+}

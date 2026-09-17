@@ -1,0 +1,213 @@
+{
+ "kind": "related_queries",
+ "term": "stock market",
+ "geo": "US",
+ "timeframe": "today 5-y",
+ "retrieved_utc": "20260917T165441Z",
+ "data": {
+  "top": [
+   {
+    "query": "today stock market",
+    "value": 100
+   },
+   {
+    "query": "the stock market",
+    "value": 81
+   },
+   {
+    "query": "market news",
+    "value": 26
+   },
+   {
+    "query": "stock market news",
+    "value": 25
+   },
+   {
+    "query": "what is the stock market",
+    "value": 20
+   },
+   {
+    "query": "stock market open",
+    "value": 20
+   },
+   {
+    "query": "us stock market",
+    "value": 17
+   },
+   {
+    "query": "the stock market today",
+    "value": 14
+   },
+   {
+    "query": "stock market crash",
+    "value": 13
+   },
+   {
+    "query": "stock market dow",
+    "value": 12
+   },
+   {
+    "query": "dow",
+    "value": 12
+   },
+   {
+    "query": "stock market stocks",
+    "value": 11
+   },
+   {
+    "query": "stocks",
+    "value": 11
+   },
+   {
+    "query": "market futures",
+    "value": 10
+   },
+   {
+    "query": "stock futures",
+    "value": 10
+   },
+   {
+    "query": "stock market futures",
+    "value": 10
+   },
+   {
+    "query": "stock market news today",
+    "value": 9
+   },
+   {
+    "query": "live stock market",
+    "value": 8
+   },
+   {
+    "query": "stock market dow jones",
+    "value": 8
+   },
+   {
+    "query": "stock market close",
+    "value": 8
+   },
+   {
+    "query": "current stock market",
+    "value": 7
+   },
+   {
+    "query": "stock market down",
+    "value": 7
+   },
+   {
+    "query": "stock market index",
+    "value": 7
+   },
+   {
+    "query": "stock market game",
+    "value": 6
+   },
+   {
+    "query": "google stock",
+    "value": 6
+   }
+  ],
+  "rising": [
+   {
+    "query": "yahoo finance stock market live, quotes, business & finance news",
+    "value": 16400
+   },
+   {
+    "query": "meta stock",
+    "value": 12050
+   },
+   {
+    "query": "meta stock price",
+    "value": 12000
+   },
+   {
+    "query": "stock market holidays 2023",
+    "value": 9750
+   },
+   {
+    "query": "how to cook pasta",
+    "value": 8350
+   },
+   {
+    "query": "best laptops 2025",
+    "value": 8100
+   },
+   {
+    "query": "stock market holidays 2024",
+    "value": 7750
+   },
+   {
+    "query": "popular movies 2025",
+    "value": 7600
+   },
+   {
+    "query": "home workout routines",
+    "value": 7350
+   },
+   {
+    "query": "u.s. stock market today live chart",
+    "value": 7350
+   },
+   {
+    "query": "coffee shops nearby",
+    "value": 7300
+   },
+   {
+    "query": "pet care tips",
+    "value": 7150
+   },
+   {
+    "query": "top songs this week",
+    "value": 6500
+   },
+   {
+    "query": "diy projects",
+    "value": 6200
+   },
+   {
+    "query": "travel destinations",
+    "value": 6100
+   },
+   {
+    "query": "gardening ideas",
+    "value": 6100
+   },
+   {
+    "query": "book recommendations",
+    "value": 5000
+   },
+   {
+    "query": "best restaurants near me",
+    "value": 4600
+   },
+   {
+    "query": "learn programming",
+    "value": 4250
+   },
+   {
+    "query": "sports scores today",
+    "value": 4250
+   },
+   {
+    "query": "stock market holidays 2022",
+    "value": 4200
+   },
+   {
+    "query": "healthy recipes",
+    "value": 3400
+   },
+   {
+    "query": "upcoming events",
+    "value": 3000
+   },
+   {
+    "query": "is the stock market open on juneteenth",
+    "value": 2600
+   },
+   {
+    "query": "stock market today live chart",
+    "value": 2300
+   }
+  ]
+ }
+}

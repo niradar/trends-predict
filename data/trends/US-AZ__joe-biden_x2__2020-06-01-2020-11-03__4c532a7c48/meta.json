@@ -1,0 +1,22 @@
+{
+  "request": {
+    "keywords": [
+      "Joe Biden",
+      "Donald Trump"
+    ],
+    "geo": "US-AZ",
+    "timeframe": "2020-06-01 2020-11-03",
+    "cat": 0,
+    "gprop": ""
+  },
+  "slug": "US-AZ__joe-biden_x2__2020-06-01-2020-11-03__4c532a7c48",
+  "vintages": [
+    {
+      "file": "v_20260917T164843Z.csv",
+      "retrieved_utc": "20260917T164843Z",
+      "rows": 156,
+      "first": "2020-06-01 00:00:00",
+      "last": "2020-11-03 00:00:00"
+    }
+  ]
+}

@@ -1,0 +1,773 @@
+{
+ "id": "01-Q1-C",
+ "question": "What will the US unemployment rate be next month?",
+ "truth": {
+  "series": "BLS LNS14000000 (UNRATE)",
+  "first": "2004-01",
+  "last": "2026-08",
+  "n": 271
+ },
+ "queries": [
+  "unemployment",
+  "unemployment benefits",
+  "file for unemployment",
+  "unemployment office",
+  "jobs hiring",
+  "indeed jobs",
+  "layoffs",
+  "severance",
+  "job openings",
+  "resume",
+  "unemployment claim",
+  "unemployment login",
+  "unemployment insurance",
+  "tech layoffs"
+ ],
+ "dropped": [],
+ "related_seeds": [
+  "unemployment",
+  "layoffs"
+ ],
+ "clusters_full_sample": {
+  "cluster1[job openings+1]": [
+   "job openings",
+   "resume"
+  ],
+  "jobs hiring": [
+   "jobs hiring"
+  ],
+  "indeed jobs": [
+   "indeed jobs"
+  ],
+  "cluster4[unemployment+6]": [
+   "unemployment",
+   "unemployment benefits",
+   "file for unemployment",
+   "unemployment office",
+   "unemployment claim",
+   "unemployment login",
+   "unemployment insurance"
+  ],
+  "cluster5[layoffs+1]": [
+   "layoffs",
+   "tech layoffs"
+  ],
+  "severance": [
+   "severance"
+  ]
+ },
+ "benchmarks": {
+  "0": "naive",
+  "1": "naive"
+ },
+ "tables": {
+  "h0_full": [
+   {
+    "model": "naive",
+    "n": 120,
+    "MAE": 0.2558333333,
+    "RMSE": 1.0148481003,
+    "MAPE": 3.7085873269,
+    "OOS_R2_vs_bench": 0.0,
+    "MASE": 0.2350508455,
+    "DirAcc": null,
+    "DM_stat": null,
+    "DM_p": null,
+    "CW_stat": null,
+    "CW_p": null
+   },
+   {
+    "model": "seasonal_naive",
+    "n": 120,
+    "MAE": 1.2391666667,
+    "RMSE": 2.3727445431,
+    "MAPE": 22.1034784068,
+    "OOS_R2_vs_bench": -4.4663807751,
+    "MASE": 1.1385036065,
+    "DirAcc": 0.4597701149,
+    "DM_stat": -3.7467763499,
+    "DM_p": 0.0002777142,
+    "CW_stat": 1.5819906784,
+    "CW_p": 0.0568258492
+   },
+   {
+    "model": "ar_diff",
+    "n": 120,
+    "MAE": 0.4793915856,
+    "RMSE": 2.20016092,
+    "MAPE": 5.9033599958,
+    "OOS_R2_vs_bench": -3.7000968434,
+    "MASE": 0.4404484593,
+    "DirAcc": 0.4597701149,
+    "DM_stat": -1.054855916,
+    "DM_p": 0.2936282013,
+    "CW_stat": -1.0917942405,
+    "CW_p": 0.8625382244
+   },
+   {
+    "model": "ridge+rawGT",
+    "n": 120,
+    "MAE": 0.3104802961,
+    "RMSE": 1.1044115715,
+    "MAPE": 4.3030763781,
+    "OOS_R2_vs_bench": -0.1842947674,
+    "MASE": 0.2852585906,
+    "DirAcc": 0.4942528736,
+    "DM_stat": -0.6699981273,
+    "DM_p": 0.5041570413,
+    "CW_stat": -0.1697095708,
+    "CW_p": 0.5673807266
+   },
+   {
+    "model": "ridge+djorno",
+    "n": 120,
+    "MAE": 0.3389022883,
+    "RMSE": 1.3634283621,
+    "MAPE": 4.4727998708,
+    "OOS_R2_vs_bench": -0.804939136,
+    "MASE": 0.311371737,
+    "DirAcc": 0.5172413793,
+    "DM_stat": -0.8341088127,
+    "DM_p": 0.4058909132,
+    "CW_stat": -0.2760358502,
+    "CW_p": 0.6087397345
+   },
+   {
+    "model": "ridge+djorno_hl0",
+    "n": 120,
+    "MAE": 0.3305083596,
+    "RMSE": 1.3111344313,
+    "MAPE": 4.4077359542,
+    "OOS_R2_vs_bench": -0.6691384387,
+    "MASE": 0.3036596848,
+    "DirAcc": 0.5287356322,
+    "DM_stat": -0.7951791205,
+    "DM_p": 0.4280924913,
+    "CW_stat": -0.1786481168,
+    "CW_p": 0.5708929948
+   },
+   {
+    "model": "ridge+djorno_nocluster",
+    "n": 120,
+    "MAE": 0.3301775666,
+    "RMSE": 1.3090438602,
+    "MAPE": 4.3031765106,
+    "OOS_R2_vs_bench": -0.6638198831,
+    "MASE": 0.3033557636,
+    "DirAcc": 0.5402298851,
+    "DM_stat": -0.844370088,
+    "DM_p": 0.400156934,
+    "CW_stat": -0.3008985246,
+    "CW_p": 0.6182540623
+   },
+   {
+    "model": "sarimax110",
+    "n": 120,
+    "MAE": 0.4121544628,
+    "RMSE": 2.0550048914,
+    "MAPE": 4.9790642554,
+    "OOS_R2_vs_bench": -3.1003755354,
+    "MASE": 0.3786733092,
+    "DirAcc": 0.5057471264,
+    "DM_stat": -0.9935928741,
+    "DM_p": 0.3224371807,
+    "CW_stat": -0.9583183428,
+    "CW_p": 0.8310488714
+   },
+   {
+    "model": "sarimax110+djornoGT",
+    "n": 120,
+    "MAE": 0.359076883,
+    "RMSE": 1.0619701873,
+    "MAPE": 6.0193060596,
+    "OOS_R2_vs_bench": -0.0950212917,
+    "MASE": 0.329907459,
+    "DirAcc": 0.5517241379,
+    "DM_stat": -0.4820452605,
+    "DM_p": 0.6306592023,
+    "CW_stat": 1.9274609982,
+    "CW_p": 0.0269611021
+   }
+  ],
+  "h0_excl2020": [
+   {
+    "model": "naive",
+    "n": 110,
+    "MAE": 0.1027272727,
+    "RMSE": 0.1391532837,
+    "MAPE": 2.4471989284,
+    "OOS_R2_vs_bench": 0.0,
+    "MASE": 0.0943822761,
+    "DirAcc": null,
+    "DM_stat": null,
+    "DM_p": null,
+    "CW_stat": null,
+    "CW_p": null
+   },
+   {
+    "model": "seasonal_naive",
+    "n": 110,
+    "MAE": 0.8627272727,
+    "RMSE": 1.6270721055,
+    "MAPE": 19.1583735666,
+    "OOS_R2_vs_bench": -135.7183098592,
+    "MASE": 0.7926440711,
+    "DirAcc": 0.4102564103,
+    "DM_stat": -2.9039991183,
+    "DM_p": 0.0044609979,
+    "CW_stat": -1.8185565279,
+    "CW_p": 0.9655104424
+   },
+   {
+    "model": "ar_diff",
+    "n": 110,
+    "MAE": 0.1284619677,
+    "RMSE": 0.1619232279,
+    "MAPE": 3.0509477849,
+    "OOS_R2_vs_bench": -0.3540396672,
+    "MASE": 0.1180264265,
+    "DirAcc": 0.4871794872,
+    "DM_stat": -3.2342882521,
+    "DM_p": 0.0016143799,
+    "CW_stat": -0.8963493511,
+    "CW_p": 0.8149668954
+   },
+   {
+    "model": "ridge+rawGT",
+    "n": 110,
+    "MAE": 0.1106689881,
+    "RMSE": 0.1413962989,
+    "MAPE": 2.6267156447,
+    "OOS_R2_vs_bench": -0.0324978715,
+    "MASE": 0.1016788503,
+    "DirAcc": 0.5256410256,
+    "DM_stat": -0.2630754407,
+    "DM_p": 0.7929890682,
+    "CW_stat": 1.7048247719,
+    "CW_p": 0.044113555
+   },
+   {
+    "model": "ridge+djorno",
+    "n": 110,
+    "MAE": 0.108373075,
+    "RMSE": 0.1328890764,
+    "MAPE": 2.6197990943,
+    "OOS_R2_vs_bench": 0.0880066999,
+    "MASE": 0.0995694446,
+    "DirAcc": 0.5512820513,
+    "DM_stat": 0.9127954101,
+    "DM_p": 0.3633646873,
+    "CW_stat": 2.0506694869,
+    "CW_p": 0.0201495722
+   },
+   {
+    "model": "ridge+djorno_hl0",
+    "n": 110,
+    "MAE": 0.107457412,
+    "RMSE": 0.1309720597,
+    "MAPE": 2.6185464823,
+    "OOS_R2_vs_bench": 0.1141291799,
+    "MASE": 0.098728165,
+    "DirAcc": 0.5641025641,
+    "DM_stat": 0.7857712957,
+    "DM_p": 0.4337062816,
+    "CW_stat": 2.3514811279,
+    "CW_p": 0.0093494191
+   },
+   {
+    "model": "ridge+djorno_nocluster",
+    "n": 110,
+    "MAE": 0.1008697097,
+    "RMSE": 0.1233058583,
+    "MAPE": 2.4438141779,
+    "OOS_R2_vs_bench": 0.2147996169,
+    "MASE": 0.0926756112,
+    "DirAcc": 0.5641025641,
+    "DM_stat": 1.3424686879,
+    "DM_p": 0.1822333505,
+    "CW_stat": 2.7884904246,
+    "CW_p": 0.0026477156
+   },
+   {
+    "model": "sarimax110",
+    "n": 110,
+    "MAE": 0.1075997081,
+    "RMSE": 0.1407433215,
+    "MAPE": 2.5678974725,
+    "OOS_R2_vs_bench": -0.022983606,
+    "MASE": 0.0988589017,
+    "DirAcc": 0.5384615385,
+    "DM_stat": -1.0926940675,
+    "DM_p": 0.276937305,
+    "CW_stat": -0.3266240234,
+    "CW_p": 0.6280238644
+   },
+   {
+    "model": "sarimax110+djornoGT",
+    "n": 110,
+    "MAE": 0.1957835584,
+    "RMSE": 0.2486877381,
+    "MAPE": 4.7648956902,
+    "OOS_R2_vs_bench": -2.1939037658,
+    "MASE": 0.1798791828,
+    "DirAcc": 0.5128205128,
+    "DM_stat": -4.6438055103,
+    "DM_p": 9.6056e-06,
+    "CW_stat": 2.1201739919,
+    "CW_p": 0.0169956874
+   }
+  ],
+  "h1_full": [
+   {
+    "model": "naive",
+    "n": 119,
+    "MAE": 0.2571428571,
+    "RMSE": 1.0190620172,
+    "MAPE": 3.72107779,
+    "OOS_R2_vs_bench": 0.0,
+    "MASE": 0.2362539908,
+    "DirAcc": null,
+    "DM_stat": null,
+    "DM_p": null,
+    "CW_stat": null,
+    "CW_p": null
+   },
+   {
+    "model": "seasonal_naive",
+    "n": 119,
+    "MAE": 1.2462184874,
+    "RMSE": 2.3824110378,
+    "MAPE": 22.2145253776,
+    "OOS_R2_vs_bench": -4.4655284027,
+    "MASE": 1.1449825762,
+    "DirAcc": 0.4651162791,
+    "DM_stat": -3.7473646379,
+    "DM_p": 0.0002780927,
+    "CW_stat": 1.5830929379,
+    "CW_p": 0.0567001415
+   },
+   {
+    "model": "ar_diff",
+    "n": 119,
+    "MAE": 0.4819022941,
+    "RMSE": 2.2093236491,
+    "MAPE": 5.9192336994,
+    "OOS_R2_vs_bench": -3.700212068,
+    "MASE": 0.4427552117,
+    "DirAcc": 0.4651162791,
+    "DM_stat": -1.0548071162,
+    "DM_p": 0.2936685004,
+    "CW_stat": -1.0915799866,
+    "CW_p": 0.8624911216
+   },
+   {
+    "model": "ridge+rawGT",
+    "n": 119,
+    "MAE": 0.3027715923,
+    "RMSE": 1.1762831331,
+    "MAPE": 4.1858633128,
+    "OOS_R2_vs_bench": -0.3323628346,
+    "MASE": 0.2781760993,
+    "DirAcc": 0.5348837209,
+    "DM_stat": -0.9055770741,
+    "DM_p": 0.3670050924,
+    "CW_stat": -0.6850385726,
+    "CW_p": 0.7533402096
+   },
+   {
+    "model": "ridge+djorno",
+    "n": 119,
+    "MAE": 0.2979033685,
+    "RMSE": 1.1056374483,
+    "MAPE": 4.2519539846,
+    "OOS_R2_vs_bench": -0.1771295184,
+    "MASE": 0.2737033432,
+    "DirAcc": 0.4418604651,
+    "DM_stat": -0.8318869403,
+    "DM_p": 0.4071530996,
+    "CW_stat": -0.6013846682,
+    "CW_p": 0.726208096
+   },
+   {
+    "model": "ridge+djorno_hl0",
+    "n": 119,
+    "MAE": 0.2991063925,
+    "RMSE": 1.0988030841,
+    "MAPE": 4.2818815115,
+    "OOS_R2_vs_bench": -0.1626219283,
+    "MASE": 0.2748086401,
+    "DirAcc": 0.476744186,
+    "DM_stat": -0.7522246566,
+    "DM_p": 0.4534138654,
+    "CW_stat": -0.42819992,
+    "CW_p": 0.6657472127
+   },
+   {
+    "model": "ridge+djorno_nocluster",
+    "n": 119,
+    "MAE": 0.3017970872,
+    "RMSE": 1.1374675051,
+    "MAPE": 4.304638525,
+    "OOS_R2_vs_bench": -0.2458815884,
+    "MASE": 0.2772807577,
+    "DirAcc": 0.511627907,
+    "DM_stat": -0.8136614234,
+    "DM_p": 0.4174777744,
+    "CW_stat": -0.468743275,
+    "CW_p": 0.6803734247
+   },
+   {
+    "model": "sarimax110",
+    "n": 119,
+    "MAE": 0.414755968,
+    "RMSE": 2.0635998788,
+    "MAPE": 5.0017500708,
+    "OOS_R2_vs_bench": -3.1006221939,
+    "MASE": 0.3810634825,
+    "DirAcc": 0.511627907,
+    "DM_stat": -0.9935910619,
+    "DM_p": 0.3224551087,
+    "CW_stat": -0.9583401814,
+    "CW_p": 0.8310543758
+   },
+   {
+    "model": "sarimax110+djornoGT",
+    "n": 119,
+    "MAE": 0.4111855582,
+    "RMSE": 1.3052573428,
+    "MAPE": 6.4069778041,
+    "OOS_R2_vs_bench": -0.6405560041,
+    "MASE": 0.3777831131,
+    "DirAcc": 0.5348837209,
+    "DM_stat": -1.1442567671,
+    "DM_p": 0.2548329867,
+    "CW_stat": -0.5635867451,
+    "CW_p": 0.7134822952
+   }
+  ],
+  "h1_excl2020": [
+   {
+    "model": "naive",
+    "n": 109,
+    "MAE": 0.1027522936,
+    "RMSE": 0.1394616122,
+    "MAPE": 2.4492629349,
+    "OOS_R2_vs_bench": 0.0,
+    "MASE": 0.0944052644,
+    "DirAcc": null,
+    "DM_stat": null,
+    "DM_p": null,
+    "CW_stat": null,
+    "CW_p": null
+   },
+   {
+    "model": "seasonal_naive",
+    "n": 109,
+    "MAE": 0.8669724771,
+    "RMSE": 1.6340696087,
+    "MAPE": 19.2525890224,
+    "OOS_R2_vs_bench": -136.2877358491,
+    "MASE": 0.7965444184,
+    "DirAcc": 0.4155844156,
+    "DM_stat": -2.9032863817,
+    "DM_p": 0.0044779694,
+    "CW_stat": -1.8105996379,
+    "CW_p": 0.9648985758
+   },
+   {
+    "model": "ar_diff",
+    "n": 109,
+    "MAE": 0.1279834787,
+    "RMSE": 0.1617377815,
+    "MAPE": 3.0421088721,
+    "OOS_R2_vs_bench": -0.3449731061,
+    "MASE": 0.1175868073,
+    "DirAcc": 0.4935064935,
+    "DM_stat": -3.144147971,
+    "DM_p": 0.0021513526,
+    "CW_stat": -0.8205853779,
+    "CW_p": 0.7940587603
+   },
+   {
+    "model": "ridge+rawGT",
+    "n": 109,
+    "MAE": 0.1086642567,
+    "RMSE": 0.1308247692,
+    "MAPE": 2.6413151527,
+    "OOS_R2_vs_bench": 0.1200244791,
+    "MASE": 0.0998369723,
+    "DirAcc": 0.5064935065,
+    "DM_stat": 0.7791952876,
+    "DM_p": 0.4375687488,
+    "CW_stat": 2.8666443878,
+    "CW_p": 0.0020742444
+   },
+   {
+    "model": "ridge+djorno",
+    "n": 109,
+    "MAE": 0.1154405457,
+    "RMSE": 0.1501900212,
+    "MAPE": 2.7935061258,
+    "OOS_R2_vs_bench": -0.1597724664,
+    "MASE": 0.106062793,
+    "DirAcc": 0.4155844156,
+    "DM_stat": -2.4694860371,
+    "DM_p": 0.0150968614,
+    "CW_stat": -1.1810546921,
+    "CW_p": 0.8812095014
+   },
+   {
+    "model": "ridge+djorno_hl0",
+    "n": 109,
+    "MAE": 0.1156524635,
+    "RMSE": 0.1450634771,
+    "MAPE": 2.8051886951,
+    "OOS_R2_vs_bench": -0.0819490325,
+    "MASE": 0.1062574958,
+    "DirAcc": 0.4675324675,
+    "DM_stat": -1.3209684888,
+    "DM_p": 0.1893039317,
+    "CW_stat": 0.192008623,
+    "CW_p": 0.4238677255
+   },
+   {
+    "model": "ridge+djorno_nocluster",
+    "n": 109,
+    "MAE": 0.117490612,
+    "RMSE": 0.1523284273,
+    "MAPE": 2.8622833059,
+    "OOS_R2_vs_bench": -0.1930332668,
+    "MASE": 0.1079463232,
+    "DirAcc": 0.4805194805,
+    "DM_stat": -1.9850367451,
+    "DM_p": 0.0496757986,
+    "CW_stat": -0.0281760794,
+    "CW_p": 0.5112391423
+   },
+   {
+    "model": "sarimax110",
+    "n": 109,
+    "MAE": 0.1076458031,
+    "RMSE": 0.1410456813,
+    "MAPE": 2.5705437592,
+    "OOS_R2_vs_bench": -0.0228459331,
+    "MASE": 0.0989012522,
+    "DirAcc": 0.5454545455,
+    "DM_stat": -1.0810056054,
+    "DM_p": 0.2821025931,
+    "CW_stat": -0.3145077647,
+    "CW_p": 0.62343229
+   },
+   {
+    "model": "sarimax110+djornoGT",
+    "n": 109,
+    "MAE": 0.1880230745,
+    "RMSE": 0.2396744201,
+    "MAPE": 4.6361596847,
+    "OOS_R2_vs_bench": -1.9534798172,
+    "MASE": 0.1727491178,
+    "DirAcc": 0.5194805195,
+    "DM_stat": -4.3209680931,
+    "DM_p": 3.46647e-05,
+    "CW_stat": 1.951311854,
+    "CW_p": 0.0255099799
+   }
+  ]
+ },
+ "verdicts": {
+  "h0_full": {
+   "gt_helps": false,
+   "best_model": "sarimax110+djornoGT",
+   "oos_r2": -0.09502129170989737,
+   "cw_p": 0.0269611020568985,
+   "dm_p": 0.6306592023007673,
+   "strength": "none",
+   "reason": "best GT model sarimax110+djornoGT has OOS R\u00b2=-0.10 vs naive (Clark\u2013West p=0.03); not a reliable gain"
+  },
+  "h0_excl2020": {
+   "gt_helps": true,
+   "best_model": "ridge+djorno_nocluster",
+   "oos_r2": 0.21479961694024396,
+   "cw_p": 0.0026477156411561786,
+   "dm_p": 0.18223335049519407,
+   "strength": "moderate",
+   "reason": "ridge+djorno_nocluster lowers squared error by 21% vs naive (Clark\u2013West p=0.003)"
+  },
+  "h1_full": {
+   "gt_helps": false,
+   "best_model": "ridge+djorno_hl0",
+   "oos_r2": -0.16262192826332034,
+   "cw_p": 0.665747212742748,
+   "dm_p": 0.453413865368119,
+   "strength": "none",
+   "reason": "best GT model ridge+djorno_hl0 has OOS R\u00b2=-0.16 vs naive (Clark\u2013West p=0.67); not a reliable gain"
+  },
+  "h1_excl2020": {
+   "gt_helps": true,
+   "best_model": "ridge+rawGT",
+   "oos_r2": 0.12002447906873859,
+   "cw_p": 0.0020742443621192264,
+   "dm_p": 0.4375687487690467,
+   "strength": "moderate",
+   "reason": "ridge+rawGT lowers squared error by 12% vs naive (Clark\u2013West p=0.002)"
+  }
+ },
+ "best_gt_config": "ridge+djorno_nocluster",
+ "forecast": {
+  "h0_nowcast_bestGT": {
+   "origin": "2026-08",
+   "target_date": "2026-09",
+   "point": 4.056162216849271,
+   "model": "ridge",
+   "n_train": 267,
+   "features": [
+    [
+     "file for unemployment__l1",
+     -0.02381468270370047
+    ],
+    [
+     "file for unemployment__l0",
+     0.023539031773316656
+    ],
+    [
+     "unemployment login__l1",
+     -0.021389627710154655
+    ],
+    [
+     "unemployment office__l0",
+     0.020627208241760234
+    ],
+    [
+     "unemployment insurance__l1",
+     -0.0194857853454557
+    ],
+    [
+     "unemployment insurance__l0",
+     0.01806820153880892
+    ],
+    [
+     "y_lag1",
+     -0.018021689717312758
+    ],
+    [
+     "unemployment__l1",
+     -0.015731833335298945
+    ],
+    [
+     "sin1",
+     0.01526826061426629
+    ],
+    [
+     "unemployment benefits__l1",
+     -0.014902018160657955
+    ],
+    [
+     "resume__l1",
+     0.014043710138922484
+    ],
+    [
+     "unemployment benefits__l0",
+     0.013074990089269366
+    ]
+   ],
+   "note": "no unpublished period to nowcast; returned h=1 forecast",
+   "lo": 3.8132853126915927,
+   "hi": 4.299039121006949,
+   "half_width": 0.24287690415767793,
+   "config": "ridge+djorno_nocluster"
+  },
+  "h1_bestGT": {
+   "origin": "2026-08",
+   "target_date": "2026-09",
+   "point": 4.056162216849271,
+   "model": "ridge",
+   "n_train": 267,
+   "features": [
+    [
+     "file for unemployment__l1",
+     -0.02381468270370047
+    ],
+    [
+     "file for unemployment__l0",
+     0.023539031773316656
+    ],
+    [
+     "unemployment login__l1",
+     -0.021389627710154655
+    ],
+    [
+     "unemployment office__l0",
+     0.020627208241760234
+    ],
+    [
+     "unemployment insurance__l1",
+     -0.0194857853454557
+    ],
+    [
+     "unemployment insurance__l0",
+     0.01806820153880892
+    ],
+    [
+     "y_lag1",
+     -0.018021689717312758
+    ],
+    [
+     "unemployment__l1",
+     -0.015731833335298945
+    ],
+    [
+     "sin1",
+     0.01526826061426629
+    ],
+    [
+     "unemployment benefits__l1",
+     -0.014902018160657955
+    ],
+    [
+     "resume__l1",
+     0.014043710138922484
+    ],
+    [
+     "unemployment benefits__l0",
+     0.013074990089269366
+    ]
+   ],
+   "lo": 3.8287572405071106,
+   "hi": 4.2835671931914305,
+   "half_width": 0.22740497634215995,
+   "config": "ridge+djorno_nocluster"
+  },
+  "h0_naive": {
+   "origin": "2026-09",
+   "target_date": "2026-09",
+   "point": 4.1,
+   "lo": 3.8999999999999995,
+   "hi": 4.3,
+   "half_width": 0.20000000000000018
+  },
+  "h1_naive": {
+   "origin": "2026-08",
+   "target_date": "2026-09",
+   "point": 4.1,
+   "lo": 3.8999999999999995,
+   "hi": 4.3,
+   "half_width": 0.20000000000000018
+  },
+  "h1_ar_diff": {
+   "origin": "2026-08",
+   "target_date": "2026-09",
+   "point": 4.008119252775065,
+   "model": "ar",
+   "n_train": 267,
+   "features": null,
+   "lo": 3.750653550541589,
+   "hi": 4.26558495500854,
+   "half_width": 0.25746570223347565
+  }
+ },
+ "requests": 7,
+ "requests_note": "5 single-keyword vintages beyond the 10 pre-cached by 00b (4 new keywords; any extra is a duplicate vintage from a 429 retry) + 2 related_queries calls. Shared catalog grew 165->165 during this run, mostly from other cells.",
+ "gt_last_month": "2026-08",
+ "nowcast_note": "gt.fetch_interest drops the isPartial current month, so GT ends in the same month as the latest BLS print; forecast_next(h=0) therefore falls back to the h=1 forecast (no complete unpublished month).",
+ "seconds": 28.2
+}

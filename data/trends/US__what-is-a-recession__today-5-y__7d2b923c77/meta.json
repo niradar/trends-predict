@@ -1,0 +1,21 @@
+{
+  "request": {
+    "keywords": [
+      "what is a recession"
+    ],
+    "geo": "US",
+    "timeframe": "today 5-y",
+    "cat": 0,
+    "gprop": ""
+  },
+  "slug": "US__what-is-a-recession__today-5-y__7d2b923c77",
+  "vintages": [
+    {
+      "file": "v_20260917T165848Z.csv",
+      "retrieved_utc": "20260917T165848Z",
+      "rows": 262,
+      "first": "2021-09-12 00:00:00",
+      "last": "2026-09-13 00:00:00"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+ "kind": "suggestions",
+ "term": "Republican Party",
+ "geo": "",
+ "timeframe": "",
+ "retrieved_utc": "20260917T170419Z",
+ "data": [
+  {
+   "mid": "/m/07wbk",
+   "title": "Republican Party",
+   "type": "United States"
+  },
+  {
+   "mid": "/m/0sw6g",
+   "title": "Hank Azaria",
+   "type": "American actor"
+  },
+  {
+   "mid": "/g/11hyj8f723",
+   "title": "Republican Party of Chile",
+   "type": "Political party"
+  },
+  {
+   "mid": "/m/0d29c3",
+   "title": "Republicans",
+   "type": "Brazil"
+  },
+  {
+   "mid": "/m/07wf9",
+   "title": "Democratic-Republican Party",
+   "type": "Political party"
+  }
+ ]
+}

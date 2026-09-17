@@ -1,0 +1,34 @@
+{
+ "kind": "suggestions",
+ "term": "Donald Trump",
+ "geo": "",
+ "timeframe": "",
+ "retrieved_utc": "20260917T164307Z",
+ "data": [
+  {
+   "mid": "/m/0cqt90",
+   "title": "Donald Trump",
+   "type": "45th and 47th U.S. President"
+  },
+  {
+   "mid": "/m/01q6gd",
+   "title": "President Donald J. Trump International Airport",
+   "type": "Airport in Palm Beach County, Florida"
+  },
+  {
+   "mid": "/m/0dzqp5",
+   "title": "Donald Trump Jr.",
+   "type": "American businessman ‧ Donald Trump's son"
+  },
+  {
+   "mid": "/g/11w7p4_k3g",
+   "title": "Age and health concerns about Donald Trump",
+   "type": "Topic"
+  },
+  {
+   "mid": "/g/11xs8q_j7t",
+   "title": "Relationship of Donald Trump and Jeffrey Epstein",
+   "type": "Topic"
+  }
+ ]
+}

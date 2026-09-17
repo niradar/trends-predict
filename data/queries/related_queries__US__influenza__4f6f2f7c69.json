@@ -1,0 +1,213 @@
+{
+ "kind": "related_queries",
+ "term": "influenza",
+ "geo": "US",
+ "timeframe": "today 5-y",
+ "retrieved_utc": "20260917T164446Z",
+ "data": {
+  "top": [
+   {
+    "query": "influenza symptoms",
+    "value": 100
+   },
+   {
+    "query": "flu influenza",
+    "value": 93
+   },
+   {
+    "query": "flu",
+    "value": 89
+   },
+   {
+    "query": "what is influenza",
+    "value": 82
+   },
+   {
+    "query": "influenza vaccine",
+    "value": 67
+   },
+   {
+    "query": "symptoms influenza a",
+    "value": 63
+   },
+   {
+    "query": "virus",
+    "value": 54
+   },
+   {
+    "query": "what is influenza a",
+    "value": 54
+   },
+   {
+    "query": "influenza virus",
+    "value": 50
+   },
+   {
+    "query": "flu a",
+    "value": 42
+   },
+   {
+    "query": "the flu",
+    "value": 37
+   },
+   {
+    "query": "covid",
+    "value": 30
+   },
+   {
+    "query": "influenza a virus",
+    "value": 29
+   },
+   {
+    "query": "avian influenza",
+    "value": 29
+   },
+   {
+    "query": "symptoms of influenza",
+    "value": 28
+   },
+   {
+    "query": "cdc",
+    "value": 27
+   },
+   {
+    "query": "cdc influenza",
+    "value": 25
+   },
+   {
+    "query": "influenza contagious",
+    "value": 25
+   },
+   {
+    "query": "influenza treatment",
+    "value": 25
+   },
+   {
+    "query": "influenza test",
+    "value": 24
+   },
+   {
+    "query": "influenza b symptoms",
+    "value": 21
+   },
+   {
+    "query": "is influenza the flu",
+    "value": 20
+   },
+   {
+    "query": "type a influenza",
+    "value": 19
+   },
+   {
+    "query": "flu symptoms",
+    "value": 18
+   },
+   {
+    "query": "is influenza a virus",
+    "value": 17
+   }
+  ],
+  "rising": [
+   {
+    "query": "influenza symptoms 2025",
+    "value": 52150
+   },
+   {
+    "query": "influenza a symptoms 2025",
+    "value": 38400
+   },
+   {
+    "query": "influenza a symptoms 2022",
+    "value": 15650
+   },
+   {
+    "query": "avian influenza 2022",
+    "value": 9700
+   },
+   {
+    "query": "influenza b symptoms 2026",
+    "value": 9100
+   },
+   {
+    "query": "h5n2 avian influenza",
+    "value": 6000
+   },
+   {
+    "query": "super flu influenza",
+    "value": 2400
+   },
+   {
+    "query": "interstellar comet 3i atlas",
+    "value": 1850
+   },
+   {
+    "query": "at home influenza test",
+    "value": 1050
+   },
+   {
+    "query": "supine position",
+    "value": 1050
+   },
+   {
+    "query": "is influenza an acute illness",
+    "value": 800
+   },
+   {
+    "query": "rsv symptoms",
+    "value": 500
+   },
+   {
+    "query": "highly pathogenic avian influenza",
+    "value": 500
+   },
+   {
+    "query": "rsv",
+    "value": 450
+   },
+   {
+    "query": "symptoms of influenza a in adults",
+    "value": 400
+   },
+   {
+    "query": "influenza a symptoms in adults",
+    "value": 350
+   },
+   {
+    "query": "avian influenza",
+    "value": 350
+   },
+   {
+    "query": "avian influenza symptoms",
+    "value": 300
+   },
+   {
+    "query": "oseltamivir",
+    "value": 300
+   },
+   {
+    "query": "influenza b symptoms in adults",
+    "value": 300
+   },
+   {
+    "query": "does influenza a cause vomiting",
+    "value": 300
+   },
+   {
+    "query": "influenza a in kids",
+    "value": 250
+   },
+   {
+    "query": "covid symptoms",
+    "value": 250
+   },
+   {
+    "query": "influenza a symptoms in kids",
+    "value": 250
+   },
+   {
+    "query": "avian influenza virus",
+    "value": 250
+   }
+  ]
+ }
+}

@@ -1,0 +1,21 @@
+{
+  "request": {
+    "keywords": [
+      "remote jobs"
+    ],
+    "geo": "US",
+    "timeframe": "2004-01-01 2026-09-17",
+    "cat": 0,
+    "gprop": ""
+  },
+  "slug": "US__remote-jobs__2004-01-01-2026-09-17__67ef1ca5e8",
+  "vintages": [
+    {
+      "file": "v_20260917T164807Z.csv",
+      "retrieved_utc": "20260917T164807Z",
+      "rows": 273,
+      "first": "2004-01-01 00:00:00",
+      "last": "2026-09-01 00:00:00"
+    }
+  ]
+}

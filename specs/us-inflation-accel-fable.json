@@ -1,0 +1,31 @@
+{
+  "id": "us-inflation-accel-fable",
+  "question": "Will US inflation accelerate next month?",
+  "title": "US CPI-U inflation (BLS, seasonally adjusted, month-over-month %) — will September 2026 run hotter than August?",
+  "truth": {"kind": "csv", "path": "data/truth/us_cpi_mm_sa_src.csv", "date_col": 0, "value_col": 1, "name": "us_cpi_mm_sa"},
+  "freq": "M", "geo": "US",
+  "answer_type": "direction",
+  "queries": [
+    "gas prices",
+    "gas prices near me",
+    "grocery prices",
+    "food prices",
+    "egg prices",
+    "rent increase",
+    "price increase",
+    "cost of living",
+    "coupons",
+    "used car prices",
+    "electric bill",
+    "car insurance",
+    "tariffs",
+    "inflation"
+  ],
+  "horizons": [{"h": 1, "y_known": true}],
+  "transform": null,
+  "p": 3, "fourier_k": 1,
+  "models": ["ridge+raw", "lasso+raw", "ridge+djorno", "ridge+djorno_nocluster", "lasso+djorno"],
+  "windows": [null, 36],
+  "exclude": ["2020-03-01", "2020-12-31"],
+  "units": "% m/m", "label": "CPI-U all items, SA, month-over-month change (%)"
+}

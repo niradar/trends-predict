@@ -1,0 +1,22 @@
+{
+  "request": {
+    "keywords": [
+      "Hillary Clinton rally",
+      "Donald Trump rally"
+    ],
+    "geo": "US",
+    "timeframe": "2016-06-01 2016-11-08",
+    "cat": 0,
+    "gprop": ""
+  },
+  "slug": "US__hillary-clinton-rally_x2__2016-06-01-2016-11-08__7a12ab6f5d",
+  "vintages": [
+    {
+      "file": "v_20260917T164819Z.csv",
+      "retrieved_utc": "20260917T164819Z",
+      "rows": 161,
+      "first": "2016-06-01 00:00:00",
+      "last": "2016-11-08 00:00:00"
+    }
+  ]
+}

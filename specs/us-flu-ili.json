@@ -1,0 +1,52 @@
+{
+ "id": "us-flu-ili",
+ "question": "How high will US influenza-like illness activity be in the coming weeks?",
+ "title": "US influenza-like illness (ILI %) — nowcast and 2-week forecast",
+ "truth": {
+  "kind": "fluview",
+  "region": "nat",
+  "start_epiweek": 201040
+ },
+ "freq": "W",
+ "geo": "US",
+ "queries": [
+  "flu symptoms",
+  "flu",
+  "influenza",
+  "cough",
+  "tamiflu",
+  "flu test",
+  "sore throat",
+  "body aches",
+  "flu shot",
+  "how long does flu last"
+ ],
+ "horizons": [
+  {
+   "h": 0,
+   "y_known": false
+  },
+  {
+   "h": 1,
+   "y_known": false
+  },
+  {
+   "h": 2,
+   "y_known": false
+  }
+ ],
+ "transform": null,
+ "windows": [
+  null
+ ],
+ "exclude": [
+  "2020-03-01",
+  "2021-06-30"
+ ],
+ "min_train": 104,
+ "max_origins": 150,
+ "units": "%",
+ "label": "Weighted ILI (%)",
+ "clip_min": 0,
+ "history_years": 9
+}

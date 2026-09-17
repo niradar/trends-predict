@@ -1,0 +1,21 @@
+{
+  "request": {
+    "keywords": [
+      "fever"
+    ],
+    "geo": "US",
+    "timeframe": "2017-01-01 2021-12-31",
+    "cat": 0,
+    "gprop": ""
+  },
+  "slug": "US__fever__2017-01-01-2021-12-31__c9d3a2a482",
+  "vintages": [
+    {
+      "file": "v_20260917T164832Z.csv",
+      "retrieved_utc": "20260917T164832Z",
+      "rows": 261,
+      "first": "2017-01-01 00:00:00",
+      "last": "2021-12-26 00:00:00"
+    }
+  ]
+}

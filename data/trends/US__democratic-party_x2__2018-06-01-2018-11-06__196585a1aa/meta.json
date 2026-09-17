@@ -1,0 +1,29 @@
+{
+  "request": {
+    "keywords": [
+      "Democratic Party",
+      "Republican Party"
+    ],
+    "geo": "US",
+    "timeframe": "2018-06-01 2018-11-06",
+    "cat": 0,
+    "gprop": ""
+  },
+  "slug": "US__democratic-party_x2__2018-06-01-2018-11-06__196585a1aa",
+  "vintages": [
+    {
+      "file": "v_20260917T164857Z.csv",
+      "retrieved_utc": "20260917T164857Z",
+      "rows": 159,
+      "first": "2018-06-01 00:00:00",
+      "last": "2018-11-06 00:00:00"
+    },
+    {
+      "file": "v_20260917T165132Z.csv",
+      "retrieved_utc": "20260917T165132Z",
+      "rows": 159,
+      "first": "2018-06-01 00:00:00",
+      "last": "2018-11-06 00:00:00"
+    }
+  ]
+}

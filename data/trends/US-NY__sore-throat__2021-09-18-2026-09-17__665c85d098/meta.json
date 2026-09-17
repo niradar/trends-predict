@@ -1,0 +1,21 @@
+{
+  "request": {
+    "keywords": [
+      "sore throat"
+    ],
+    "geo": "US-NY",
+    "timeframe": "2021-09-18 2026-09-17",
+    "cat": 0,
+    "gprop": ""
+  },
+  "slug": "US-NY__sore-throat__2021-09-18-2026-09-17__665c85d098",
+  "vintages": [
+    {
+      "file": "v_20260917T171822Z.csv",
+      "retrieved_utc": "20260917T171822Z",
+      "rows": 262,
+      "first": "2021-09-12 00:00:00",
+      "last": "2026-09-13 00:00:00"
+    }
+  ]
+}

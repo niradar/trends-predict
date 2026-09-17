@@ -1,0 +1,43 @@
+{
+  "source": "CBS Israel series API (apis.cbs.gov.il/series/data/list)",
+  "freq": "M",
+  "description": "Unemployment rate, ages 15+, total population, seasonally adjusted, % of civilian labour force (Labour Force Survey, monthly). Spliced: old definition (2012-01..2024-12) + new definition (2025-01..).",
+  "endpoint": "https://apis.cbs.gov.il/series/data/list?id={sid}&format=json&download=false&PageSize=1000",
+  "series": {
+    "old_sa": {
+      "sid": 491094,
+      "update": "2026-01-20",
+      "data": "מנוכי עונתיות",
+      "unit": "אחוזים",
+      "path": {
+        "level1": "נתוני תעסוקה על פי סקר כוח אדם",
+        "level2": "נתונים החל מינואר 2012 ועד דצמבר 2025 לפי הגדרה ישנה סכ\"א חודשי (מבוסס על אומדני מפקד 2008)",
+        "level3": "אוכלוסיית בני 15 ומעלה ובני 64-25 , לפי תכונות כוח העבודה",
+        "level4": "בלתי מועסקים",
+        "name_id": "כלל אוכלוסייה - בני 15 ומעלה"
+      }
+    },
+    "new_sa": {
+      "sid": 41097,
+      "update": "2026-08-16",
+      "data": "מנוכי עונתיות",
+      "unit": "אחוזים",
+      "path": {
+        "level1": "נתוני תעסוקה על פי סקר כוח אדם",
+        "level2": "החל מינואר 2025 לפי הגדרה חדשה סכ\"א חודשי  (מבוסס על אומדני מפקד 2022)",
+        "level3": "אוכלוסיית בני 15 ומעלה ובני 64-25 , לפי תכונות כוח העבודה",
+        "level4": "בלתי מועסקים",
+        "name_id": "כלל אוכלוסייה - בני 15 ומעלה"
+      }
+    }
+  },
+  "splice_date": "2025-01-01",
+  "overlap_months": 12,
+  "overlap_new_minus_old_mean": 0.042,
+  "overlap_new_minus_old_max_abs": 0.1,
+  "name": "cbs_unemployment_rate_il",
+  "rows": 175,
+  "first": "2012-01-01 00:00:00",
+  "last": "2026-07-01 00:00:00",
+  "retrieved_utc": "20260917T171608Z"
+}

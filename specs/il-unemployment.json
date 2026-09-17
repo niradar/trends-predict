@@ -1,0 +1,5 @@
+{"id": "il-unemployment", "question": "מה יהיה שיעור האבטלה בישראל בחודש הבא?", "title": "Israel unemployment rate (LFS, 15+, SA) — next print",
+ "truth": {"kind": "cbs", "id": "UNEMP_IL_SA"}, "freq": "M", "geo": "IL",
+ "queries": ["דמי אבטלה", "לשכת התעסוקה", "שירות התעסוקה", "ביטוח לאומי אבטלה", "דרושים", "פיטורים", "חלת", "אבטלה", "/m/07s_c", "מחפש עבודה", "הצעות עבודה", "מחשבון אבטלה"],
+ "horizons": [{"h": 0, "y_known": false}, {"h": 1, "y_known": false}], "exclude": ["2020-03-01", "2021-06-30"], "min_train": 48, "clip_min": 0,
+ "units": "%", "label": "Unemployment rate, SA (%)"}

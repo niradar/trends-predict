@@ -1,0 +1,28 @@
+{
+  "request": {
+    "keywords": [
+      "bear market"
+    ],
+    "geo": "US",
+    "timeframe": "2004-01-01 2026-09-17",
+    "cat": 0,
+    "gprop": ""
+  },
+  "slug": "US__bear-market__2004-01-01-2026-09-17__85f772a9d1",
+  "vintages": [
+    {
+      "file": "v_20260917T171643Z.csv",
+      "retrieved_utc": "20260917T171643Z",
+      "rows": 273,
+      "first": "2004-01-01 00:00:00",
+      "last": "2026-09-01 00:00:00"
+    },
+    {
+      "file": "v_20260917T171742Z.csv",
+      "retrieved_utc": "20260917T171742Z",
+      "rows": 273,
+      "first": "2004-01-01 00:00:00",
+      "last": "2026-09-01 00:00:00"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "request": {
+    "keywords": [
+      "how long does flu last"
+    ],
+    "geo": "US",
+    "timeframe": "2017-09-17 2022-03-19",
+    "cat": 0,
+    "gprop": ""
+  },
+  "slug": "US__how-long-does-flu-last__2017-09-17-2022-03-19__9e48facec7",
+  "vintages": [
+    {
+      "file": "v_20260917T170322Z.csv",
+      "retrieved_utc": "20260917T170322Z",
+      "rows": 235,
+      "first": "2017-09-17 00:00:00",
+      "last": "2022-03-13 00:00:00"
+    }
+  ]
+}

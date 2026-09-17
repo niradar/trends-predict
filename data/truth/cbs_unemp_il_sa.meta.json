@@ -1,0 +1,29 @@
+{
+  "source": "CBS Israel series API",
+  "endpoint": "https://apis.cbs.gov.il/series/data/list?id={sid}&format=json&download=false&PageSize=1000",
+  "description": "Unemployment rate, 15+, SA, % (LFS monthly; old+new definition spliced)",
+  "freq": "M",
+  "series": {
+    "old": {
+      "sid": 491094,
+      "update": "2026-01-20",
+      "data": "מנוכי עונתיות",
+      "unit": "אחוזים"
+    },
+    "new": {
+      "sid": 41097,
+      "update": "2026-08-16",
+      "data": "מנוכי עונתיות",
+      "unit": "אחוזים"
+    }
+  },
+  "splice_date": "2025-01-01",
+  "overlap_months": 12,
+  "overlap_new_minus_old_mean": 0.042,
+  "overlap_new_minus_old_max_abs": 0.1,
+  "name": "cbs_unemp_il_sa",
+  "rows": 175,
+  "first": "2012-01-01 00:00:00",
+  "last": "2026-07-01 00:00:00",
+  "retrieved_utc": "20260917T172635Z"
+}

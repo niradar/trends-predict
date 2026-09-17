@@ -1,0 +1,213 @@
+{
+ "kind": "related_queries",
+ "term": "jobs",
+ "geo": "US",
+ "timeframe": "2004-01-01 2026-09-17",
+ "retrieved_utc": "20260917T164445Z",
+ "data": {
+  "top": [
+   {
+    "query": "jobs near me",
+    "value": 100
+   },
+   {
+    "query": "jobs indeed",
+    "value": 64
+   },
+   {
+    "query": "indeed",
+    "value": 64
+   },
+   {
+    "query": "job",
+    "value": 62
+   },
+   {
+    "query": "jobs hiring",
+    "value": 51
+   },
+   {
+    "query": "state jobs",
+    "value": 36
+   },
+   {
+    "query": "craigslist jobs",
+    "value": 33
+   },
+   {
+    "query": "part time jobs",
+    "value": 33
+   },
+   {
+    "query": "remote jobs",
+    "value": 29
+   },
+   {
+    "query": "amazon jobs",
+    "value": 28
+   },
+   {
+    "query": "jobs from home",
+    "value": 22
+   },
+   {
+    "query": "usa jobs",
+    "value": 21
+   },
+   {
+    "query": "online jobs",
+    "value": 20
+   },
+   {
+    "query": "jobs hiring near me",
+    "value": 20
+   },
+   {
+    "query": "hiring near me",
+    "value": 19
+   },
+   {
+    "query": "it jobs",
+    "value": 18
+   },
+   {
+    "query": "steve jobs",
+    "value": 17
+   },
+   {
+    "query": "work from home jobs",
+    "value": 17
+   },
+   {
+    "query": "google jobs",
+    "value": 17
+   },
+   {
+    "query": "work from home",
+    "value": 17
+   },
+   {
+    "query": "va jobs",
+    "value": 15
+   },
+   {
+    "query": "government jobs",
+    "value": 15
+   },
+   {
+    "query": "security jobs",
+    "value": 14
+   },
+   {
+    "query": "nursing jobs",
+    "value": 14
+   },
+   {
+    "query": "entry level jobs",
+    "value": 13
+   }
+  ],
+  "rising": [
+   {
+    "query": "jobs indeed",
+    "value": 449700
+   },
+   {
+    "query": "indeed",
+    "value": 449500
+   },
+   {
+    "query": "jobs near me",
+    "value": 277150
+   },
+   {
+    "query": "jobs hiring near me",
+    "value": 137500
+   },
+   {
+    "query": "hiring near me",
+    "value": 129950
+   },
+   {
+    "query": "part time jobs near me",
+    "value": 36150
+   },
+   {
+    "query": "linkedin jobs",
+    "value": 29700
+   },
+   {
+    "query": "glassdoor",
+    "value": 24500
+   },
+   {
+    "query": "glassdoor jobs",
+    "value": 24200
+   },
+   {
+    "query": "indeed jobs near me",
+    "value": 21400
+   },
+   {
+    "query": "amazon jobs near me",
+    "value": 17250
+   },
+   {
+    "query": "part time remote jobs",
+    "value": 14900
+   },
+   {
+    "query": "amazon warehouse jobs",
+    "value": 14800
+   },
+   {
+    "query": "remote jobs near me",
+    "value": 13950
+   },
+   {
+    "query": "office jobs near me",
+    "value": 12850
+   },
+   {
+    "query": "indeed.com",
+    "value": 12050
+   },
+   {
+    "query": "indeed.com jobs",
+    "value": 10900
+   },
+   {
+    "query": "warehouse jobs near me",
+    "value": 9250
+   },
+   {
+    "query": "full time jobs near me",
+    "value": 8900
+   },
+   {
+    "query": "work from home jobs near me",
+    "value": 8900
+   },
+   {
+    "query": "rn jobs near me",
+    "value": 8600
+   },
+   {
+    "query": "amazon remote jobs",
+    "value": 8250
+   },
+   {
+    "query": "data entry remote jobs",
+    "value": 7700
+   },
+   {
+    "query": "receptionist jobs near me",
+    "value": 7650
+   },
+   {
+    "query": "cna jobs near me",
+    "value": 6800
+   }
+  ]
+ }
+}

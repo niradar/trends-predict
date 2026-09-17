@@ -1,0 +1,7 @@
+{"id": "us-midterms-2026-salience-fable",
+ "question": "מי ינצח בבחירות הקרובות בארצות הברית? (Who will win the upcoming US election? -> 2026 midterms, 3 Nov 2026)",
+ "title": "2026 US midterms — search-attention share by party (description, not a forecast)",
+ "entities": ["Democratic Party", "Republican Party"],
+ "geo": "US",
+ "timeframe": "2026-06-01 2026-09-17",
+ "context": "The upcoming US election is the 3 Nov 2026 midterm (all 435 House seats, 33+ Senate seats, 36 governors); there is no single national winner and no keyless historical outcome series long enough to validate a model, so the pipeline runs in descriptive salience mode only. A parallel pull with the language-neutral topic ids /m/0d075m and /m/07wbk is in outputs/us-midterms-2026-salience-fable-topics.html."}

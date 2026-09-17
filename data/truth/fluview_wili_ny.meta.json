@@ -1,0 +1,12 @@
+{
+  "source": "Delphi Epidata fluview",
+  "region": "ny",
+  "field": "wili",
+  "freq": "W-SAT",
+  "note": "ILINet; off-season weeks (epiweeks 21-39) may be missing in older years",
+  "name": "fluview_wili_ny",
+  "rows": 782,
+  "first": "2010-10-09 00:00:00",
+  "last": "2025-09-27 00:00:00",
+  "retrieved_utc": "20260917T171530Z"
+}

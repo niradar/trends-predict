@@ -1,0 +1,21 @@
+{
+  "request": {
+    "keywords": [
+      "buy or sell stocks"
+    ],
+    "geo": "US",
+    "timeframe": "today 5-y",
+    "cat": 0,
+    "gprop": ""
+  },
+  "slug": "US__buy-or-sell-stocks__today-5-y__f1feb63aa6",
+  "vintages": [
+    {
+      "file": "v_20260917T165908Z.csv",
+      "retrieved_utc": "20260917T165908Z",
+      "rows": 262,
+      "first": "2021-09-12 00:00:00",
+      "last": "2026-09-13 00:00:00"
+    }
+  ]
+}

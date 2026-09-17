@@ -1,0 +1,22 @@
+{
+  "request": {
+    "keywords": [
+      "vote for Joe Biden",
+      "vote for Donald Trump"
+    ],
+    "geo": "US",
+    "timeframe": "2020-06-01 2020-11-03",
+    "cat": 0,
+    "gprop": ""
+  },
+  "slug": "US__vote-for-joe-biden_x2__2020-06-01-2020-11-03__9cc14dcfd1",
+  "vintages": [
+    {
+      "file": "v_20260917T164815Z.csv",
+      "retrieved_utc": "20260917T164815Z",
+      "rows": 156,
+      "first": "2020-06-01 00:00:00",
+      "last": "2020-11-03 00:00:00"
+    }
+  ]
+}

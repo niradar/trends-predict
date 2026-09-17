@@ -1,0 +1,213 @@
+{
+ "kind": "related_queries",
+ "term": "flu symptoms",
+ "geo": "US",
+ "timeframe": "today 5-y",
+ "retrieved_utc": "20260917T164444Z",
+ "data": {
+  "top": [
+   {
+    "query": "symptoms of flu",
+    "value": 100
+   },
+   {
+    "query": "the flu",
+    "value": 81
+   },
+   {
+    "query": "the flu symptoms",
+    "value": 80
+   },
+   {
+    "query": "covid",
+    "value": 49
+   },
+   {
+    "query": "covid symptoms",
+    "value": 45
+   },
+   {
+    "query": "symptoms of the flu",
+    "value": 40
+   },
+   {
+    "query": "stomach flu",
+    "value": 38
+   },
+   {
+    "query": "stomach flu symptoms",
+    "value": 38
+   },
+   {
+    "query": "flu like symptoms",
+    "value": 31
+   },
+   {
+    "query": "cold flu symptoms",
+    "value": 31
+   },
+   {
+    "query": "cold symptoms",
+    "value": 30
+   },
+   {
+    "query": "symptoms of flu a",
+    "value": 26
+   },
+   {
+    "query": "fever symptoms",
+    "value": 23
+   },
+   {
+    "query": "flu 2025 symptoms",
+    "value": 23
+   },
+   {
+    "query": "bird flu",
+    "value": 19
+   },
+   {
+    "query": "what are flu symptoms",
+    "value": 18
+   },
+   {
+    "query": "bird flu symptoms",
+    "value": 17
+   },
+   {
+    "query": "symptoms of covid",
+    "value": 16
+   },
+   {
+    "query": "flu symptoms 2022",
+    "value": 15
+   },
+   {
+    "query": "flu vs covid symptoms",
+    "value": 14
+   },
+   {
+    "query": "covid vs flu",
+    "value": 14
+   },
+   {
+    "query": "flu shot",
+    "value": 13
+   },
+   {
+    "query": "flu shot symptoms",
+    "value": 13
+   },
+   {
+    "query": "flu test",
+    "value": 13
+   },
+   {
+    "query": "flu symptoms 2024",
+    "value": 13
+   }
+  ],
+  "rising": [
+   {
+    "query": "flu 2025 symptoms",
+    "value": 297100
+   },
+   {
+    "query": "flu symptoms 2023",
+    "value": 175600
+   },
+   {
+    "query": "2026 flu symptoms",
+    "value": 147550
+   },
+   {
+    "query": "flu symptoms 2026",
+    "value": 145400
+   },
+   {
+    "query": "flu symptoms 2024",
+    "value": 124750
+   },
+   {
+    "query": "flu symptoms 2022",
+    "value": 119250
+   },
+   {
+    "query": "symptoms of flu 2025",
+    "value": 87200
+   },
+   {
+    "query": "flu a symptoms 2025",
+    "value": 80550
+   },
+   {
+    "query": "covid symptoms 2025",
+    "value": 62400
+   },
+   {
+    "query": "flu a symptoms 2026",
+    "value": 59550
+   },
+   {
+    "query": "covid symptoms 2024",
+    "value": 54850
+   },
+   {
+    "query": "omicron symptoms",
+    "value": 49000
+   },
+   {
+    "query": "covid symptoms 2023",
+    "value": 48550
+   },
+   {
+    "query": "symptoms of flu 2024",
+    "value": 38350
+   },
+   {
+    "query": "flu b symptoms 2026",
+    "value": 37950
+   },
+   {
+    "query": "flu a symptoms 2023",
+    "value": 33400
+   },
+   {
+    "query": "flu b symptoms 2025",
+    "value": 32850
+   },
+   {
+    "query": "flu a symptoms 2022",
+    "value": 32050
+   },
+   {
+    "query": "flu a symptoms 2024",
+    "value": 30300
+   },
+   {
+    "query": "symptoms of flu 2022",
+    "value": 30100
+   },
+   {
+    "query": "covid symptoms 2026",
+    "value": 28300
+   },
+   {
+    "query": "symptoms of the flu 2022",
+    "value": 25700
+   },
+   {
+    "query": "covid symptoms 2022",
+    "value": 24400
+   },
+   {
+    "query": "stomach flu symptoms 2025",
+    "value": 18300
+   },
+   {
+    "query": "symptoms of the flu 2024",
+    "value": 17550
+   }
+  ]
+ }
+}

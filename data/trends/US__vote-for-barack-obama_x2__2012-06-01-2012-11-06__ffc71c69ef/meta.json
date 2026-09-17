@@ -1,0 +1,22 @@
+{
+  "request": {
+    "keywords": [
+      "vote for Barack Obama",
+      "vote for Mitt Romney"
+    ],
+    "geo": "US",
+    "timeframe": "2012-06-01 2012-11-06",
+    "cat": 0,
+    "gprop": ""
+  },
+  "slug": "US__vote-for-barack-obama_x2__2012-06-01-2012-11-06__ffc71c69ef",
+  "vintages": [
+    {
+      "file": "v_20260917T164813Z.csv",
+      "retrieved_utc": "20260917T164813Z",
+      "rows": 159,
+      "first": "2012-06-01 00:00:00",
+      "last": "2012-11-06 00:00:00"
+    }
+  ]
+}

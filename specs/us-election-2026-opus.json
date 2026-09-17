@@ -1,0 +1,9 @@
+{
+ "id": "us-election-2026-opus",
+ "question": "מי ינצח בבחירות הקרובות בארצות הברית? / Who will win the upcoming US election?",
+ "title": "US 2026 midterms (3 Nov 2026) — party attention share, descriptive only",
+ "entities": ["/m/0d075m", "/m/07wbk"],
+ "geo": "US",
+ "timeframe": "2025-09-17 2026-09-17",
+ "context": "Entities are language-neutral Google Trends topic ids: /m/0d075m = Democratic Party (United States), /m/07wbk = Republican Party (United States). The contest in question is the 3 November 2026 US midterm elections (all 435 House seats, ~1/3 of the Senate, 36 governorships). There is no keyless historical ground-truth series of election winners that is long enough to validate a Google Trends model (a handful of contests), so no forecast is produced: this run is the skill's salience mode, a description of relative search attention. Validated on history in research/experiments/04-Q4-F.md: attention share picked the winner in 21/36 US contests 2006-2024 (58%), 2/5 presidential contests, 12/21 swing-state races (p=0.33), and 4/5 midterms on party names with n=5 (p=0.07) where the reading flips sign when one news-spike week is dropped. A legitimate validated question would be nowcasting a continuous poll margin or prediction-market price from search interest, which needs a historical CSV of that series."
+}

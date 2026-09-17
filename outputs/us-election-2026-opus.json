@@ -1,0 +1,26 @@
+{
+ "id": "us-election-2026-opus",
+ "question": "מי ינצח בבחירות הקרובות בארצות הברית? / Who will win the upcoming US election?",
+ "entities": [
+  "/m/0d075m",
+  "/m/07wbk"
+ ],
+ "geo": "US",
+ "timeframe": "2025-09-17 2026-09-17",
+ "share_last4": {
+  "/m/0d075m": 0.437,
+  "/m/07wbk": 0.563
+ },
+ "share_prev4": {
+  "/m/0d075m": 0.5,
+  "/m/07wbk": 0.5
+ },
+ "share_last4_ex_spike_week": {
+  "/m/0d075m": 0.437,
+  "/m/07wbk": 0.563
+ },
+ "spike_week": "2025-11-02",
+ "leader_by_attention": "/m/07wbk",
+ "validated_hit_rate": "21/36 pooled US contests 2006–2024 (58%); presidential raw share 2/5; swing states 12/21",
+ "is_forecast": false
+}

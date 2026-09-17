@@ -1,0 +1,213 @@
+{
+ "kind": "related_queries",
+ "term": "S&P 500",
+ "geo": "US",
+ "timeframe": "today 5-y",
+ "retrieved_utc": "20260917T165450Z",
+ "data": {
+  "top": [
+   {
+    "query": "s&p 500 stock",
+    "value": 100
+   },
+   {
+    "query": "s&p 500 index",
+    "value": 86
+   },
+   {
+    "query": "s&p 500 today",
+    "value": 70
+   },
+   {
+    "query": "dow",
+    "value": 58
+   },
+   {
+    "query": "s&p 500 price",
+    "value": 50
+   },
+   {
+    "query": "nasdaq",
+    "value": 47
+   },
+   {
+    "query": "dow jones",
+    "value": 41
+   },
+   {
+    "query": "what is s&p 500",
+    "value": 31
+   },
+   {
+    "query": "s&p 500 futures",
+    "value": 27
+   },
+   {
+    "query": "etf",
+    "value": 27
+   },
+   {
+    "query": "s&p futures",
+    "value": 27
+   },
+   {
+    "query": "s&p 500 etf",
+    "value": 26
+   },
+   {
+    "query": "s&p 500 news",
+    "value": 25
+   },
+   {
+    "query": "s&p 500 stock price",
+    "value": 24
+   },
+   {
+    "query": "dow today",
+    "value": 20
+   },
+   {
+    "query": "s&p 500 chart",
+    "value": 19
+   },
+   {
+    "query": "what is the s&p 500",
+    "value": 18
+   },
+   {
+    "query": "s&p 500 index fund",
+    "value": 18
+   },
+   {
+    "query": "s&p 500 stocks",
+    "value": 17
+   },
+   {
+    "query": "dow jones today",
+    "value": 17
+   },
+   {
+    "query": "nasdaq today",
+    "value": 16
+   },
+   {
+    "query": "stock market",
+    "value": 16
+   },
+   {
+    "query": "stocks",
+    "value": 16
+   },
+   {
+    "query": "vanguard",
+    "value": 15
+   },
+   {
+    "query": "vanguard s&p 500",
+    "value": 15
+   }
+  ],
+  "rising": [
+   {
+    "query": "meta stock",
+    "value": 21850
+   },
+   {
+    "query": "meta stock price",
+    "value": 10300
+   },
+   {
+    "query": "djt stock",
+    "value": 5100
+   },
+   {
+    "query": "djt stock price",
+    "value": 3600
+   },
+   {
+    "query": "smci stock",
+    "value": 2750
+   },
+   {
+    "query": "rivian stock",
+    "value": 2050
+   },
+   {
+    "query": "qqqm",
+    "value": 1250
+   },
+   {
+    "query": "sofi stock",
+    "value": 1200
+   },
+   {
+    "query": "nvidia",
+    "value": 1200
+   },
+   {
+    "query": "nvidia stock price",
+    "value": 1200
+   },
+   {
+    "query": "mstr stock",
+    "value": 1100
+   },
+   {
+    "query": "silver price today",
+    "value": 1050
+   },
+   {
+    "query": "brent crude oil price",
+    "value": 1050
+   },
+   {
+    "query": "nvidia stock",
+    "value": 1000
+   },
+   {
+    "query": "bitcoin price usd",
+    "value": 1000
+   },
+   {
+    "query": "s&p 500 annual returns last 20 years",
+    "value": 850
+   },
+   {
+    "query": "schd",
+    "value": 750
+   },
+   {
+    "query": "palantir stock",
+    "value": 750
+   },
+   {
+    "query": "schd stock",
+    "value": 700
+   },
+   {
+    "query": "gold price today",
+    "value": 700
+   },
+   {
+    "query": "ethereum price usd",
+    "value": 700
+   },
+   {
+    "query": "spacex stock",
+    "value": 650
+   },
+   {
+    "query": "broadcom stock",
+    "value": 650
+   },
+   {
+    "query": "bitcoin price today",
+    "value": 600
+   },
+   {
+    "query": "pltr",
+    "value": 600
+   }
+  ]
+ }
+}

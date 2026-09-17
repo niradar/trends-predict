@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.idea/
+scratch/
+outputs/*.pkl
+outputs/*.png
+summary/index.png
+.pytest_cache/

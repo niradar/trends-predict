@@ -1,0 +1,51 @@
+{
+ "id": "ny-flu-ili-opus",
+ "question": "How bad will the flu be in New York in two weeks?",
+ "title": "New York flu activity (weighted ILI %, HHS Region 2) — nowcast through 2 weeks ahead",
+ "truth": {
+  "kind": "fluview",
+  "region": "hhs2",
+  "start_epiweek": 201040
+ },
+ "freq": "W",
+ "geo": "US-NY",
+ "queries": [
+  "flu symptoms",
+  "flu",
+  "influenza",
+  "cough",
+  "tamiflu",
+  "flu test",
+  "sore throat",
+  "body aches",
+  "flu shot",
+  "how long does flu last"
+ ],
+ "horizons": [
+  {"h": 0, "y_known": false},
+  {"h": 1, "y_known": false},
+  {"h": 2, "y_known": false},
+  {"h": 3, "y_known": false}
+ ],
+ "transform": null,
+ "p": 4,
+ "xlags": 1,
+ "fourier_k": 2,
+ "models": [
+  "ridge+raw",
+  "ols+raw",
+  "lasso+raw",
+  "ridge+djorno",
+  "ridge+djorno_nocluster",
+  "lasso+djorno"
+ ],
+ "windows": [null],
+ "exclude": ["2020-03-01", "2021-06-30"],
+ "min_train": 104,
+ "max_origins": 300,
+ "units": "%",
+ "label": "Weighted ILI (% of outpatient visits), HHS Region 2 (NY/NJ/PR/VI)",
+ "clip_min": 0,
+ "history_years": 9,
+ "answer_type": "quantity"
+}

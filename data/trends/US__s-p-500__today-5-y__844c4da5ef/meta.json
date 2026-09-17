@@ -1,0 +1,21 @@
+{
+  "request": {
+    "keywords": [
+      "S&P 500"
+    ],
+    "geo": "US",
+    "timeframe": "today 5-y",
+    "cat": 0,
+    "gprop": ""
+  },
+  "slug": "US__s-p-500__today-5-y__844c4da5ef",
+  "vintages": [
+    {
+      "file": "v_20260917T165855Z.csv",
+      "retrieved_utc": "20260917T165855Z",
+      "rows": 262,
+      "first": "2021-09-12 00:00:00",
+      "last": "2026-09-13 00:00:00"
+    }
+  ]
+}

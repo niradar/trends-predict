@@ -1,0 +1,27 @@
+{
+  "id": "il-unemployment-fable",
+  "question": "מה יהיה שיעור האבטלה בישראל בחודש הבא?",
+  "title": "Israel unemployment rate (CBS LFS, ages 15+, seasonally adjusted) — next monthly prints",
+  "truth": {"kind": "cached", "name": "cbs_unemployment_rate_il"},
+  "freq": "M", "geo": "IL",
+  "queries": [
+    "דמי אבטלה",
+    "ביטוח לאומי אבטלה",
+    "שירות התעסוקה",
+    "לשכת התעסוקה",
+    "חלת",
+    "פיטורים",
+    "פיצויי פיטורים",
+    "דרושים",
+    "חיפוש עבודה",
+    "קורות חיים",
+    "alljobs",
+    "/m/07s_c"
+  ],
+  "horizons": [{"h": 0, "y_known": false}, {"h": 1, "y_known": true}, {"h": 2, "y_known": true}, {"h": 3, "y_known": true}],
+  "models": ["ridge+raw", "lasso+raw", "ridge+djorno", "ridge+djorno_nocluster", "lasso+djorno"],
+  "windows": [null, 36],
+  "exclude": ["2020-03-01", "2021-06-30"],
+  "clip_min": 0,
+  "units": "%", "label": "Unemployment rate, 15+, SA (%)"
+}

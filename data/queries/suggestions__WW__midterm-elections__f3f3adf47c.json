@@ -1,0 +1,34 @@
+{
+ "kind": "suggestions",
+ "term": "midterm elections",
+ "geo": "",
+ "timeframe": "",
+ "retrieved_utc": "20260917T170422Z",
+ "data": [
+  {
+   "mid": "/m/04kwhc",
+   "title": "United States midterm election",
+   "type": "Topic"
+  },
+  {
+   "mid": "/m/06kx664",
+   "title": "The Logic of American Politics",
+   "type": "Textbook by Gary Jacobson, Samuel Kernell, and Steven S. Smith"
+  },
+  {
+   "mid": "/g/11c2j97gkx",
+   "title": "United States elections, 2022",
+   "type": "General election"
+  },
+  {
+   "mid": "/m/0rfh1s7",
+   "title": "2018 United States elections",
+   "type": "General election"
+  },
+  {
+   "mid": "/g/113xnz5h6",
+   "title": "We the People",
+   "type": "Book by Benjamin Ginsberg and Caroline Tolbert"
+  }
+ ]
+}

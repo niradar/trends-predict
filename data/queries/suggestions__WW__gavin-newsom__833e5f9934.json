@@ -1,0 +1,34 @@
+{
+ "kind": "suggestions",
+ "term": "Gavin Newsom",
+ "geo": "",
+ "timeframe": "",
+ "retrieved_utc": "20260917T164308Z",
+ "data": [
+  {
+   "mid": "/m/0264nv",
+   "title": "Gavin Newsom",
+   "type": "Governor of California"
+  },
+  {
+   "mid": "/g/11q2s4j2g8",
+   "title": "Ben and Emma's Big Hit",
+   "type": "Book by Gavin Newsom and Ruby Shamir"
+  },
+  {
+   "mid": "/g/11whxxkvvx",
+   "title": "Califailure: Reversing the Ruin of America's Worst-Run State",
+   "type": "Book by Steve Hilton"
+  },
+  {
+   "mid": "/g/11x3396_5m",
+   "title": "This Is Gavin Newsom",
+   "type": "Topic"
+  },
+  {
+   "mid": "/g/11w4c42v6d",
+   "title": "Politickin' with Gavin Newsom, Marshawn Lynch, and Doug Hendrickson",
+   "type": "Topic"
+  }
+ ]
+}

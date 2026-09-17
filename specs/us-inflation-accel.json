@@ -1,0 +1,4 @@
+{"id": "us-inflation-accel", "question": "Will US inflation accelerate next month?", "title": "US CPI inflation (m/m, SA) — will it accelerate?",
+ "truth": {"kind": "bls", "id": "CPIAUCSL", "derive": "pct_change"}, "freq": "M", "geo": "US", "answer_type": "direction", "transform": null,
+ "queries": ["inflation", "gas prices", "grocery prices", "rent increase", "price increase", "egg prices", "car insurance", "electric bill", "cost of living", "interest rates"],
+ "horizons": [{"h": 1, "y_known": true}], "exclude": ["2020-03-01", "2020-12-31"], "units": "% m/m", "label": "CPI-U m/m change, SA (%)"}

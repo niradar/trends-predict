@@ -1,0 +1,25 @@
+{
+  "request": {
+    "keywords": [
+      "unemployment",
+      "unemployment benefits",
+      "file for unemployment",
+      "unemployment office",
+      "jobs hiring"
+    ],
+    "geo": "US",
+    "timeframe": "2004-01-01 2026-09-17",
+    "cat": 0,
+    "gprop": ""
+  },
+  "slug": "US__unemployment_x5__2004-01-01-2026-09-17__9988d21be8",
+  "vintages": [
+    {
+      "file": "v_20260917T163220Z.csv",
+      "retrieved_utc": "20260917T163220Z",
+      "rows": 273,
+      "first": "2004-01-01 00:00:00",
+      "last": "2026-09-01 00:00:00"
+    }
+  ]
+}

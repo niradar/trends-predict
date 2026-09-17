@@ -1,0 +1,26 @@
+{
+ "id": "us-midterms-2026-salience",
+ "question": "Who will win the next US election?",
+ "entities": [
+  "Democratic Party",
+  "Republican Party"
+ ],
+ "geo": "US",
+ "timeframe": "today 12-m",
+ "share_last4": {
+  "Democratic Party": 0.437,
+  "Republican Party": 0.563
+ },
+ "share_prev4": {
+  "Democratic Party": 0.5,
+  "Republican Party": 0.5
+ },
+ "share_last4_ex_spike_week": {
+  "Democratic Party": 0.454,
+  "Republican Party": 0.546
+ },
+ "spike_week": "2026-09-06",
+ "leader_by_attention": "Republican Party",
+ "validated_hit_rate": "21/36 pooled US contests 2006–2024 (58%); presidential raw share 2/5; swing states 12/21",
+ "is_forecast": false
+}

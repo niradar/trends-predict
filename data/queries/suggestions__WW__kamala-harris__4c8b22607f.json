@@ -1,0 +1,34 @@
+{
+ "kind": "suggestions",
+ "term": "Kamala Harris",
+ "geo": "",
+ "timeframe": "",
+ "retrieved_utc": "20260917T164306Z",
+ "data": [
+  {
+   "mid": "/m/08sry2",
+   "title": "Kamala Harris",
+   "type": "Attorney and former Vice President of the United States"
+  },
+  {
+   "mid": "/m/05k_kx",
+   "title": "Kamala",
+   "type": "Wrestler"
+  },
+  {
+   "mid": "/g/11f4pw_k9_",
+   "title": "Elsa Kurt",
+   "type": "Author"
+  },
+  {
+   "mid": "/g/11y6gls8w3",
+   "title": "Alencia Johnson",
+   "type": "Author"
+  },
+  {
+   "mid": "/g/11vs4wtymm",
+   "title": "2024 United States presidential debates",
+   "type": "Topic"
+  }
+ ]
+}

@@ -1,0 +1,1528 @@
+{
+  "id": "04-Q4-F",
+  "question": "Who will win the next US election? (2026 midterms, House control / popular vote)",
+  "today": "2026-09-17",
+  "tables": {
+    "step1_presidential_raw": [
+      {
+        "year": 2008,
+        "dem": "Barack Obama",
+        "rep": "John McCain",
+        "share_dem_last4": 0.6037309214,
+        "trend_4v4": 0.058192743,
+        "slope_8w": 0.0112188966,
+        "share_dem_full": 0.58159583,
+        "margin_dem": 7.27,
+        "pv_hit": true,
+        "ec_hit": true,
+        "trend_hit": true,
+        "note": "156 daily obs"
+      },
+      {
+        "year": 2012,
+        "dem": "Barack Obama",
+        "rep": "Mitt Romney",
+        "share_dem_last4": 0.2576153177,
+        "trend_4v4": 0.0387519561,
+        "slope_8w": 0.0027277646,
+        "share_dem_full": 0.2522045855,
+        "margin_dem": 3.86,
+        "pv_hit": false,
+        "ec_hit": false,
+        "trend_hit": true,
+        "note": "158 daily obs"
+      },
+      {
+        "year": 2016,
+        "dem": "Hillary Clinton",
+        "rep": "Donald Trump",
+        "share_dem_last4": 0.4502923977,
+        "trend_4v4": 0.0291702854,
+        "slope_8w": -0.0193337611,
+        "share_dem_full": 0.4297981967,
+        "margin_dem": 2.09,
+        "pv_hit": false,
+        "ec_hit": true,
+        "trend_hit": true,
+        "note": "160 daily obs"
+      },
+      {
+        "year": 2020,
+        "dem": "Joe Biden",
+        "rep": "Donald Trump",
+        "share_dem_last4": 0.5251601098,
+        "trend_4v4": 0.0844821437,
+        "slope_8w": 0.0096014755,
+        "share_dem_full": 0.4280717097,
+        "margin_dem": 4.45,
+        "pv_hit": true,
+        "ec_hit": true,
+        "trend_hit": true,
+        "note": "155 daily obs"
+      },
+      {
+        "year": 2024,
+        "dem": "Kamala Harris",
+        "rep": "Donald Trump",
+        "share_dem_last4": 0.6680497925,
+        "trend_4v4": 0.0072019122,
+        "slope_8w": -0.0023989568,
+        "share_dem_full": 0.625957121,
+        "margin_dem": -1.48,
+        "pv_hit": false,
+        "ec_hit": false,
+        "trend_hit": false,
+        "note": "157 daily obs"
+      }
+    ],
+    "step2_modifiers": [
+      {
+        "modifier": "vote_for",
+        "year": 2008,
+        "share_dem_last4": 0.6004464286,
+        "trend_4v4": 0.0383162511,
+        "share_dem_full": 0.5524419536,
+        "zero_day_share": 0.8974358974,
+        "margin_dem": 7.27,
+        "pv_hit": true,
+        "ec_hit": true,
+        "note": ""
+      },
+      {
+        "modifier": "vote_for",
+        "year": 2012,
+        "share_dem_last4": 0.221978022,
+        "trend_4v4": 0.076978022,
+        "share_dem_full": 0.1797752809,
+        "zero_day_share": 0.8481012658,
+        "margin_dem": 3.86,
+        "pv_hit": false,
+        "ec_hit": false,
+        "note": ""
+      },
+      {
+        "modifier": "vote_for",
+        "year": 2016,
+        "share_dem_last4": 0.4618015964,
+        "trend_4v4": -0.0580847673,
+        "share_dem_full": 0.4965553789,
+        "zero_day_share": 0.275,
+        "margin_dem": 2.09,
+        "pv_hit": false,
+        "ec_hit": true,
+        "note": ""
+      },
+      {
+        "modifier": "vote_for",
+        "year": 2020,
+        "share_dem_last4": 0.6321428571,
+        "trend_4v4": -0.0513103803,
+        "share_dem_full": 0.6871818602,
+        "zero_day_share": 0.4,
+        "margin_dem": 4.45,
+        "pv_hit": true,
+        "ec_hit": true,
+        "note": ""
+      },
+      {
+        "modifier": "vote_for",
+        "year": 2024,
+        "share_dem_last4": 0.6253869969,
+        "trend_4v4": 0.0049050692,
+        "share_dem_full": 0.658392435,
+        "zero_day_share": 0.4904458599,
+        "margin_dem": -1.48,
+        "pv_hit": false,
+        "ec_hit": false,
+        "note": ""
+      },
+      {
+        "modifier": "rally",
+        "year": 2008,
+        "share_dem_last4": 0.8727506427,
+        "trend_4v4": null,
+        "share_dem_full": 0.8727506427,
+        "zero_day_share": 0.9807692308,
+        "margin_dem": 7.27,
+        "pv_hit": true,
+        "ec_hit": true,
+        "note": ""
+      },
+      {
+        "modifier": "rally",
+        "year": 2012,
+        "share_dem_last4": 0.0681003584,
+        "trend_4v4": 0.0681003584,
+        "share_dem_full": 0.0664335664,
+        "zero_day_share": 0.9873417722,
+        "margin_dem": 3.86,
+        "pv_hit": false,
+        "ec_hit": false,
+        "note": ""
+      },
+      {
+        "modifier": "rally",
+        "year": 2016,
+        "share_dem_last4": 0.4227848101,
+        "trend_4v4": 0.0744138828,
+        "share_dem_full": 0.3309352518,
+        "zero_day_share": 0.2875,
+        "margin_dem": 2.09,
+        "pv_hit": false,
+        "ec_hit": true,
+        "note": ""
+      },
+      {
+        "modifier": "rally",
+        "year": 2020,
+        "share_dem_last4": 0.4750402576,
+        "trend_4v4": 0.1169007228,
+        "share_dem_full": 0.3636363636,
+        "zero_day_share": 0.5612903226,
+        "margin_dem": 4.45,
+        "pv_hit": false,
+        "ec_hit": false,
+        "note": ""
+      },
+      {
+        "modifier": "rally",
+        "year": 2024,
+        "share_dem_last4": 0.8053097345,
+        "trend_4v4": 0.1440194119,
+        "share_dem_full": 0.6787353391,
+        "zero_day_share": 0.3121019108,
+        "margin_dem": -1.48,
+        "pv_hit": false,
+        "ec_hit": false,
+        "note": ""
+      },
+      {
+        "modifier": "policies",
+        "year": 2008,
+        "share_dem_last4": 0.515060241,
+        "trend_4v4": null,
+        "share_dem_full": 0.6767068273,
+        "zero_day_share": 1.0,
+        "margin_dem": 7.27,
+        "pv_hit": true,
+        "ec_hit": true,
+        "note": ""
+      },
+      {
+        "modifier": "policies",
+        "year": 2012,
+        "share_dem_last4": 0.1827731092,
+        "trend_4v4": 0.1827731092,
+        "share_dem_full": 0.2030237581,
+        "zero_day_share": 0.9936708861,
+        "margin_dem": 3.86,
+        "pv_hit": false,
+        "ec_hit": false,
+        "note": ""
+      },
+      {
+        "modifier": "policies",
+        "year": 2016,
+        "share_dem_last4": 0.5513905683,
+        "trend_4v4": 0.0319730926,
+        "share_dem_full": 0.5191773207,
+        "zero_day_share": 0.7,
+        "margin_dem": 2.09,
+        "pv_hit": true,
+        "ec_hit": false,
+        "note": ""
+      },
+      {
+        "modifier": "policies",
+        "year": 2020,
+        "share_dem_last4": 0.7687626775,
+        "trend_4v4": 0.0021722885,
+        "share_dem_full": 0.8313592781,
+        "zero_day_share": 0.7096774194,
+        "margin_dem": 4.45,
+        "pv_hit": true,
+        "ec_hit": true,
+        "note": ""
+      },
+      {
+        "modifier": "policies",
+        "year": 2024,
+        "share_dem_last4": 0.7857142857,
+        "trend_4v4": -0.0770308123,
+        "share_dem_full": 0.8602761982,
+        "zero_day_share": 0.4585987261,
+        "margin_dem": -1.48,
+        "pv_hit": false,
+        "ec_hit": false,
+        "note": ""
+      },
+      {
+        "modifier": "for_president",
+        "year": 2008,
+        "share_dem_last4": 0.2946175637,
+        "trend_4v4": 0.0850105768,
+        "share_dem_full": 0.2285714286,
+        "zero_day_share": 0.6666666667,
+        "margin_dem": 7.27,
+        "pv_hit": false,
+        "ec_hit": false,
+        "note": ""
+      },
+      {
+        "modifier": "for_president",
+        "year": 2012,
+        "share_dem_last4": 0.3097345133,
+        "trend_4v4": 0.0786809088,
+        "share_dem_full": 0.2322670376,
+        "zero_day_share": 0.6582278481,
+        "margin_dem": 3.86,
+        "pv_hit": false,
+        "ec_hit": false,
+        "note": ""
+      },
+      {
+        "modifier": "for_president",
+        "year": 2016,
+        "share_dem_last4": 0.4848484848,
+        "trend_4v4": 0.0429074103,
+        "share_dem_full": 0.4724148327,
+        "zero_day_share": 0.025,
+        "margin_dem": 2.09,
+        "pv_hit": false,
+        "ec_hit": true,
+        "note": ""
+      },
+      {
+        "modifier": "for_president",
+        "year": 2020,
+        "share_dem_last4": 0.6718878813,
+        "trend_4v4": 0.0705365299,
+        "share_dem_full": 0.6628930818,
+        "zero_day_share": 0.0,
+        "margin_dem": 4.45,
+        "pv_hit": true,
+        "ec_hit": true,
+        "note": ""
+      },
+      {
+        "modifier": "for_president",
+        "year": 2024,
+        "share_dem_last4": 0.6395939086,
+        "trend_4v4": -0.022657747,
+        "share_dem_full": 0.7262914418,
+        "zero_day_share": 0.178343949,
+        "margin_dem": -1.48,
+        "pv_hit": false,
+        "ec_hit": false,
+        "note": ""
+      }
+    ],
+    "step2_modifier_summary": [
+      {
+        "modifier": "raw name (step 1)",
+        "pv_hits": "2/5",
+        "ec_hits": "3/5",
+        "pearson_share_margin": -0.2135208186,
+        "spearman": -0.1,
+        "mean_zero_day_share": null
+      },
+      {
+        "modifier": "vote_for",
+        "pv_hits": "2/5",
+        "ec_hits": "3/5",
+        "pearson_share_margin": -0.0690389816,
+        "spearman": 0.1,
+        "mean_zero_day_share": 0.5821966046
+      },
+      {
+        "modifier": "rally",
+        "pv_hits": "1/5",
+        "ec_hits": "2/5",
+        "pearson_share_margin": -0.035266354,
+        "spearman": 0.3,
+        "mean_zero_day_share": 0.6258006473
+      },
+      {
+        "modifier": "policies",
+        "pv_hits": "3/5",
+        "ec_hits": "2/5",
+        "pearson_share_margin": -0.3858776436,
+        "spearman": -0.5,
+        "mean_zero_day_share": 0.7723894063
+      },
+      {
+        "modifier": "for_president",
+        "pv_hits": "1/5",
+        "ec_hits": "2/5",
+        "pearson_share_margin": -0.6026039515,
+        "spearman": -0.4,
+        "mean_zero_day_share": 0.3056476928
+      }
+    ],
+    "step3_states": [
+      {
+        "year": 2016,
+        "state": "US-PA",
+        "share_dem_last4": 0.4602597403,
+        "rel_share": 0.0099673426,
+        "margin_dem": -0.72,
+        "hit": true,
+        "rel_hit": false
+      },
+      {
+        "year": 2016,
+        "state": "US-MI",
+        "share_dem_last4": 0.4477922078,
+        "rel_share": -0.0025001899,
+        "margin_dem": -0.23,
+        "hit": true,
+        "rel_hit": true
+      },
+      {
+        "year": 2016,
+        "state": "US-WI",
+        "share_dem_last4": 0.4431699687,
+        "rel_share": -0.0071224289,
+        "margin_dem": -0.77,
+        "hit": true,
+        "rel_hit": true
+      },
+      {
+        "year": 2016,
+        "state": "US-GA",
+        "share_dem_last4": 0.4463705309,
+        "rel_share": -0.0039218668,
+        "margin_dem": -5.13,
+        "hit": true,
+        "rel_hit": true
+      },
+      {
+        "year": 2016,
+        "state": "US-AZ",
+        "share_dem_last4": 0.4677668901,
+        "rel_share": 0.0174744925,
+        "margin_dem": -3.55,
+        "hit": true,
+        "rel_hit": false
+      },
+      {
+        "year": 2016,
+        "state": "US-NV",
+        "share_dem_last4": 0.4514870795,
+        "rel_share": 0.0011946818,
+        "margin_dem": 2.42,
+        "hit": false,
+        "rel_hit": true
+      },
+      {
+        "year": 2016,
+        "state": "US-NC",
+        "share_dem_last4": 0.4555444555,
+        "rel_share": 0.0052520579,
+        "margin_dem": -3.66,
+        "hit": true,
+        "rel_hit": false
+      },
+      {
+        "year": 2020,
+        "state": "US-PA",
+        "share_dem_last4": 0.5412329864,
+        "rel_share": 0.0160728766,
+        "margin_dem": 1.17,
+        "hit": true,
+        "rel_hit": false
+      },
+      {
+        "year": 2020,
+        "state": "US-MI",
+        "share_dem_last4": 0.5278592375,
+        "rel_share": 0.0026991277,
+        "margin_dem": 2.78,
+        "hit": true,
+        "rel_hit": false
+      },
+      {
+        "year": 2020,
+        "state": "US-WI",
+        "share_dem_last4": 0.5315515961,
+        "rel_share": 0.0063914863,
+        "margin_dem": 0.63,
+        "hit": true,
+        "rel_hit": false
+      },
+      {
+        "year": 2020,
+        "state": "US-GA",
+        "share_dem_last4": 0.5317815577,
+        "rel_share": 0.006621448,
+        "margin_dem": 0.23,
+        "hit": true,
+        "rel_hit": false
+      },
+      {
+        "year": 2020,
+        "state": "US-AZ",
+        "share_dem_last4": 0.5313921747,
+        "rel_share": 0.0062320649,
+        "margin_dem": 0.31,
+        "hit": true,
+        "rel_hit": false
+      },
+      {
+        "year": 2020,
+        "state": "US-NV",
+        "share_dem_last4": 0.5026548673,
+        "rel_share": -0.0225052425,
+        "margin_dem": 2.39,
+        "hit": true,
+        "rel_hit": true
+      },
+      {
+        "year": 2020,
+        "state": "US-NC",
+        "share_dem_last4": 0.531462585,
+        "rel_share": 0.0063024752,
+        "margin_dem": -1.35,
+        "hit": false,
+        "rel_hit": false
+      },
+      {
+        "year": 2024,
+        "state": "US-PA",
+        "share_dem_last4": 0.6622516556,
+        "rel_share": -0.0057981369,
+        "margin_dem": -1.71,
+        "hit": false,
+        "rel_hit": true
+      },
+      {
+        "year": 2024,
+        "state": "US-MI",
+        "share_dem_last4": 0.6672212978,
+        "rel_share": -0.0008284947,
+        "margin_dem": -1.42,
+        "hit": false,
+        "rel_hit": false
+      },
+      {
+        "year": 2024,
+        "state": "US-WI",
+        "share_dem_last4": 0.6909413854,
+        "rel_share": 0.0228915929,
+        "margin_dem": -0.86,
+        "hit": false,
+        "rel_hit": true
+      },
+      {
+        "year": 2024,
+        "state": "US-GA",
+        "share_dem_last4": 0.682885906,
+        "rel_share": 0.0148361135,
+        "margin_dem": -2.2,
+        "hit": false,
+        "rel_hit": false
+      },
+      {
+        "year": 2024,
+        "state": "US-AZ",
+        "share_dem_last4": 0.6692607004,
+        "rel_share": 0.0012109079,
+        "margin_dem": -5.53,
+        "hit": false,
+        "rel_hit": false
+      },
+      {
+        "year": 2024,
+        "state": "US-NV",
+        "share_dem_last4": 0.6552962298,
+        "rel_share": -0.0127535627,
+        "margin_dem": -3.1,
+        "hit": false,
+        "rel_hit": true
+      },
+      {
+        "year": 2024,
+        "state": "US-NC",
+        "share_dem_last4": 0.660685155,
+        "rel_share": -0.0073646376,
+        "margin_dem": -3.24,
+        "hit": false,
+        "rel_hit": true
+      }
+    ],
+    "step4_midterms": [
+      {
+        "pair": "party_name",
+        "year": 2006,
+        "share_dem_last4": 0.5229110512,
+        "trend_4v4": -6.83466e-05,
+        "share_dem_full": 0.548729495,
+        "zero_day_share": 0.1194968553,
+        "margin_dem": 8.0,
+        "hit": true,
+        "note": ""
+      },
+      {
+        "pair": "party_name",
+        "year": 2010,
+        "share_dem_last4": 0.4490481523,
+        "trend_4v4": 0.0041738776,
+        "share_dem_full": 0.4412442396,
+        "zero_day_share": 0.0064935065,
+        "margin_dem": -6.8,
+        "hit": true,
+        "note": ""
+      },
+      {
+        "pair": "party_name",
+        "year": 2014,
+        "share_dem_last4": 0.483706721,
+        "trend_4v4": 0.0040019239,
+        "share_dem_full": 0.4744933613,
+        "zero_day_share": 0.0,
+        "margin_dem": -5.7,
+        "hit": true,
+        "note": ""
+      },
+      {
+        "pair": "party_name",
+        "year": 2018,
+        "share_dem_last4": 0.4974463739,
+        "trend_4v4": 0.0033987548,
+        "share_dem_full": 0.5069904341,
+        "zero_day_share": 0.0,
+        "margin_dem": 8.6,
+        "hit": false,
+        "note": ""
+      },
+      {
+        "pair": "party_name",
+        "year": 2022,
+        "share_dem_last4": 0.4699398798,
+        "trend_4v4": 0.0202610789,
+        "share_dem_full": 0.4474810668,
+        "zero_day_share": 0.0,
+        "margin_dem": -2.8,
+        "hit": true,
+        "note": ""
+      },
+      {
+        "pair": "vote_party",
+        "year": 2006,
+        "share_dem_last4": 0.1428571429,
+        "trend_4v4": -0.8571428571,
+        "share_dem_full": 0.226993865,
+        "zero_day_share": 0.9937106918,
+        "margin_dem": 8.0,
+        "hit": false,
+        "note": ""
+      },
+      {
+        "pair": "vote_party",
+        "year": 2010,
+        "share_dem_last4": 0.3490909091,
+        "trend_4v4": -0.1937662338,
+        "share_dem_full": 0.3042328042,
+        "zero_day_share": 0.9285714286,
+        "margin_dem": -6.8,
+        "hit": true,
+        "note": ""
+      },
+      {
+        "pair": "vote_party",
+        "year": 2014,
+        "share_dem_last4": 0.325,
+        "trend_4v4": 0.1642857143,
+        "share_dem_full": 0.2739463602,
+        "zero_day_share": 0.8333333333,
+        "margin_dem": -5.7,
+        "hit": true,
+        "note": ""
+      },
+      {
+        "pair": "vote_party",
+        "year": 2018,
+        "share_dem_last4": 0.4300791557,
+        "trend_4v4": 0.0493973375,
+        "share_dem_full": 0.403892944,
+        "zero_day_share": 0.1582278481,
+        "margin_dem": 8.6,
+        "hit": false,
+        "note": ""
+      },
+      {
+        "pair": "vote_party",
+        "year": 2022,
+        "share_dem_last4": 0.3770053476,
+        "trend_4v4": 0.0748470742,
+        "share_dem_full": 0.3279924599,
+        "zero_day_share": 0.05625,
+        "margin_dem": -2.8,
+        "hit": true,
+        "note": ""
+      }
+    ],
+    "step5_2026_current": [
+      {
+        "pair": "party_name",
+        "share_dem_last4": 0.456281407,
+        "trend_4v4": -0.1143068283,
+        "slope_8w": -0.0191362981,
+        "share_dem_full": 0.5205609698,
+        "last_obs": "2026-09-16",
+        "n_days": 108,
+        "note": ""
+      },
+      {
+        "pair": "vote_party",
+        "share_dem_last4": 0.3404825737,
+        "trend_4v4": -0.0302896024,
+        "slope_8w": -0.0095600294,
+        "share_dem_full": 0.3460490463,
+        "last_obs": "2026-09-16",
+        "n_days": 108,
+        "note": ""
+      }
+    ]
+  },
+  "hit_rates": {
+    "step1_raw_last4_vs_popular_vote": {
+      "hits": 2,
+      "n": 5,
+      "rate": 0.4
+    },
+    "step1_raw_last4_vs_electoral_college": {
+      "hits": 3,
+      "n": 5,
+      "rate": 0.6
+    },
+    "step1_trend_4v4_vs_popular_vote": {
+      "hits": 4,
+      "n": 5,
+      "rate": 0.8
+    },
+    "step3_state_winner": {
+      "hits": 12,
+      "n": 21,
+      "rate": 0.5714285714285714
+    },
+    "step3_state_relative_to_national": {
+      "hits": 9,
+      "n": 21,
+      "rate": 0.42857142857142855
+    },
+    "step4_party_name": {
+      "hits": 4,
+      "n": 5,
+      "rate": 0.8
+    },
+    "step4_vote_party": {
+      "hits": 3,
+      "n": 5,
+      "rate": 0.6
+    }
+  },
+  "correlations": {
+    "step1_share_last4_vs_margin": {
+      "pearson": -0.21352081858536587,
+      "spearman": -0.09999999999999999,
+      "n": 5
+    },
+    "step3_share_vs_state_margin_pooled": {
+      "pearson": -0.27150801837985,
+      "spearman": -0.21038961038961035,
+      "n": 21
+    },
+    "step3_within_year": {
+      "2016": {
+        "pearson": -0.19101888148998517,
+        "spearman": 0.03571428571428572,
+        "n": 7,
+        "hits": {
+          "hits": 6,
+          "n": 7,
+          "rate": 0.8571428571428571
+        }
+      },
+      "2020": {
+        "pearson": -0.4723711114862229,
+        "spearman": -0.42857142857142866,
+        "n": 7,
+        "hits": {
+          "hits": 6,
+          "n": 7,
+          "rate": 0.8571428571428571
+        }
+      },
+      "2024": {
+        "pearson": 0.3930133339091821,
+        "spearman": 0.42857142857142866,
+        "n": 7,
+        "hits": {
+          "hits": 0,
+          "n": 7,
+          "rate": 0.0
+        }
+      }
+    },
+    "step3_relative_share_vs_relative_margin": {
+      "pearson": -0.08754928084030633,
+      "spearman": -0.18181818181818182,
+      "n": 21
+    },
+    "step4_party_name_share_vs_margin": {
+      "pearson": 0.8437921727898469,
+      "spearman": 0.7999999999999999,
+      "n": 5
+    },
+    "step4_vote_party_share_vs_margin": {
+      "pearson": -0.2643404875618757,
+      "spearman": 0.3,
+      "n": 5
+    }
+  },
+  "queries": [
+    {
+      "step": 1,
+      "keywords": [
+        "Barack Obama",
+        "John McCain"
+      ],
+      "geo": "US",
+      "tf": "2008-06-01 2008-11-04"
+    },
+    {
+      "step": 1,
+      "keywords": [
+        "Barack Obama",
+        "Mitt Romney"
+      ],
+      "geo": "US",
+      "tf": "2012-06-01 2012-11-06"
+    },
+    {
+      "step": 1,
+      "keywords": [
+        "Donald Trump",
+        "Hillary Clinton"
+      ],
+      "geo": "US",
+      "tf": "2016-06-01 2016-11-08"
+    },
+    {
+      "step": 1,
+      "keywords": [
+        "Joe Biden",
+        "Donald Trump"
+      ],
+      "geo": "US",
+      "tf": "2020-06-01 2020-11-03"
+    },
+    {
+      "step": 1,
+      "keywords": [
+        "Kamala Harris",
+        "Donald Trump"
+      ],
+      "geo": "US",
+      "tf": "2024-06-01 2024-11-05"
+    },
+    {
+      "step": 2,
+      "keywords": [
+        "vote for Barack Obama",
+        "vote for John McCain"
+      ],
+      "geo": "US",
+      "tf": "2008-06-01 2008-11-04"
+    },
+    {
+      "step": 2,
+      "keywords": [
+        "vote for Barack Obama",
+        "vote for Mitt Romney"
+      ],
+      "geo": "US",
+      "tf": "2012-06-01 2012-11-06"
+    },
+    {
+      "step": 2,
+      "keywords": [
+        "vote for Hillary Clinton",
+        "vote for Donald Trump"
+      ],
+      "geo": "US",
+      "tf": "2016-06-01 2016-11-08"
+    },
+    {
+      "step": 2,
+      "keywords": [
+        "vote for Joe Biden",
+        "vote for Donald Trump"
+      ],
+      "geo": "US",
+      "tf": "2020-06-01 2020-11-03"
+    },
+    {
+      "step": 2,
+      "keywords": [
+        "vote for Kamala Harris",
+        "vote for Donald Trump"
+      ],
+      "geo": "US",
+      "tf": "2024-06-01 2024-11-05"
+    },
+    {
+      "step": 2,
+      "keywords": [
+        "Barack Obama rally",
+        "John McCain rally"
+      ],
+      "geo": "US",
+      "tf": "2008-06-01 2008-11-04"
+    },
+    {
+      "step": 2,
+      "keywords": [
+        "Barack Obama rally",
+        "Mitt Romney rally"
+      ],
+      "geo": "US",
+      "tf": "2012-06-01 2012-11-06"
+    },
+    {
+      "step": 2,
+      "keywords": [
+        "Hillary Clinton rally",
+        "Donald Trump rally"
+      ],
+      "geo": "US",
+      "tf": "2016-06-01 2016-11-08"
+    },
+    {
+      "step": 2,
+      "keywords": [
+        "Joe Biden rally",
+        "Donald Trump rally"
+      ],
+      "geo": "US",
+      "tf": "2020-06-01 2020-11-03"
+    },
+    {
+      "step": 2,
+      "keywords": [
+        "Kamala Harris rally",
+        "Donald Trump rally"
+      ],
+      "geo": "US",
+      "tf": "2024-06-01 2024-11-05"
+    },
+    {
+      "step": 2,
+      "keywords": [
+        "Barack Obama policies",
+        "John McCain policies"
+      ],
+      "geo": "US",
+      "tf": "2008-06-01 2008-11-04"
+    },
+    {
+      "step": 2,
+      "keywords": [
+        "Barack Obama policies",
+        "Mitt Romney policies"
+      ],
+      "geo": "US",
+      "tf": "2012-06-01 2012-11-06"
+    },
+    {
+      "step": 2,
+      "keywords": [
+        "Hillary Clinton policies",
+        "Donald Trump policies"
+      ],
+      "geo": "US",
+      "tf": "2016-06-01 2016-11-08"
+    },
+    {
+      "step": 2,
+      "keywords": [
+        "Joe Biden policies",
+        "Donald Trump policies"
+      ],
+      "geo": "US",
+      "tf": "2020-06-01 2020-11-03"
+    },
+    {
+      "step": 2,
+      "keywords": [
+        "Kamala Harris policies",
+        "Donald Trump policies"
+      ],
+      "geo": "US",
+      "tf": "2024-06-01 2024-11-05"
+    },
+    {
+      "step": 2,
+      "keywords": [
+        "Barack Obama for president",
+        "John McCain for president"
+      ],
+      "geo": "US",
+      "tf": "2008-06-01 2008-11-04"
+    },
+    {
+      "step": 2,
+      "keywords": [
+        "Barack Obama for president",
+        "Mitt Romney for president"
+      ],
+      "geo": "US",
+      "tf": "2012-06-01 2012-11-06"
+    },
+    {
+      "step": 2,
+      "keywords": [
+        "Hillary Clinton for president",
+        "Donald Trump for president"
+      ],
+      "geo": "US",
+      "tf": "2016-06-01 2016-11-08"
+    },
+    {
+      "step": 2,
+      "keywords": [
+        "Joe Biden for president",
+        "Donald Trump for president"
+      ],
+      "geo": "US",
+      "tf": "2020-06-01 2020-11-03"
+    },
+    {
+      "step": 2,
+      "keywords": [
+        "Kamala Harris for president",
+        "Donald Trump for president"
+      ],
+      "geo": "US",
+      "tf": "2024-06-01 2024-11-05"
+    },
+    {
+      "step": 3,
+      "keywords": [
+        "Donald Trump",
+        "Hillary Clinton"
+      ],
+      "geo": "US-PA",
+      "tf": "2016-06-01 2016-11-08"
+    },
+    {
+      "step": 3,
+      "keywords": [
+        "Donald Trump",
+        "Hillary Clinton"
+      ],
+      "geo": "US-MI",
+      "tf": "2016-06-01 2016-11-08"
+    },
+    {
+      "step": 3,
+      "keywords": [
+        "Donald Trump",
+        "Hillary Clinton"
+      ],
+      "geo": "US-WI",
+      "tf": "2016-06-01 2016-11-08"
+    },
+    {
+      "step": 3,
+      "keywords": [
+        "Donald Trump",
+        "Hillary Clinton"
+      ],
+      "geo": "US-GA",
+      "tf": "2016-06-01 2016-11-08"
+    },
+    {
+      "step": 3,
+      "keywords": [
+        "Donald Trump",
+        "Hillary Clinton"
+      ],
+      "geo": "US-AZ",
+      "tf": "2016-06-01 2016-11-08"
+    },
+    {
+      "step": 3,
+      "keywords": [
+        "Donald Trump",
+        "Hillary Clinton"
+      ],
+      "geo": "US-NV",
+      "tf": "2016-06-01 2016-11-08"
+    },
+    {
+      "step": 3,
+      "keywords": [
+        "Donald Trump",
+        "Hillary Clinton"
+      ],
+      "geo": "US-NC",
+      "tf": "2016-06-01 2016-11-08"
+    },
+    {
+      "step": 3,
+      "keywords": [
+        "Joe Biden",
+        "Donald Trump"
+      ],
+      "geo": "US-PA",
+      "tf": "2020-06-01 2020-11-03"
+    },
+    {
+      "step": 3,
+      "keywords": [
+        "Joe Biden",
+        "Donald Trump"
+      ],
+      "geo": "US-MI",
+      "tf": "2020-06-01 2020-11-03"
+    },
+    {
+      "step": 3,
+      "keywords": [
+        "Joe Biden",
+        "Donald Trump"
+      ],
+      "geo": "US-WI",
+      "tf": "2020-06-01 2020-11-03"
+    },
+    {
+      "step": 3,
+      "keywords": [
+        "Joe Biden",
+        "Donald Trump"
+      ],
+      "geo": "US-GA",
+      "tf": "2020-06-01 2020-11-03"
+    },
+    {
+      "step": 3,
+      "keywords": [
+        "Joe Biden",
+        "Donald Trump"
+      ],
+      "geo": "US-AZ",
+      "tf": "2020-06-01 2020-11-03"
+    },
+    {
+      "step": 3,
+      "keywords": [
+        "Joe Biden",
+        "Donald Trump"
+      ],
+      "geo": "US-NV",
+      "tf": "2020-06-01 2020-11-03"
+    },
+    {
+      "step": 3,
+      "keywords": [
+        "Joe Biden",
+        "Donald Trump"
+      ],
+      "geo": "US-NC",
+      "tf": "2020-06-01 2020-11-03"
+    },
+    {
+      "step": 3,
+      "keywords": [
+        "Kamala Harris",
+        "Donald Trump"
+      ],
+      "geo": "US-PA",
+      "tf": "2024-06-01 2024-11-05"
+    },
+    {
+      "step": 3,
+      "keywords": [
+        "Kamala Harris",
+        "Donald Trump"
+      ],
+      "geo": "US-MI",
+      "tf": "2024-06-01 2024-11-05"
+    },
+    {
+      "step": 3,
+      "keywords": [
+        "Kamala Harris",
+        "Donald Trump"
+      ],
+      "geo": "US-WI",
+      "tf": "2024-06-01 2024-11-05"
+    },
+    {
+      "step": 3,
+      "keywords": [
+        "Kamala Harris",
+        "Donald Trump"
+      ],
+      "geo": "US-GA",
+      "tf": "2024-06-01 2024-11-05"
+    },
+    {
+      "step": 3,
+      "keywords": [
+        "Kamala Harris",
+        "Donald Trump"
+      ],
+      "geo": "US-AZ",
+      "tf": "2024-06-01 2024-11-05"
+    },
+    {
+      "step": 3,
+      "keywords": [
+        "Kamala Harris",
+        "Donald Trump"
+      ],
+      "geo": "US-NV",
+      "tf": "2024-06-01 2024-11-05"
+    },
+    {
+      "step": 3,
+      "keywords": [
+        "Kamala Harris",
+        "Donald Trump"
+      ],
+      "geo": "US-NC",
+      "tf": "2024-06-01 2024-11-05"
+    },
+    {
+      "step": 4,
+      "keywords": [
+        "Democratic Party",
+        "Republican Party"
+      ],
+      "geo": "US",
+      "tf": "2006-06-01 2006-11-07"
+    },
+    {
+      "step": 4,
+      "keywords": [
+        "Democratic Party",
+        "Republican Party"
+      ],
+      "geo": "US",
+      "tf": "2010-06-01 2010-11-02"
+    },
+    {
+      "step": 4,
+      "keywords": [
+        "Democratic Party",
+        "Republican Party"
+      ],
+      "geo": "US",
+      "tf": "2014-06-01 2014-11-04"
+    },
+    {
+      "step": 4,
+      "keywords": [
+        "Democratic Party",
+        "Republican Party"
+      ],
+      "geo": "US",
+      "tf": "2018-06-01 2018-11-06"
+    },
+    {
+      "step": 4,
+      "keywords": [
+        "Democratic Party",
+        "Republican Party"
+      ],
+      "geo": "US",
+      "tf": "2022-06-01 2022-11-08"
+    },
+    {
+      "step": 4,
+      "keywords": [
+        "vote Democrat",
+        "vote Republican"
+      ],
+      "geo": "US",
+      "tf": "2006-06-01 2006-11-07"
+    },
+    {
+      "step": 4,
+      "keywords": [
+        "vote Democrat",
+        "vote Republican"
+      ],
+      "geo": "US",
+      "tf": "2010-06-01 2010-11-02"
+    },
+    {
+      "step": 4,
+      "keywords": [
+        "vote Democrat",
+        "vote Republican"
+      ],
+      "geo": "US",
+      "tf": "2014-06-01 2014-11-04"
+    },
+    {
+      "step": 4,
+      "keywords": [
+        "vote Democrat",
+        "vote Republican"
+      ],
+      "geo": "US",
+      "tf": "2018-06-01 2018-11-06"
+    },
+    {
+      "step": 4,
+      "keywords": [
+        "vote Democrat",
+        "vote Republican"
+      ],
+      "geo": "US",
+      "tf": "2022-06-01 2022-11-08"
+    },
+    {
+      "step": 5,
+      "keywords": [
+        "Democratic Party",
+        "Republican Party"
+      ],
+      "geo": "US",
+      "tf": "2026-06-01 2026-09-17"
+    },
+    {
+      "step": 5,
+      "keywords": [
+        "vote Democrat",
+        "vote Republican"
+      ],
+      "geo": "US",
+      "tf": "2026-06-01 2026-09-17"
+    }
+  ],
+  "robustness_party_name": {
+    "loo_threshold": [
+      {
+        "year": 2006,
+        "share": 0.5229110512,
+        "loo_threshold": 0.4750352817,
+        "decided_by": 0.0478757695,
+        "call": "D",
+        "actual": "D",
+        "hit": true
+      },
+      {
+        "year": 2010,
+        "share": 0.4490481523,
+        "loo_threshold": 0.4935010065,
+        "decided_by": -0.0444528542,
+        "call": "R",
+        "actual": "R",
+        "hit": true
+      },
+      {
+        "year": 2014,
+        "share": 0.483706721,
+        "loo_threshold": 0.4848363643,
+        "decided_by": -0.0011296433,
+        "call": "R",
+        "actual": "R",
+        "hit": true
+      },
+      {
+        "year": 2018,
+        "share": 0.4974463739,
+        "loo_threshold": 0.4814014511,
+        "decided_by": 0.0160449228,
+        "call": "D",
+        "actual": "D",
+        "hit": true
+      },
+      {
+        "year": 2022,
+        "share": 0.4699398798,
+        "loo_threshold": 0.4882780746,
+        "decided_by": -0.0183381948,
+        "call": "R",
+        "actual": "R",
+        "hit": true
+      }
+    ],
+    "loo_hits": {
+      "hits": 5,
+      "n": 5,
+      "rate": 1.0
+    },
+    "loo_min_abs_decided_by": 0.0011296433021427688,
+    "always_R_baseline": {
+      "hits": 3,
+      "n": 5,
+      "rate": 0.6
+    },
+    "binom_p_fixed_0.5": 0.1875,
+    "binom_p_loo": 0.03125,
+    "pearson_p_share_vs_margin": 0.0723504013521607,
+    "retrieval_noise_same_day": {
+      "2014": {
+        "n_vintages": 2,
+        "shares_last4": [
+          0.48370672097759676,
+          0.48370672097759676
+        ],
+        "identical": true
+      },
+      "2018": {
+        "n_vintages": 2,
+        "shares_last4": [
+          0.4974463738508682,
+          0.4974463738508682
+        ],
+        "identical": true
+      }
+    },
+    "s2026": {
+      "spike_week_ending": "2026-09-05",
+      "spike_week_values": {
+        "dem": 93,
+        "rep": 227
+      },
+      "share_last4": 0.4562814070351759,
+      "share_last4_excl_spike_week": 0.5348148148148149,
+      "weekly_dem_share": [
+        {
+          "week_ending": "2026-06-06",
+          "share": 0.513
+        },
+        {
+          "week_ending": "2026-06-13",
+          "share": 0.511
+        },
+        {
+          "week_ending": "2026-06-20",
+          "share": 0.512
+        },
+        {
+          "week_ending": "2026-06-27",
+          "share": 0.462
+        },
+        {
+          "week_ending": "2026-07-04",
+          "share": 0.556
+        },
+        {
+          "week_ending": "2026-07-11",
+          "share": 0.571
+        },
+        {
+          "week_ending": "2026-07-18",
+          "share": 0.554
+        },
+        {
+          "week_ending": "2026-07-25",
+          "share": 0.566
+        },
+        {
+          "week_ending": "2026-08-01",
+          "share": 0.616
+        },
+        {
+          "week_ending": "2026-08-08",
+          "share": 0.567
+        },
+        {
+          "week_ending": "2026-08-15",
+          "share": 0.547
+        },
+        {
+          "week_ending": "2026-08-22",
+          "share": 0.573
+        },
+        {
+          "week_ending": "2026-08-29",
+          "share": 0.571
+        },
+        {
+          "week_ending": "2026-09-05",
+          "share": 0.291
+        },
+        {
+          "week_ending": "2026-09-12",
+          "share": 0.491
+        },
+        {
+          "week_ending": "2026-09-19",
+          "share": 0.493
+        }
+      ],
+      "historical_mean_share_last4": 0.48461043561931094
+    }
+  },
+  "validation_checks": {
+    "step1_raw_last4_vs_popular_vote": {
+      "n": 5,
+      "hits": 2,
+      "rate": 0.4,
+      "binom_p": 0.8125,
+      "corr_p": 0.7302169709409779,
+      "passes": false
+    },
+    "step3_state_winner": {
+      "n": 21,
+      "hits": 12,
+      "rate": 0.5714285714285714,
+      "binom_p": 0.33181190490722656,
+      "corr_p": 0.23383200888244463,
+      "passes": false
+    },
+    "step4_party_name": {
+      "n": 5,
+      "hits": 4,
+      "rate": 0.8,
+      "binom_p": 0.1875,
+      "corr_p": 0.0723504013521607,
+      "passes": false
+    },
+    "step4_vote_party": {
+      "n": 5,
+      "hits": 3,
+      "rate": 0.6,
+      "binom_p": 0.5,
+      "corr_p": 0.6673930569427174,
+      "passes": false
+    }
+  },
+  "validated": false,
+  "validation_reasons": [
+    "no relationship meets the pre-registered rule (n>=8, binomial p<0.05, correlation p<0.05)"
+  ],
+  "forecast": null,
+  "unvalidated_lean": {
+    "pair": "party_name",
+    "dem_share_last4": 0.4562814070351759,
+    "dem_share_last4_excl_spike": 0.5348148148148149,
+    "historical_mean_share": 0.48461043561931094,
+    "reading": "Below the historical midterm mean only because of one news-spike week; excluding it the share is at/above the mean. Not a forecast."
+  },
+  "requests": {
+    "attempted_this_run": 58,
+    "cached_probe_pairs": 4,
+    "new_pulls_first_run": 54,
+    "forced_repulls": 2,
+    "total_new_requests": 56,
+    "budget": 60,
+    "catalog_before_this_run": 169,
+    "catalog_after_this_run": 169,
+    "failed": []
+  },
+  "seconds": 0.7,
+  "pooled_history_hits": {
+    "hits": 21,
+    "n": 36,
+    "rate": 0.5833333333333334
+  }
+}

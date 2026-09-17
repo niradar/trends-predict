@@ -1,0 +1,22 @@
+{
+  "request": {
+    "keywords": [
+      "Joe Biden for president",
+      "Donald Trump for president"
+    ],
+    "geo": "US",
+    "timeframe": "2020-06-01 2020-11-03",
+    "cat": 0,
+    "gprop": ""
+  },
+  "slug": "US__joe-biden-for-president_x2__2020-06-01-2020-11-03__6b27521446",
+  "vintages": [
+    {
+      "file": "v_20260917T164830Z.csv",
+      "retrieved_utc": "20260917T164830Z",
+      "rows": 156,
+      "first": "2020-06-01 00:00:00",
+      "last": "2020-11-03 00:00:00"
+    }
+  ]
+}

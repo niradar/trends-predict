@@ -1,0 +1,21 @@
+{
+  "request": {
+    "keywords": [
+      "body aches"
+    ],
+    "geo": "US-NY",
+    "timeframe": "2021-09-18 2026-09-17",
+    "cat": 0,
+    "gprop": ""
+  },
+  "slug": "US-NY__body-aches__2021-09-18-2026-09-17__06e43ec20c",
+  "vintages": [
+    {
+      "file": "v_20260917T171824Z.csv",
+      "retrieved_utc": "20260917T171824Z",
+      "rows": 262,
+      "first": "2021-09-12 00:00:00",
+      "last": "2026-09-13 00:00:00"
+    }
+  ]
+}

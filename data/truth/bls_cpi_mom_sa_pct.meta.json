@@ -1,0 +1,15 @@
+{
+  "source": "derived from BLS CUSR0000SA0 via api.bls.gov v1",
+  "description": "US CPI-U all items, SA, month-over-month inflation rate, percent (100*log-diff of the index). Oct-2025 index interpolated (BLS shutdown gap), so Oct/Nov-2025 m/m are split evenly.",
+  "freq": "M",
+  "units": "% m/m",
+  "interpolated_months": [
+    "2025-10-01"
+  ],
+  "derivation": "s=truth.bls_series('CPIAUCSL'); s=s.reindex(pd.date_range(s.index.min(),s.index.max(),freq='MS')).interpolate(); mom=(100*np.log(s).diff()).dropna().round(4)  # Oct-2025 level interpolated (BLS shutdown gap)",
+  "name": "bls_cpi_mom_sa_pct",
+  "rows": 271,
+  "first": "2004-02-01 00:00:00",
+  "last": "2026-08-01 00:00:00",
+  "retrieved_utc": "20260917T171640Z"
+}

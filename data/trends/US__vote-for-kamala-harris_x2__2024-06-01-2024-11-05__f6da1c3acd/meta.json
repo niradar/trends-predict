@@ -1,0 +1,22 @@
+{
+  "request": {
+    "keywords": [
+      "vote for Kamala Harris",
+      "vote for Donald Trump"
+    ],
+    "geo": "US",
+    "timeframe": "2024-06-01 2024-11-05",
+    "cat": 0,
+    "gprop": ""
+  },
+  "slug": "US__vote-for-kamala-harris_x2__2024-06-01-2024-11-05__f6da1c3acd",
+  "vintages": [
+    {
+      "file": "v_20260917T164816Z.csv",
+      "retrieved_utc": "20260917T164816Z",
+      "rows": 158,
+      "first": "2024-06-01 00:00:00",
+      "last": "2024-11-05 00:00:00"
+    }
+  ]
+}
