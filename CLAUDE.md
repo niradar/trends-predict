@@ -84,6 +84,10 @@ summary/                   # final web summary with showcase examples
   `specs/`, artifacts in `outputs/`; validation protocol in `research/validation/`; web summary
   generator `summary/build_summary.py`.
 
+- 2026-09-17 (end of day): skill validated by 16 isolated runs (Fable 5.1 vs Opus 5, all correct;
+  `research/validation/results.json`); 17 defects they found were fixed. Web summary published:
+  https://claude.ai/artifact/FmFMJyL5jKSizNkx5vpkiR (source in `summary/`). **Status: skill ready.**
+
 ## How to run things
 
 ```
