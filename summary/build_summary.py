@@ -146,22 +146,25 @@ def build():
     cards = "".join(showcase_card(*s) for s in SHOWCASE)
     css = f"""
 :root{{--surface:{LIGHT['surface']};--page:{LIGHT['page']};--ink:{LIGHT['ink']};--ink2:{LIGHT['ink2']};--muted:{LIGHT['muted']};--grid:{LIGHT['grid']};--border:{LIGHT['border']};--s1:{LIGHT['s'][0]};--s2:{LIGHT['s'][1]};--s3:{LIGHT['s'][2]};--good:{LIGHT['good']};--serious:{LIGHT['serious']};--critical:{LIGHT['critical']};color-scheme:light}}
-@media (prefers-color-scheme: dark){{:root{{--surface:{DARK['surface']};--page:{DARK['page']};--ink:{DARK['ink']};--ink2:{DARK['ink2']};--muted:{DARK['muted']};--grid:{DARK['grid']};--border:{DARK['border']};--s1:{DARK['s'][0]};--s2:{DARK['s'][1]};--s3:{DARK['s'][2]};color-scheme:dark}}}}
-*{{box-sizing:border-box}}body{{margin:0;background:var(--page);color:var(--ink);font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}}
-main{{max-width:1100px;margin:0 auto;padding:36px 20px 80px}}h1{{font-size:34px;letter-spacing:-.015em;margin:0 0 8px;font-weight:650}}h2{{font-size:20px;margin:44px 0 12px;font-weight:650}}
-.lede{{font-size:18px;color:var(--ink2);max-width:820px;margin:0 0 26px}}
+@media (prefers-color-scheme: dark){{:root:not([data-theme="light"]){{--surface:{DARK['surface']};--page:{DARK['page']};--ink:{DARK['ink']};--ink2:{DARK['ink2']};--muted:{DARK['muted']};--grid:{DARK['grid']};--border:{DARK['border']};--s1:{DARK['s'][0]};--s2:{DARK['s'][1]};--s3:{DARK['s'][2]};color-scheme:dark}}}}
+:root[data-theme="dark"]{{--surface:{DARK['surface']};--page:{DARK['page']};--ink:{DARK['ink']};--ink2:{DARK['ink2']};--muted:{DARK['muted']};--grid:{DARK['grid']};--border:{DARK['border']};--s1:{DARK['s'][0]};--s2:{DARK['s'][1]};--s3:{DARK['s'][2]};color-scheme:dark}}
+*{{box-sizing:border-box}}body{{margin:0;background:var(--page);color:var(--ink);font:15px/1.6 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif}}
+main{{max-width:1100px;margin:0 auto;padding:36px 20px 80px}}h1{{font:600 40px/1.1 "Newsreader",Georgia,"Times New Roman",serif;letter-spacing:-.01em;margin:0 0 10px;text-wrap:balance}}h2{{font:600 24px/1.2 "Newsreader",Georgia,serif;margin:48px 0 14px;text-wrap:balance}}
+.lede{{font-size:17px;color:var(--ink2);max-width:72ch;margin:0 0 26px}}
 .card{{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px 22px}}
 .grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px}}
 .show .q{{font-size:17px;font-weight:600;margin-bottom:8px}}.show .head{{font-size:15px;font-weight:600;margin-bottom:8px}}.show .take{{color:var(--ink2);margin:0 0 12px}}
 .kvs{{display:grid;grid-template-columns:1fr 1fr;gap:6px 14px;font-size:13px;margin-bottom:14px}}.kv span{{color:var(--muted);display:block;font-size:11px;text-transform:uppercase;letter-spacing:.05em}}.kv b{{font-weight:600}}
 .btn{{display:inline-block;font-size:13px;color:var(--s1);text-decoration:none;border:1px solid var(--border);border-radius:8px;padding:6px 10px}}.btn:hover{{background:var(--grid)}}
 .conf-high{{color:var(--good)}}.conf-medium{{color:#a86f00}}.conf-low{{color:var(--serious)}}.conf-none{{color:var(--critical)}}
-table{{border-collapse:collapse;width:100%;font-size:13.5px}}th,td{{text-align:left;padding:8px 10px;border-bottom:1px solid var(--grid);vertical-align:top}}th{{color:var(--ink2);font-weight:600}}
+table{{border-collapse:collapse;width:100%;font-size:13.5px;font-variant-numeric:tabular-nums}}th,td{{text-align:left;padding:8px 10px;border-bottom:1px solid var(--grid);vertical-align:top}}th{{color:var(--ink2);font-weight:600}}
 .steps{{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;counter-reset:s}}.step{{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 14px;font-size:13.5px}}.step b{{display:block;margin-bottom:4px}}.step::before{{counter-increment:s;content:counter(s);display:inline-block;width:22px;height:22px;border-radius:11px;background:var(--s1);color:#fff;font-size:12px;text-align:center;line-height:22px;margin-bottom:8px}}
 ul{{margin:6px 0;padding-left:22px}}li{{margin:5px 0}}code{{font-size:12.5px;background:var(--grid);padding:1px 5px;border-radius:4px}}.muted{{color:var(--muted)}}.scroll{{overflow:auto}}
 footer{{margin-top:50px;font-size:12.5px;color:var(--muted)}}
 """
-    doc = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>trends-forecast — predicting with Google Trends, honestly</title><style>{css}</style></head><body><main>
+    fonts = '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">'
+    head = f'<title>trends-forecast</title>{fonts}<style>{css}</style>'
+    body = f"""<main>
 <h1>trends-forecast</h1>
 <p class="lede">A Claude Code skill that turns a plain-language prediction question — in English or Hebrew — into a <b>validated</b> Google Trends forecast, or into a reasoned refusal. It applies the methods of the Google-Trends forecasting literature (Choi &amp; Varian, ARGO, MIDAS, Rivera, Borup &amp; Montes Schütte, Djorno et al.) with rolling-origin backtests against the best target-only benchmark, and delivers a written answer plus a self-contained evidence artifact.</p>
 
@@ -204,8 +207,9 @@ footer{{margin-top:50px;font-size:12.5px;color:var(--muted)}}
 <li>Library: <code>src/trends_predict/</code> (gt · truth · preprocess · models · evaluate · report · pipeline), 11 synthetic tests.</li>
 </ul></div>
 <footer>trends-predict · 2026-09-17 · Google Trends values are relative search interest, not counts.</footer>
-</main></body></html>"""
-    (OUT / "index.html").write_text(doc, encoding="utf-8")
+</main>"""
+    (OUT / "index.html").write_text(f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">{head}</head><body>{body}</body></html>', encoding="utf-8")
+    (OUT / "artifact.html").write_text(head + body, encoding="utf-8")  # body-only version for the Artifact tool
     print("wrote", OUT / "index.html")
 
 

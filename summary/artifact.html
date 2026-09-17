@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>trends-forecast</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap"><style>
+<title>trends-forecast</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap"><style>
 :root{--surface:#fcfcfb;--page:#f9f9f7;--ink:#0b0b0b;--ink2:#52514e;--muted:#898781;--grid:#e1e0d9;--border:rgba(11,11,11,0.10);--s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--good:#0ca30c;--serious:#ec835a;--critical:#d03b3b;color-scheme:light}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--surface:#1a1a19;--page:#0d0d0d;--ink:#ffffff;--ink2:#c3c2b7;--muted:#898781;--grid:#2c2c2a;--border:rgba(255,255,255,0.10);--s1:#3987e5;--s2:#d95926;--s3:#199e70;color-scheme:dark}}
 :root[data-theme="dark"]{--surface:#1a1a19;--page:#0d0d0d;--ink:#ffffff;--ink2:#c3c2b7;--muted:#898781;--grid:#2c2c2a;--border:rgba(255,255,255,0.10);--s1:#3987e5;--s2:#d95926;--s3:#199e70;color-scheme:dark}
@@ -15,7 +15,7 @@ table{border-collapse:collapse;width:100%;font-size:13.5px;font-variant-numeric:
 .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;counter-reset:s}.step{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 14px;font-size:13.5px}.step b{display:block;margin-bottom:4px}.step::before{counter-increment:s;content:counter(s);display:inline-block;width:22px;height:22px;border-radius:11px;background:var(--s1);color:#fff;font-size:12px;text-align:center;line-height:22px;margin-bottom:8px}
 ul{margin:6px 0;padding-left:22px}li{margin:5px 0}code{font-size:12.5px;background:var(--grid);padding:1px 5px;border-radius:4px}.muted{color:var(--muted)}.scroll{overflow:auto}
 footer{margin-top:50px;font-size:12.5px;color:var(--muted)}
-</style></head><body><main>
+</style><main>
 <h1>trends-forecast</h1>
 <p class="lede">A Claude Code skill that turns a plain-language prediction question — in English or Hebrew — into a <b>validated</b> Google Trends forecast, or into a reasoned refusal. It applies the methods of the Google-Trends forecasting literature (Choi &amp; Varian, ARGO, MIDAS, Rivera, Borup &amp; Montes Schütte, Djorno et al.) with rolling-origin backtests against the best target-only benchmark, and delivers a written answer plus a self-contained evidence artifact.</p>
 
@@ -94,4 +94,4 @@ footer{margin-top:50px;font-size:12.5px;color:var(--muted)}
 <li>Library: <code>src/trends_predict/</code> (gt · truth · preprocess · models · evaluate · report · pipeline), 11 synthetic tests.</li>
 </ul></div>
 <footer>trends-predict · 2026-09-17 · Google Trends values are relative search interest, not counts.</footer>
-</main></body></html>
+</main>
